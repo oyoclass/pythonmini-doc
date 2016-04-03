@@ -1,5 +1,6 @@
-# Documentation for processing lib
+<link rel="stylesheet" href="../css/doc.css"></link>
 
+# Documentation for processing lib
 
 ## mouse
 
