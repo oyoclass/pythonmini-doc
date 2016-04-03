@@ -13,7 +13,7 @@ Now you have your own turtle, there are several functions you can use to control
 
 ## Motion
 
-* ```forward``` or ```fd``
+* ```forward``` or ```fd```
 
 ```python
 # move forward 100 steps
