@@ -22,7 +22,7 @@ Now you have your own turtle, there are several functions you can use to control
     [https://docs.python.org/2/library/turtle.html#turtle.forward](https://docs.python.org/2/library/turtle.html#turtle.forward)
 
     Example:
-```python
-    # move forward 100 steps
+    ```python
+# move forward 100 steps
 nick.forward(100)
-```
+    ```
