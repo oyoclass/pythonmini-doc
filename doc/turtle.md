@@ -1,4 +1,4 @@
-<link rel="stylesheet" src="../css/doc.css"></link>
+<link rel="stylesheet" href="../css/doc.css"></link>
 
 Turtle graphic library is a subset of the Python Turtle.
 
