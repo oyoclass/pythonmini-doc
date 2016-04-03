@@ -1,7 +1,5 @@
 <link rel="stylesheet" href="../css/doc.css"></link>
 
-# Documentation for processing lib
-
 ## mouse
 
 #### Property
