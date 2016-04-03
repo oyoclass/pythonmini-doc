@@ -15,7 +15,7 @@ Now you have your own turtle, there are several functions you can use to control
 
 ## Motion
 
- ※ ```turtle.forward(distance)``` or ```turtle.fd(distance)```
+\* ```turtle.forward(distance)``` or ```turtle.fd(distance)```
 
 > Move the turtle forward by the specified distance, in the direction the turtle is headed.
 
