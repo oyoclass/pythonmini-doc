@@ -1,2 +1,2 @@
-# Documentation for Python Mini App in OYOclass.com
+# Documentation for Python Mini App
 
