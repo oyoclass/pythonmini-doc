@@ -1,3 +1,5 @@
+<style type="text/css">pre {font-size:1.2em !important} </style>
+
 Turtle graphic library is a subset of the Python Turtle.
 
 # Import library
