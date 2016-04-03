@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../css/doc.css"></link>
+<link rel="stylesheet" href="../../css/doc.css"></link>
 
 ## mouse
 
