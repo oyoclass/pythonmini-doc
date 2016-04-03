@@ -15,9 +15,14 @@ Now you have your own turtle, there are several functions you can use to control
 
 ## Motion
 
-* ```forward``` or ```fd```
+* ```turtle.forward(distance)``` or ```turtle.fd(distance)```
 
+    Move the turtle forward by the specified distance, in the direction the turtle is headed.
+
+    [https://docs.python.org/2/library/turtle.html#turtle.forward](https://docs.python.org/2/library/turtle.html#turtle.forward)
+
+    Example:
 ```python
-# move forward 100 steps
+    # move forward 100 steps
 nick.forward(100)
 ```
