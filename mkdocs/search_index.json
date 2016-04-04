@@ -1,0 +1,109 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Python Mini Documentation\n\n\nPython Mini implements a subset of Python 2, plus the addition of two graphical libraries, Turtle, Processing.\n\n\nGet started\n\n\nfrom random import randint\na = randint()\nprint a", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#python-mini-documentation", 
+            "text": "Python Mini implements a subset of Python 2, plus the addition of two graphical libraries, Turtle, Processing.", 
+            "title": "Python Mini Documentation"
+        }, 
+        {
+            "location": "/#get-started", 
+            "text": "from random import randint\na = randint()\nprint a", 
+            "title": "Get started"
+        }, 
+        {
+            "location": "/start/", 
+            "text": "Get Started", 
+            "title": "Get Started"
+        }, 
+        {
+            "location": "/start/#get-started", 
+            "text": "", 
+            "title": "Get Started"
+        }, 
+        {
+            "location": "/core/types/", 
+            "text": "", 
+            "title": "Types"
+        }, 
+        {
+            "location": "/stdmod/math/", 
+            "text": "", 
+            "title": "Math"
+        }, 
+        {
+            "location": "/stdmod/random/", 
+            "text": "", 
+            "title": "Random"
+        }, 
+        {
+            "location": "/stdmod/time/", 
+            "text": "", 
+            "title": "Time"
+        }, 
+        {
+            "location": "/turtle/motion/", 
+            "text": "Turtle graphic library is a subset of the Python Turtle.\n\n\nImport library\n\n\nfrom turtle import Turtle\n\n# Generate Turtle object, name it like your pet\nnick = Turtle()\n\n\n\n\nNow you have your own turtle, there are several functions you can use to control your turtle.\n\n\nMotion\n\n\n\u27a4 \nturtle.forward(distance)\n or \nturtle.fd(distance)\n\n\n\n\nMove the turtle forward by the specified distance, in the direction the turtle is headed.\n\n\nhttps://docs.python.org/2/library/turtle.html#turtle.forward\n\n\n\n\nExample:\n\n\n# move forward 100 steps\nnick.forward(100)", 
+            "title": "Motion"
+        }, 
+        {
+            "location": "/turtle/motion/#import-library", 
+            "text": "from turtle import Turtle\n\n# Generate Turtle object, name it like your pet\nnick = Turtle()  Now you have your own turtle, there are several functions you can use to control your turtle.", 
+            "title": "Import library"
+        }, 
+        {
+            "location": "/turtle/motion/#motion", 
+            "text": "\u27a4  turtle.forward(distance)  or  turtle.fd(distance)   Move the turtle forward by the specified distance, in the direction the turtle is headed.  https://docs.python.org/2/library/turtle.html#turtle.forward   Example:  # move forward 100 steps\nnick.forward(100)", 
+            "title": "Motion"
+        }, 
+        {
+            "location": "/processing/setup/", 
+            "text": "setup processing", 
+            "title": "Setup"
+        }, 
+        {
+            "location": "/processing/setup/#setup-processing", 
+            "text": "", 
+            "title": "setup processing"
+        }, 
+        {
+            "location": "/processing/keyboard/", 
+            "text": "keyboard\n\n\nProperty\n\n\n\n\nkeyboard.keyCode", 
+            "title": "Keyboard"
+        }, 
+        {
+            "location": "/processing/keyboard/#keyboard", 
+            "text": "", 
+            "title": "keyboard"
+        }, 
+        {
+            "location": "/processing/keyboard/#property", 
+            "text": "keyboard.keyCode", 
+            "title": "Property"
+        }, 
+        {
+            "location": "/processing/mouse/", 
+            "text": "mouse\n\n\nProperty\n\n\n\n\nmouse.x\n\n\nmouse.y\n\n\nmouse.px (?)\n\n\nmouse.py (?)\n\n\nmouse.button\n\n\n\n\nFunctions\n\n\n\n\nmousePressed\n\n\nmouseMoved\n\n\nmouseReleased\n\n\n\n\nExample:\n\n\nfrom processing import *\n\ndef mousePressed():\n    print \npressed at:\n, mouse.x, mouse.y\n    # left button is 37, right button is 39\n    print \nmouse button:\n, mouse.button\n\ndef mouseMoved():\n    print \nmouse moved\n\n\ndef mouseReleased():\n    print \nreleased ...\n\n\nrun()", 
+            "title": "Mouse"
+        }, 
+        {
+            "location": "/processing/mouse/#mouse", 
+            "text": "", 
+            "title": "mouse"
+        }, 
+        {
+            "location": "/processing/mouse/#property", 
+            "text": "mouse.x  mouse.y  mouse.px (?)  mouse.py (?)  mouse.button", 
+            "title": "Property"
+        }, 
+        {
+            "location": "/processing/mouse/#functions", 
+            "text": "mousePressed  mouseMoved  mouseReleased   Example:  from processing import *\n\ndef mousePressed():\n    print  pressed at: , mouse.x, mouse.y\n    # left button is 37, right button is 39\n    print  mouse button: , mouse.button\n\ndef mouseMoved():\n    print  mouse moved \n\ndef mouseReleased():\n    print  released ... \n\nrun()", 
+            "title": "Functions"
+        }
+    ]
+}
