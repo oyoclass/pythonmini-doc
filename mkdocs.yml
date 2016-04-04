@@ -1,3 +1,6 @@
+site_name: Python Mini Document
+theme: readthedocs
+docs_dir: 'doc'
 pages:
     - 'Home': 'index.md'
     - 'Get Started': 'start.md'
@@ -13,6 +16,5 @@ pages:
         - 'Setup': 'processing/setup.md'
         - 'Keyboard': 'processing/keyboard.md'
         - 'Mouse': 'processing/mouse.md'
-
 extra_css:
     - css/doc.css
