@@ -56,3 +56,12 @@ To deploy to product server, just run:
 ```shell
 $ ./deploy.sh
 ```
+
+You will see the published site in several seconds.
+
+
+### Reference:
+
+1. [Mkdocs](http://www.mkdocs.org/)
+1. [mkdocs.yml](http://www.mkdocs.org/user-guide/configuration/)
+1. [Deploying docs](http://www.mkdocs.org/user-guide/deploying-your-docs/)
