@@ -1,6 +1,6 @@
 ## mouse
 
-#### Property
+### Property
 
 * mouse.x
 * mouse.y
@@ -8,13 +8,13 @@
 * mouse.py (?)
 * mouse.button
 
-#### Functions
+### Functions
 
 * mousePressed
 * mouseMoved
 * mouseReleased
 
-Example:
+### Example
 
 ```python
 from processing import *

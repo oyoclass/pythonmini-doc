@@ -1,5 +1,5 @@
 ## keyboard
 
-#### Property
+### Property
 
 * keyboard.keyCode

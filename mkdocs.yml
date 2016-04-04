@@ -3,16 +3,15 @@ theme: readthedocs
 docs_dir: 'doc'
 pages:
     - 'Home': 'index.md'
-    - 'Get Started': 'start.md'
     - 'Core':
         - 'Types': 'core/types.md'
     - 'Standard Modules':
         - 'Math': 'stdmod/math.md'
         - 'Random': 'stdmod/random.md'
         - 'Time': 'stdmod/time.md'
-    - 'Turtle':
+    - 'Turtle Graphic':
         - 'Motion': 'turtle/motion.md'
-    - 'Processing':
+    - 'Processing Graphic':
         - 'Setup': 'processing/setup.md'
         - 'Keyboard': 'processing/keyboard.md'
         - 'Mouse': 'processing/mouse.md'
