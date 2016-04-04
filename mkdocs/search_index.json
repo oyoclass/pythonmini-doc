@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Python Mini Documentation\n\n\nPython Mini implements a subset of Python 2, plus the addition of two graphical libraries, Turtle, Processing.\n\n\nGet started\n\n\nfrom random import randint\na = randint()\nprint a", 
+            "text": "Python Mini Documentation\n\n\nPython Mini implements a subset of Python 2, plus the addition of two graphical libraries, Turtle, Processing.\n\n\nGet started", 
             "title": "Home"
         }, 
         {
@@ -12,18 +12,8 @@
         }, 
         {
             "location": "/#get-started", 
-            "text": "from random import randint\na = randint()\nprint a", 
-            "title": "Get started"
-        }, 
-        {
-            "location": "/start/", 
-            "text": "Get Started", 
-            "title": "Get Started"
-        }, 
-        {
-            "location": "/start/#get-started", 
             "text": "", 
-            "title": "Get Started"
+            "title": "Get started"
         }, 
         {
             "location": "/core/types/", 
@@ -32,8 +22,28 @@
         }, 
         {
             "location": "/stdmod/math/", 
-            "text": "", 
+            "text": "This module contains some mathematical operations (subset of Python's standard \nmath\n module), to use it, make sure use \nimport math\n first to import it.\n\n\nConstants\n\n\n\n\nmath.e\n : The mathematical constant e = 2.718281..., to available precision\n\n\nmath.pi\n : The mathematical constant \u03c0 = 3.141592..., to available precision.\n\n\n\n\nFunctions\n\n\n\n\nmath.acos(x)\n : Return the arc cosine of x, in radians.\n\n\nmath.acosh(x)\n : Return the inverse hyperbolic cosine of x.\n\n\nmath.asin(x)\n : Return the arc sine of x, in radians.\n\n\nmath.asinh(x)\n : Return the inverse hyperbolic sine of x.\n\n\nmath.atan(x)\n : Return the arc tangent of x, in radians.\n\n\nmath.atan2(y, x)\n : Return atan(y / x), in radians. The result is between -pi and pi.\n\n\nmath.atanh(x)\n : Return the inverse hyperbolic tangent of x.\n\n\nmath.ceil(x)\n : Return the ceiling of x as a float, the smallest integer value greater than or equal to x.\n\n\nmath.cos(x)\n : Return the cosine of x radians.\n\n\nmath.cosh(x)\n : Return the hyperbolic cosine of x.\n\n\nmath.degrees(x)\n : Convert angle x from radians to degrees.\n\n\nmath.exp(x)\n : Return e**x.\n\n\nmath.fabs(x)\n : Return the absolute value of x.\n\n\nmath.factorial(x)\n : Return x factorial.\n\n\nmath.floor(x)\n : Return the floor of x as a float, the largest integer value less than or equal to x.\n\n\nmath.hypot(x, y)\n : Return the Euclidean norm, sqrt(x\nx + y\ny). This is the length of the vector from the origin to point (x, y).\n\n\nmath.log(x[,base])\n : With one argument, return the natural logarithm of x (to base e). With two arguments, return the logarithm of x to the given base, calculated as log(x)/log(base).\n\n\nmath.log10(x)\n : Return the base-10 logarithm of x. This is usually more accurate than log(x, 10).\n\n\nmath.pow(x, y)\n : Return x raised to the power y.\n\n\nmath.radians\n : Convert angle x from degrees to radians.\n\n\nmath.sin(x)\n : Return the sine of x radians.\n\n\nmath.sinh(x)\n : Return the hyperbolic sine of x.\n\n\nmath.sqrt(x)\n : Return the square root of x.\n\n\nmath.tan(x)\n : Return the tangent of x radians.\n\n\nmath.tanh(x)\n : Return the hyperbolic tangent of x.\n\n\nmath.trunc(x)\n : Return the Real value x truncated to an Integral (usually a long integer).\n\n\n\n\nExample\n\n\nimport math\n\nprint math.pi\n# 3.14159265359\n\nprint math.sqrt(4)\n# 2.0\n\nprint math.sin(math.pi/6)\n# 0.5\n\nprint math.degrees(math.pi/6)\n# 30.0\n\n\n\n\nReference\n\n\n\n\nPython Math Module, python.org", 
             "title": "Math"
+        }, 
+        {
+            "location": "/stdmod/math/#constants", 
+            "text": "math.e  : The mathematical constant e = 2.718281..., to available precision  math.pi  : The mathematical constant \u03c0 = 3.141592..., to available precision.", 
+            "title": "Constants"
+        }, 
+        {
+            "location": "/stdmod/math/#functions", 
+            "text": "math.acos(x)  : Return the arc cosine of x, in radians.  math.acosh(x)  : Return the inverse hyperbolic cosine of x.  math.asin(x)  : Return the arc sine of x, in radians.  math.asinh(x)  : Return the inverse hyperbolic sine of x.  math.atan(x)  : Return the arc tangent of x, in radians.  math.atan2(y, x)  : Return atan(y / x), in radians. The result is between -pi and pi.  math.atanh(x)  : Return the inverse hyperbolic tangent of x.  math.ceil(x)  : Return the ceiling of x as a float, the smallest integer value greater than or equal to x.  math.cos(x)  : Return the cosine of x radians.  math.cosh(x)  : Return the hyperbolic cosine of x.  math.degrees(x)  : Convert angle x from radians to degrees.  math.exp(x)  : Return e**x.  math.fabs(x)  : Return the absolute value of x.  math.factorial(x)  : Return x factorial.  math.floor(x)  : Return the floor of x as a float, the largest integer value less than or equal to x.  math.hypot(x, y)  : Return the Euclidean norm, sqrt(x x + y y). This is the length of the vector from the origin to point (x, y).  math.log(x[,base])  : With one argument, return the natural logarithm of x (to base e). With two arguments, return the logarithm of x to the given base, calculated as log(x)/log(base).  math.log10(x)  : Return the base-10 logarithm of x. This is usually more accurate than log(x, 10).  math.pow(x, y)  : Return x raised to the power y.  math.radians  : Convert angle x from degrees to radians.  math.sin(x)  : Return the sine of x radians.  math.sinh(x)  : Return the hyperbolic sine of x.  math.sqrt(x)  : Return the square root of x.  math.tan(x)  : Return the tangent of x radians.  math.tanh(x)  : Return the hyperbolic tangent of x.  math.trunc(x)  : Return the Real value x truncated to an Integral (usually a long integer).", 
+            "title": "Functions"
+        }, 
+        {
+            "location": "/stdmod/math/#example", 
+            "text": "import math\n\nprint math.pi\n# 3.14159265359\n\nprint math.sqrt(4)\n# 2.0\n\nprint math.sin(math.pi/6)\n# 0.5\n\nprint math.degrees(math.pi/6)\n# 30.0", 
+            "title": "Example"
+        }, 
+        {
+            "location": "/stdmod/math/#reference", 
+            "text": "Python Math Module, python.org", 
+            "title": "Reference"
         }, 
         {
             "location": "/stdmod/random/", 
@@ -87,7 +97,7 @@
         }, 
         {
             "location": "/processing/mouse/", 
-            "text": "mouse\n\n\nProperty\n\n\n\n\nmouse.x\n\n\nmouse.y\n\n\nmouse.px (?)\n\n\nmouse.py (?)\n\n\nmouse.button\n\n\n\n\nFunctions\n\n\n\n\nmousePressed\n\n\nmouseMoved\n\n\nmouseReleased\n\n\n\n\nExample:\n\n\nfrom processing import *\n\ndef mousePressed():\n    print \npressed at:\n, mouse.x, mouse.y\n    # left button is 37, right button is 39\n    print \nmouse button:\n, mouse.button\n\ndef mouseMoved():\n    print \nmouse moved\n\n\ndef mouseReleased():\n    print \nreleased ...\n\n\nrun()", 
+            "text": "mouse\n\n\nProperty\n\n\n\n\nmouse.x\n\n\nmouse.y\n\n\nmouse.px (?)\n\n\nmouse.py (?)\n\n\nmouse.button\n\n\n\n\nFunctions\n\n\n\n\nmousePressed\n\n\nmouseMoved\n\n\nmouseReleased\n\n\n\n\nExample\n\n\nfrom processing import *\n\ndef mousePressed():\n    print \npressed at:\n, mouse.x, mouse.y\n    # left button is 37, right button is 39\n    print \nmouse button:\n, mouse.button\n\ndef mouseMoved():\n    print \nmouse moved\n\n\ndef mouseReleased():\n    print \nreleased ...\n\n\nrun()", 
             "title": "Mouse"
         }, 
         {
@@ -102,8 +112,13 @@
         }, 
         {
             "location": "/processing/mouse/#functions", 
-            "text": "mousePressed  mouseMoved  mouseReleased   Example:  from processing import *\n\ndef mousePressed():\n    print  pressed at: , mouse.x, mouse.y\n    # left button is 37, right button is 39\n    print  mouse button: , mouse.button\n\ndef mouseMoved():\n    print  mouse moved \n\ndef mouseReleased():\n    print  released ... \n\nrun()", 
+            "text": "mousePressed  mouseMoved  mouseReleased", 
             "title": "Functions"
+        }, 
+        {
+            "location": "/processing/mouse/#example", 
+            "text": "from processing import *\n\ndef mousePressed():\n    print  pressed at: , mouse.x, mouse.y\n    # left button is 37, right button is 39\n    print  mouse button: , mouse.button\n\ndef mouseMoved():\n    print  mouse moved \n\ndef mouseReleased():\n    print  released ... \n\nrun()", 
+            "title": "Example"
         }
     ]
 }
