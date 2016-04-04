@@ -25,7 +25,7 @@ mkdocs, version 0.15.3
 ```
 
 
-## View your change
+## View your change locally
 
 After you make some changes, to view the whole site, use:
 
@@ -36,7 +36,7 @@ INFO    -  Cleaning site directory
 Serving on http://127.0.0.1:8000
 ```
 
-or you can use:
+or simply use:
 
 ```shell
 $ ./runserver.sh
@@ -57,11 +57,11 @@ To deploy to product server, just run:
 $ ./deploy.sh
 ```
 
-You will see the published site in several seconds.
+You will see the published site in a few seconds.
 
 
-### Reference:
+## Reference:
 
-1. [Mkdocs](http://www.mkdocs.org/)
-1. [mkdocs.yml](http://www.mkdocs.org/user-guide/configuration/)
-1. [Deploying docs](http://www.mkdocs.org/user-guide/deploying-your-docs/)
+* [Mkdocs](http://www.mkdocs.org/)
+* [mkdocs.yml](http://www.mkdocs.org/user-guide/configuration/)
+* [Deploying docs](http://www.mkdocs.org/user-guide/deploying-your-docs/)
