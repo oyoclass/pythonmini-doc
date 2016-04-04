@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="../../css/doc.css"></link>
-
 ## mouse
 
 #### Property

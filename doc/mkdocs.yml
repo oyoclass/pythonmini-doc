@@ -1,0 +1,17 @@
+pages:
+- Home: index.md
+- Core:
+    - 'Types': 'core/types.md'
+- 'Standard Modules':
+    - 'Math': 'stdmod/math.md'
+    - 'Random': 'stdmod/random.md'
+    - 'Time': 'stdmod/time.md'
+- 'Turtle':
+    - 'Motion': 'turtle/motion.md'
+- 'Processing':
+    - 'Setup': 'processing/setup.md'
+    - 'Keyboard': 'processing/keyboard.md'
+    - 'Mouse': 'processing/mouse.md'
+
+extra_css:
+    - css/doc.css
