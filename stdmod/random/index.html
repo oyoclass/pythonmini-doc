@@ -95,6 +95,15 @@
         
             <ul>
             
+                <li class="toctree-l3"><a href="#random-generate-pseudo-random-numbers">random — Generate pseudo-random numbers</a></li>
+                
+                    <li><a class="toctree-l4" href="#functions">Functions</a></li>
+                
+                    <li><a class="toctree-l4" href="#example">Example</a></li>
+                
+                    <li><a class="toctree-l4" href="#reference">Reference</a></li>
+                
+            
             </ul>
         
     </li>
@@ -190,7 +199,39 @@
           <div role="main">
             <div class="section">
               
-                
+                <h2 id="random-generate-pseudo-random-numbers">random — Generate pseudo-random numbers</h2>
+<!-- doc for this module is completed -->
+
+<p>This module implements a subset of Python standard <code>random</code> module, it contains pseudo-random number generators for various distributions. To use it, make sure use <code>import random</code> first.</p>
+<h3 id="functions">Functions</h3>
+<ul>
+<li><code>random.choice(seq)</code> : Return a random element from the non-empty sequence seq.</li>
+<li><code>random.randint(a, b)</code> : Return a random integer N such that a &lt;= N &lt;= b</li>
+<li><code>random.random</code> : Return the next random floating point number in the range [0.0, 1.0).</li>
+<li><code>random.randrange(stop)</code> : See below.</li>
+<li><code>random.randrange(start, stop[, step])</code> : Return a randomly selected element from <em>range(start, stop, step)</em>. This is equivalent to <em>choice(range(start, stop, step))</em>.</li>
+<li><code>random.seed(x)</code> : Initialize the basic random number generator.</li>
+<li><code>random.shuffle(x)</code> : Shuffle the sequence x in place.</li>
+</ul>
+<h3 id="example">Example</h3>
+<pre><code class="python">import random
+
+lst = [1, 2, 3, 4, 5]
+
+print random.choice(lst)
+
+print random.randint(1, 10)
+
+print random.random()
+
+random.shuffle(lst)
+print lst
+</code></pre>
+
+<h3 id="reference">Reference</h3>
+<ul>
+<li><a href="https://docs.python.org/2/library/random.html">random module, python.org</a></li>
+</ul>
               
             </div>
           </div>

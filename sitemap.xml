@@ -4,7 +4,7 @@
     
     <url>
      <loc>None/</loc>
-     <lastmod>2016-04-04</lastmod>
+     <lastmod>2016-04-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,7 +13,7 @@
         
     <url>
      <loc>None/core/types/</loc>
-     <lastmod>2016-04-04</lastmod>
+     <lastmod>2016-04-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -23,19 +23,19 @@
         
     <url>
      <loc>None/stdmod/math/</loc>
-     <lastmod>2016-04-04</lastmod>
+     <lastmod>2016-04-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/stdmod/random/</loc>
-     <lastmod>2016-04-04</lastmod>
+     <lastmod>2016-04-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/stdmod/time/</loc>
-     <lastmod>2016-04-04</lastmod>
+     <lastmod>2016-04-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -45,7 +45,7 @@
         
     <url>
      <loc>None/turtle/motion/</loc>
-     <lastmod>2016-04-04</lastmod>
+     <lastmod>2016-04-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -55,19 +55,19 @@
         
     <url>
      <loc>None/processing/setup/</loc>
-     <lastmod>2016-04-04</lastmod>
+     <lastmod>2016-04-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/processing/keyboard/</loc>
-     <lastmod>2016-04-04</lastmod>
+     <lastmod>2016-04-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/processing/mouse/</loc>
-     <lastmod>2016-04-04</lastmod>
+     <lastmod>2016-04-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
