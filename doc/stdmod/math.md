@@ -1,3 +1,4 @@
+## math — Mathematical functions
 <!-- doc for this module is completed -->
 
 This module contains some mathematical operations (subset of Python's standard *math* module), to use it, make sure use ```import math``` first to import it.
