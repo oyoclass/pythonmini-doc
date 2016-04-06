@@ -6,14 +6,15 @@ pages:
     - 'Core':
         - 'Types': 'core/types.md'
     - 'Standard Modules':
-        - 'Math': 'stdmod/math.md'
-        - 'Random': 'stdmod/random.md'
-        - 'Time': 'stdmod/time.md'
+        - 'math': 'stdmod/math.md'
+        - 'random': 'stdmod/random.md'
+        - 'time': 'stdmod/time.md'
+        - 're': 'stdmod/regexp.md'
     - 'Turtle Graphic':
-        - 'Motion': 'turtle/motion.md'
+        - 'motion': 'turtle/motion.md'
     - 'Processing Graphic':
-        - 'Setup': 'processing/setup.md'
-        - 'Keyboard': 'processing/keyboard.md'
-        - 'Mouse': 'processing/mouse.md'
+        - 'setup': 'processing/setup.md'
+        - 'keyboard': 'processing/keyboard.md'
+        - 'mouse': 'processing/mouse.md'
 extra_css:
     - css/doc.css
