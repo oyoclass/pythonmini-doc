@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>motion - Python Mini Document</title>
+  
+
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../css/doc.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "motion";
+    var mkdocs_page_input_path = "turtle/turtle.md";
+    var mkdocs_page_url = "/turtle/turtle/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Python Mini Document</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Core</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/types/">Types</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Standard Modules</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../stdmod/math/">math</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../stdmod/random/">random</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../stdmod/time/">time</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../stdmod/regexp/">re</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Turtle Graphic</span></li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">motion</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#turtle-turtle-graphics">turtle — Turtle graphics</a></li>
+                
+                    <li><a class="toctree-l4" href="#setup">Setup</a></li>
+                
+                    <li><a class="toctree-l4" href="#move-and-draw">Move and draw</a></li>
+                
+                    <li><a class="toctree-l4" href="#appearance">Appearance</a></li>
+                
+                    <li><a class="toctree-l4" href="#tell-turtles-state">Tell Turtle's State</a></li>
+                
+                    <li><a class="toctree-l4" href="#pen-control">Pen control</a></li>
+                
+                    <li><a class="toctree-l4" href="#color-control">Color control</a></li>
+                
+                    <li><a class="toctree-l4" href="#filling">Filling</a></li>
+                
+                    <li><a class="toctree-l4" href="#visibility">Visibility</a></li>
+                
+                    <li><a class="toctree-l4" href="#animation-control">Animation control</a></li>
+                
+                    <li><a class="toctree-l4" href="#reset">Reset</a></li>
+                
+                    <li><a class="toctree-l4" href="#examples">Examples</a></li>
+                
+                    <li><a class="toctree-l4" href="#reference">Reference</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Processing Graphic</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../processing/setup/">setup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../processing/keyboard/">keyboard</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../processing/mouse/">mouse</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Python Mini Document</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Turtle Graphic &raquo;</li>
+        
+      
+    
+    <li>motion</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="turtle-turtle-graphics">turtle — Turtle graphics</h2>
+<p>Turtle graphic implements a subset functions of the <a href="https://docs.python.org/2/library/turtle.html">Python Turtle Library</a>.</p>
+<h3 id="setup">Setup</h3>
+<pre><code class="python">from turtle import Turtle
+
+# Generate Turtle object, name it like your pet
+nick = Turtle()
+</code></pre>
+
+<p>Now you have your own turtle (in this example I called it <em>nick</em>, but you can change it), there are several functions you can use to control your turtle.</p>
+<h3 id="move-and-draw">Move and draw</h3>
+<ul>
+<li><code>turtle.forward(distance)</code> or <code>turtle.fd(distance)</code> : Move the turtle forward by <em>distance</em>, in the direction the turtle is headed.</li>
+<li><code>turtle.backward(distance)</code> or <code>turtle.back(distance)</code> or <code>turtle.bk(distance)</code> : Move the turtle backward by <em>distance</em>, opposite to the direction the turtle is headed. This function doesn't change turtle's heading.</li>
+<li><code>turtle.right(angle)</code> or <code>turtle.rt(angle)</code> :</li>
+<li><code>turtle.left(angle)</code> or <code>turtle.lt(angle)</code> :</li>
+<li><code>turtle.goto(x, y)</code> :</li>
+<li><code>turtle.setposition(x, y)</code> or <code>turtle.setpos(x, y)</code> :</li>
+<li><code>turtle.setworldcoordinates()</code> : ?</li>
+<li><code>turtle.setx(x)</code> :</li>
+<li><code>turtle.sety(y)</code> :</li>
+<li><code>turtle.setheading(dir)</code> or <code>turtle.seth(dir)</code> :</li>
+<li><code>turtle.home()</code> :</li>
+<li><code>turtle.circle()</code> :</li>
+<li><code>turtle.dot()</code> :</li>
+<li><code>turtle.stamp()</code> :</li>
+<li><code>turtle.speed()</code> :</li>
+</ul>
+<h3 id="appearance">Appearance</h3>
+<ul>
+<li><code>turtle.shape()</code> :</li>
+</ul>
+<h3 id="tell-turtles-state">Tell Turtle's State</h3>
+<ul>
+<li><code>turtle.position()</code> or <code>turtle.pos()</code> : Return the turtle’s current location (x, y)</li>
+<li><code>turtle.towards(x, y)</code> : Return the angle between the line from turtle position to position specified by (x, y), the vector or the other turtle.</li>
+<li><code>turtle.xcor()</code> :</li>
+<li><code>turtle.ycor()</code> :</li>
+<li><code>turtle.heading()</code> :</li>
+<li><code>turtle.distance()</code> :</li>
+</ul>
+<h3 id="pen-control">Pen control</h3>
+<ul>
+<li><code>turtle.pendown()</code> or <code>turtle.pd()</code> or <code>turtle.down()</code> :</li>
+<li><code>turtle.penup()</code> or <code>turtle.pu()</code> or <code>turtle.up()</code> :</li>
+<li><code>turtle.pensize(number)</code> or <code>turtle.width(number)</code> :</li>
+<li><code>turtle.isdown()</code> :</li>
+</ul>
+<h3 id="color-control">Color control</h3>
+<ul>
+<li><code>turtle.color()</code> :</li>
+<li><code>turtle.pencolor()</code> :</li>
+<li><code>turtle.fillcolor()</code> :</li>
+</ul>
+<h3 id="filling">Filling</h3>
+<ul>
+<li><code>turtle.fill()</code> :</li>
+<li><code>turtle.begin_fill()</code> :</li>
+<li><code>turtle.end_fill()</code> :</li>
+</ul>
+<h3 id="visibility">Visibility</h3>
+<ul>
+<li><code>turtle.showturtle()</code> or <code>turtle.st()</code> :</li>
+<li><code>turtle.hideturtle()</code> or <code>turtle.ht()</code> :</li>
+<li><code>turtle.isvisible()</code> :</li>
+</ul>
+<h3 id="animation-control">Animation control</h3>
+<ul>
+<li><code>turtle.delay()</code> :</li>
+<li><code>turtle.tracer()</code> :</li>
+<li><code>turtle.update()</code> :</li>
+</ul>
+<h3 id="reset">Reset</h3>
+<ul>
+<li><code>turtle.reset()</code> :</li>
+<li><code>turtle.clear()</code> :</li>
+</ul>
+<h3 id="examples">Examples</h3>
+<ul>
+<li>Draw line and circle</li>
+</ul>
+<pre><code class="python">from turtle import Turtle
+nick = Turtle()
+
+# move forward 100 steps
+nick.forward(100)
+</code></pre>
+
+<ul>
+<li>
+<p>Draw square</p>
+</li>
+<li>
+<p>Pixel Art</p>
+</li>
+</ul>
+<h3 id="reference">Reference</h3>
+<ul>
+<li><a href="https://docs.python.org/2/library/turtle.html">turtle library</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../processing/setup/" class="btn btn-neutral float-right" title="setup">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../stdmod/regexp/" class="btn btn-neutral" title="re"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../../stdmod/regexp/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../processing/setup/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>
