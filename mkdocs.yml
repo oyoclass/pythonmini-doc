@@ -11,7 +11,7 @@ pages:
         - 'time': 'stdmod/time.md'
         - 're': 'stdmod/regexp.md'
     - 'Turtle Graphic':
-        - 'motion': 'turtle/turtle.md'
+        - 'turtle': 'turtle/turtle.md'
     - 'Processing Graphic':
         - 'setup': 'processing/setup.md'
         - 'keyboard': 'processing/keyboard.md'
