@@ -6,10 +6,14 @@ pages:
     - 'Core':
         - 'Types': 'core/types.md'
     - 'Standard Modules':
+        - 'collections': 'stdmod/collections.md'
+        - 'json': 'stdmod/json.md'
         - 'math': 'stdmod/math.md'
+        - 'operator': 'stdmod/operator.md'
         - 'random': 'stdmod/random.md'
-        - 'time': 'stdmod/time.md'
         - 're': 'stdmod/regexp.md'
+        - 'string': 'stdmod/string.md'
+        - 'time': 'stdmod/time.md'
     - 'Turtle Graphic':
         - 'turtle': 'turtle/turtle.md'
     - 'Processing Graphic':

@@ -18,6 +18,7 @@ This module contains some mathematical operations (subset of Python's standard *
 * ```math.atan2(y, x)``` : Return atan(y / x), in radians. The result is between -pi and pi.
 * ```math.atanh(x)``` : Return the inverse hyperbolic tangent of x.
 * ```math.ceil(x)``` : Return the ceiling of x as a float, the smallest integer value greater than or equal to x.
+* ```math.copysign(x, y)```: Return x with the sign of y. On a platform that supports signed zeros, copysign(1.0, -0.0) returns -1.0.
 * ```math.cos(x)``` : Return the cosine of x radians.
 * ```math.cosh(x)``` : Return the hyperbolic cosine of x.
 * ```math.degrees(x)``` : Convert angle x from radians to degrees.
