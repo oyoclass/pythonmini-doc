@@ -21,8 +21,48 @@
             "title": "Types"
         }, 
         {
+            "location": "/stdmod/collections/", 
+            "text": "collections \u2014 High-performance container datatypes\n\n\nThis module implements the following specialized container datatypes:\n\n\nObjects\n\n\n\n\nnamedtuple\n: factory function for creating tuple subclasses with named fields\n\n\ndeque\n: list-like container with fast appends and pops on either end\n\n\nCounter\n: dict subclass for counting hashable objects\n\n\nOrderedDict\n: dict subclass that remembers the order entries were added\n\n\ndefaultdict\n: dict subclass that calls a factory function to supply missing values\n\n\n\n\nFor more information and how to use those objects, check \nPython Collections Module documentation\n.\n\n\nExample\n\n\nimport collections\n\nc = collections.Counter('gallahad')\nprint c[\na\n]\n# 3\nprint c.most_common(1)\n# [('a', 3)]\n\nPoint = collections.namedtuple('Point', ['x', 'y'])\np = Point(1,2)\nprint p.x\n# 1\nprint p.y\n# 2", 
+            "title": "collections"
+        }, 
+        {
+            "location": "/stdmod/collections/#collections-high-performance-container-datatypes", 
+            "text": "This module implements the following specialized container datatypes:", 
+            "title": "collections \u2014 High-performance container datatypes"
+        }, 
+        {
+            "location": "/stdmod/collections/#objects", 
+            "text": "namedtuple : factory function for creating tuple subclasses with named fields  deque : list-like container with fast appends and pops on either end  Counter : dict subclass for counting hashable objects  OrderedDict : dict subclass that remembers the order entries were added  defaultdict : dict subclass that calls a factory function to supply missing values   For more information and how to use those objects, check  Python Collections Module documentation .", 
+            "title": "Objects"
+        }, 
+        {
+            "location": "/stdmod/collections/#example", 
+            "text": "import collections\n\nc = collections.Counter('gallahad')\nprint c[ a ]\n# 3\nprint c.most_common(1)\n# [('a', 3)]\n\nPoint = collections.namedtuple('Point', ['x', 'y'])\np = Point(1,2)\nprint p.x\n# 1\nprint p.y\n# 2", 
+            "title": "Example"
+        }, 
+        {
+            "location": "/stdmod/json/", 
+            "text": "json\n\n\nJSON (JavaScript Object Notation), specified by RFC 7159 (which obsoletes RFC 4627) and by ECMA-404, is a lightweight data interchange format inspired by JavaScript object literal syntax.\n\n\nFunctions\n\n\n\n\njson.dumps(object)\n: Serialize obj to a JSON formatted string\n\n\njson.loads(string)\n: Deserialize a string to a Python object\n\n\n\n\nExample\n\n\nimport json\n\nstudent = {\n    \nname\n: \nNick\n,\n    \ngrade\n: 5\n}\n\n# s is a string\ns = json.dumps(student)\nprint s\n\n# o is an object\no = json.loads(s)\nprint o[\nname\n]", 
+            "title": "json"
+        }, 
+        {
+            "location": "/stdmod/json/#json", 
+            "text": "JSON (JavaScript Object Notation), specified by RFC 7159 (which obsoletes RFC 4627) and by ECMA-404, is a lightweight data interchange format inspired by JavaScript object literal syntax.", 
+            "title": "json"
+        }, 
+        {
+            "location": "/stdmod/json/#functions", 
+            "text": "json.dumps(object) : Serialize obj to a JSON formatted string  json.loads(string) : Deserialize a string to a Python object", 
+            "title": "Functions"
+        }, 
+        {
+            "location": "/stdmod/json/#example", 
+            "text": "import json\n\nstudent = {\n     name :  Nick ,\n     grade : 5\n}\n\n# s is a string\ns = json.dumps(student)\nprint s\n\n# o is an object\no = json.loads(s)\nprint o[ name ]", 
+            "title": "Example"
+        }, 
+        {
             "location": "/stdmod/math/", 
-            "text": "math \u2014 Mathematical functions\n\n\n\n\n\nThis module contains some mathematical operations (subset of Python's standard \nmath\n module), to use it, make sure use \nimport math\n first to import it.\n\n\nConstants\n\n\n\n\nmath.e\n : The mathematical constant e = 2.718281..., to available precision\n\n\nmath.pi\n : The mathematical constant \u03c0 = 3.141592..., to available precision.\n\n\n\n\nFunctions\n\n\n\n\nmath.acos(x)\n : Return the arc cosine of x, in radians.\n\n\nmath.acosh(x)\n : Return the inverse hyperbolic cosine of x.\n\n\nmath.asin(x)\n : Return the arc sine of x, in radians.\n\n\nmath.asinh(x)\n : Return the inverse hyperbolic sine of x.\n\n\nmath.atan(x)\n : Return the arc tangent of x, in radians.\n\n\nmath.atan2(y, x)\n : Return atan(y / x), in radians. The result is between -pi and pi.\n\n\nmath.atanh(x)\n : Return the inverse hyperbolic tangent of x.\n\n\nmath.ceil(x)\n : Return the ceiling of x as a float, the smallest integer value greater than or equal to x.\n\n\nmath.cos(x)\n : Return the cosine of x radians.\n\n\nmath.cosh(x)\n : Return the hyperbolic cosine of x.\n\n\nmath.degrees(x)\n : Convert angle x from radians to degrees.\n\n\nmath.exp(x)\n : Return e**x.\n\n\nmath.fabs(x)\n : Return the absolute value of x.\n\n\nmath.factorial(x)\n : Return x factorial.\n\n\nmath.floor(x)\n : Return the floor of x as a float, the largest integer value less than or equal to x.\n\n\nmath.hypot(x, y)\n : Return the Euclidean norm, sqrt(x\nx + y\ny). This is the length of the vector from the origin to point (x, y).\n\n\nmath.log(x[,base])\n : With one argument, return the natural logarithm of x (to base e). With two arguments, return the logarithm of x to the given base, calculated as log(x)/log(base).\n\n\nmath.log10(x)\n : Return the base-10 logarithm of x. This is usually more accurate than log(x, 10).\n\n\nmath.pow(x, y)\n : Return x raised to the power y.\n\n\nmath.radians\n : Convert angle x from degrees to radians.\n\n\nmath.sin(x)\n : Return the sine of x radians.\n\n\nmath.sinh(x)\n : Return the hyperbolic sine of x.\n\n\nmath.sqrt(x)\n : Return the square root of x.\n\n\nmath.tan(x)\n : Return the tangent of x radians.\n\n\nmath.tanh(x)\n : Return the hyperbolic tangent of x.\n\n\nmath.trunc(x)\n : Return the Real value x truncated to an Integral (usually a long integer).\n\n\n\n\nExample\n\n\nimport math\n\nprint math.pi\n# 3.14159265359\n\nprint math.sqrt(4)\n# 2.0\n\nprint math.sin(math.pi/6)\n# 0.5\n\nprint math.degrees(math.pi/6)\n# 30.0\n\n\n\n\nReference\n\n\n\n\nPython Math Module, python.org", 
+            "text": "math \u2014 Mathematical functions\n\n\n\n\n\nThis module contains some mathematical operations (subset of Python's standard \nmath\n module), to use it, make sure use \nimport math\n first to import it.\n\n\nConstants\n\n\n\n\nmath.e\n : The mathematical constant e = 2.718281..., to available precision\n\n\nmath.pi\n : The mathematical constant \u03c0 = 3.141592..., to available precision.\n\n\n\n\nFunctions\n\n\n\n\nmath.acos(x)\n : Return the arc cosine of x, in radians.\n\n\nmath.acosh(x)\n : Return the inverse hyperbolic cosine of x.\n\n\nmath.asin(x)\n : Return the arc sine of x, in radians.\n\n\nmath.asinh(x)\n : Return the inverse hyperbolic sine of x.\n\n\nmath.atan(x)\n : Return the arc tangent of x, in radians.\n\n\nmath.atan2(y, x)\n : Return atan(y / x), in radians. The result is between -pi and pi.\n\n\nmath.atanh(x)\n : Return the inverse hyperbolic tangent of x.\n\n\nmath.ceil(x)\n : Return the ceiling of x as a float, the smallest integer value greater than or equal to x.\n\n\nmath.copysign(x, y)\n: Return x with the sign of y. On a platform that supports signed zeros, copysign(1.0, -0.0) returns -1.0.\n\n\nmath.cos(x)\n : Return the cosine of x radians.\n\n\nmath.cosh(x)\n : Return the hyperbolic cosine of x.\n\n\nmath.degrees(x)\n : Convert angle x from radians to degrees.\n\n\nmath.exp(x)\n : Return e**x.\n\n\nmath.fabs(x)\n : Return the absolute value of x.\n\n\nmath.factorial(x)\n : Return x factorial.\n\n\nmath.floor(x)\n : Return the floor of x as a float, the largest integer value less than or equal to x.\n\n\nmath.hypot(x, y)\n : Return the Euclidean norm, sqrt(x\nx + y\ny). This is the length of the vector from the origin to point (x, y).\n\n\nmath.log(x[,base])\n : With one argument, return the natural logarithm of x (to base e). With two arguments, return the logarithm of x to the given base, calculated as log(x)/log(base).\n\n\nmath.log10(x)\n : Return the base-10 logarithm of x. This is usually more accurate than log(x, 10).\n\n\nmath.pow(x, y)\n : Return x raised to the power y.\n\n\nmath.radians\n : Convert angle x from degrees to radians.\n\n\nmath.sin(x)\n : Return the sine of x radians.\n\n\nmath.sinh(x)\n : Return the hyperbolic sine of x.\n\n\nmath.sqrt(x)\n : Return the square root of x.\n\n\nmath.tan(x)\n : Return the tangent of x radians.\n\n\nmath.tanh(x)\n : Return the hyperbolic tangent of x.\n\n\nmath.trunc(x)\n : Return the Real value x truncated to an Integral (usually a long integer).\n\n\n\n\nExample\n\n\nimport math\n\nprint math.pi\n# 3.14159265359\n\nprint math.sqrt(4)\n# 2.0\n\nprint math.sin(math.pi/6)\n# 0.5\n\nprint math.degrees(math.pi/6)\n# 30.0\n\n\n\n\nReference\n\n\n\n\nPython Math Module, python.org", 
             "title": "math"
         }, 
         {
@@ -37,7 +77,7 @@
         }, 
         {
             "location": "/stdmod/math/#functions", 
-            "text": "math.acos(x)  : Return the arc cosine of x, in radians.  math.acosh(x)  : Return the inverse hyperbolic cosine of x.  math.asin(x)  : Return the arc sine of x, in radians.  math.asinh(x)  : Return the inverse hyperbolic sine of x.  math.atan(x)  : Return the arc tangent of x, in radians.  math.atan2(y, x)  : Return atan(y / x), in radians. The result is between -pi and pi.  math.atanh(x)  : Return the inverse hyperbolic tangent of x.  math.ceil(x)  : Return the ceiling of x as a float, the smallest integer value greater than or equal to x.  math.cos(x)  : Return the cosine of x radians.  math.cosh(x)  : Return the hyperbolic cosine of x.  math.degrees(x)  : Convert angle x from radians to degrees.  math.exp(x)  : Return e**x.  math.fabs(x)  : Return the absolute value of x.  math.factorial(x)  : Return x factorial.  math.floor(x)  : Return the floor of x as a float, the largest integer value less than or equal to x.  math.hypot(x, y)  : Return the Euclidean norm, sqrt(x x + y y). This is the length of the vector from the origin to point (x, y).  math.log(x[,base])  : With one argument, return the natural logarithm of x (to base e). With two arguments, return the logarithm of x to the given base, calculated as log(x)/log(base).  math.log10(x)  : Return the base-10 logarithm of x. This is usually more accurate than log(x, 10).  math.pow(x, y)  : Return x raised to the power y.  math.radians  : Convert angle x from degrees to radians.  math.sin(x)  : Return the sine of x radians.  math.sinh(x)  : Return the hyperbolic sine of x.  math.sqrt(x)  : Return the square root of x.  math.tan(x)  : Return the tangent of x radians.  math.tanh(x)  : Return the hyperbolic tangent of x.  math.trunc(x)  : Return the Real value x truncated to an Integral (usually a long integer).", 
+            "text": "math.acos(x)  : Return the arc cosine of x, in radians.  math.acosh(x)  : Return the inverse hyperbolic cosine of x.  math.asin(x)  : Return the arc sine of x, in radians.  math.asinh(x)  : Return the inverse hyperbolic sine of x.  math.atan(x)  : Return the arc tangent of x, in radians.  math.atan2(y, x)  : Return atan(y / x), in radians. The result is between -pi and pi.  math.atanh(x)  : Return the inverse hyperbolic tangent of x.  math.ceil(x)  : Return the ceiling of x as a float, the smallest integer value greater than or equal to x.  math.copysign(x, y) : Return x with the sign of y. On a platform that supports signed zeros, copysign(1.0, -0.0) returns -1.0.  math.cos(x)  : Return the cosine of x radians.  math.cosh(x)  : Return the hyperbolic cosine of x.  math.degrees(x)  : Convert angle x from radians to degrees.  math.exp(x)  : Return e**x.  math.fabs(x)  : Return the absolute value of x.  math.factorial(x)  : Return x factorial.  math.floor(x)  : Return the floor of x as a float, the largest integer value less than or equal to x.  math.hypot(x, y)  : Return the Euclidean norm, sqrt(x x + y y). This is the length of the vector from the origin to point (x, y).  math.log(x[,base])  : With one argument, return the natural logarithm of x (to base e). With two arguments, return the logarithm of x to the given base, calculated as log(x)/log(base).  math.log10(x)  : Return the base-10 logarithm of x. This is usually more accurate than log(x, 10).  math.pow(x, y)  : Return x raised to the power y.  math.radians  : Convert angle x from degrees to radians.  math.sin(x)  : Return the sine of x radians.  math.sinh(x)  : Return the hyperbolic sine of x.  math.sqrt(x)  : Return the square root of x.  math.tan(x)  : Return the tangent of x radians.  math.tanh(x)  : Return the hyperbolic tangent of x.  math.trunc(x)  : Return the Real value x truncated to an Integral (usually a long integer).", 
             "title": "Functions"
         }, 
         {
@@ -51,8 +91,33 @@
             "title": "Reference"
         }, 
         {
+            "location": "/stdmod/operator/", 
+            "text": "operator \u2014 Standard operators as functions\n\n\nThe operator module exports a set of efficient functions corresponding to the intrinsic operators of Python.\n\n\nFunctions\n\n\n\n\noperator.abs\n\n\noperator.add\n\n\noperator.and_\n\n\noperator.concat\n\n\noperator.contains\n\n\noperator.countOf\n\n\noperator.delitem\n\n\noperator.div\n\n\noperator.divmod\n\n\noperator.eq\n\n\noperator.floordiv\n\n\noperator.ge\n\n\noperator.getitem\n\n\noperator.gt\n\n\noperator.index\n\n\noperator.indexOf\n\n\noperator.inv\n\n\noperator.invert\n\n\noperator.is_\n\n\noperator.is_not\n\n\noperator.le\n\n\noperator.lshift\n\n\noperator.lt\n\n\noperator.mod\n\n\noperator.mul\n\n\noperator.ne\n\n\noperator.neg\n\n\noperator.not_\n\n\noperator.or_\n\n\noperator.pos\n\n\noperator.pow\n\n\noperator.rshift\n\n\noperator.setitem\n\n\noperator.sub\n\n\noperator.truediv\n\n\noperator.truth\n\n\noperator.xor\n\n\n\n\nFor more information on how to use those functions, please check Python's official documentation at \noperator module - docs.python.org\n.\n\n\nExample\n\n\nimport operator\n\nprint operator.lt(1, 2)\n# True\n\nprint operator.truth(0)\n# False\n\nprint operator.truth([])\n# False\n\nprint operator.truth(2)\n# True\n\nprint operator.countOf(\nhello world\n, \nl\n)\n# 3\n\n\n\n\nReference\n\n\n\n\noperator module - docs.python.org", 
+            "title": "operator"
+        }, 
+        {
+            "location": "/stdmod/operator/#operator-standard-operators-as-functions", 
+            "text": "The operator module exports a set of efficient functions corresponding to the intrinsic operators of Python.", 
+            "title": "operator \u2014 Standard operators as functions"
+        }, 
+        {
+            "location": "/stdmod/operator/#functions", 
+            "text": "operator.abs  operator.add  operator.and_  operator.concat  operator.contains  operator.countOf  operator.delitem  operator.div  operator.divmod  operator.eq  operator.floordiv  operator.ge  operator.getitem  operator.gt  operator.index  operator.indexOf  operator.inv  operator.invert  operator.is_  operator.is_not  operator.le  operator.lshift  operator.lt  operator.mod  operator.mul  operator.ne  operator.neg  operator.not_  operator.or_  operator.pos  operator.pow  operator.rshift  operator.setitem  operator.sub  operator.truediv  operator.truth  operator.xor   For more information on how to use those functions, please check Python's official documentation at  operator module - docs.python.org .", 
+            "title": "Functions"
+        }, 
+        {
+            "location": "/stdmod/operator/#example", 
+            "text": "import operator\n\nprint operator.lt(1, 2)\n# True\n\nprint operator.truth(0)\n# False\n\nprint operator.truth([])\n# False\n\nprint operator.truth(2)\n# True\n\nprint operator.countOf( hello world ,  l )\n# 3", 
+            "title": "Example"
+        }, 
+        {
+            "location": "/stdmod/operator/#reference", 
+            "text": "operator module - docs.python.org", 
+            "title": "Reference"
+        }, 
+        {
             "location": "/stdmod/random/", 
-            "text": "random \u2014 Generate pseudo-random numbers\n\n\n\n\n\nThis module implements a subset of Python standard \nrandom\n module, it contains pseudo-random number generators for various distributions. To use it, make sure use \nimport random\n first.\n\n\nFunctions\n\n\n\n\nrandom.choice(seq)\n : Return a random element from the non-empty sequence seq.\n\n\nrandom.randint(a, b)\n : Return a random integer N such that a \n= N \n= b\n\n\nrandom.random\n : Return the next random floating point number in the range [0.0, 1.0).\n\n\nrandom.randrange(stop)\n : See below.\n\n\nrandom.randrange(start, stop[, step])\n : Return a randomly selected element from \nrange(start, stop, step)\n. This is equivalent to \nchoice(range(start, stop, step))\n.\n\n\nrandom.seed(x)\n : Initialize the basic random number generator.\n\n\nrandom.shuffle(x)\n : Shuffle the sequence x in place.\n\n\n\n\nExample\n\n\nimport random\n\nlst = [1, 2, 3, 4, 5]\n\nprint random.choice(lst)\n\nprint random.randint(1, 10)\n\nprint random.random()\n\nrandom.shuffle(lst)\nprint lst\n\n\n\n\nReference\n\n\n\n\nrandom module, python.org", 
+            "text": "random \u2014 Generate pseudo-random numbers\n\n\n\n\n\nThis module implements a subset of Python standard \nrandom\n module, it contains pseudo-random number generators for various distributions. To use it, make sure use \nimport random\n first.\n\n\nFunctions\n\n\n\n\nrandom.choice(seq)\n : Return a random element from the non-empty sequence seq.\n\n\nrandom.randint(a, b)\n : Return a random integer N such that a \n= N \n= b\n\n\nrandom.random\n : Return the next random floating point number in the range [0.0, 1.0).\n\n\nrandom.randrange(stop)\n : See below.\n\n\nrandom.randrange(start, stop[, step])\n : Return a randomly selected element from \nrange(start, stop, step)\n. This is equivalent to \nchoice(range(start, stop, step))\n.\n\n\nrandom.sample(population, k)\n: Return a k length list of unique elements chosen from the population sequence.\n\n\nrandom.seed(x)\n : Initialize the basic random number generator.\n\n\nrandom.shuffle(x)\n : Shuffle the sequence x in place.\n\n\nrandom.triangular(low, high, mode)\n: Return a random floating point number N such that low \n= N \n= high and with the specified mode between those bounds.\n\n\nrandom.uniform(a, b)\n: Return a random floating point number N such that a \n= N \n= b for a \n= b and b \n= N \n= a for b \n a.\n\n\n\n\nExample\n\n\nimport random\n\nlst = [1, 2, 3, 4, 5]\n\nprint random.choice(lst)\n\nprint random.randint(1, 10)\n\nprint random.random()\n\nrandom.shuffle(lst)\nprint lst\n\nprint random.sample(range(100), 10)\n\n\n\n\nReference\n\n\n\n\nrandom module, python.org", 
             "title": "random"
         }, 
         {
@@ -62,12 +127,12 @@
         }, 
         {
             "location": "/stdmod/random/#functions", 
-            "text": "random.choice(seq)  : Return a random element from the non-empty sequence seq.  random.randint(a, b)  : Return a random integer N such that a  = N  = b  random.random  : Return the next random floating point number in the range [0.0, 1.0).  random.randrange(stop)  : See below.  random.randrange(start, stop[, step])  : Return a randomly selected element from  range(start, stop, step) . This is equivalent to  choice(range(start, stop, step)) .  random.seed(x)  : Initialize the basic random number generator.  random.shuffle(x)  : Shuffle the sequence x in place.", 
+            "text": "random.choice(seq)  : Return a random element from the non-empty sequence seq.  random.randint(a, b)  : Return a random integer N such that a  = N  = b  random.random  : Return the next random floating point number in the range [0.0, 1.0).  random.randrange(stop)  : See below.  random.randrange(start, stop[, step])  : Return a randomly selected element from  range(start, stop, step) . This is equivalent to  choice(range(start, stop, step)) .  random.sample(population, k) : Return a k length list of unique elements chosen from the population sequence.  random.seed(x)  : Initialize the basic random number generator.  random.shuffle(x)  : Shuffle the sequence x in place.  random.triangular(low, high, mode) : Return a random floating point number N such that low  = N  = high and with the specified mode between those bounds.  random.uniform(a, b) : Return a random floating point number N such that a  = N  = b for a  = b and b  = N  = a for b   a.", 
             "title": "Functions"
         }, 
         {
             "location": "/stdmod/random/#example", 
-            "text": "import random\n\nlst = [1, 2, 3, 4, 5]\n\nprint random.choice(lst)\n\nprint random.randint(1, 10)\n\nprint random.random()\n\nrandom.shuffle(lst)\nprint lst", 
+            "text": "import random\n\nlst = [1, 2, 3, 4, 5]\n\nprint random.choice(lst)\n\nprint random.randint(1, 10)\n\nprint random.random()\n\nrandom.shuffle(lst)\nprint lst\n\nprint random.sample(range(100), 10)", 
             "title": "Example"
         }, 
         {
@@ -76,8 +141,73 @@
             "title": "Reference"
         }, 
         {
+            "location": "/stdmod/regexp/", 
+            "text": "re \u2014 Regular expression operations\n\n\nThis module provides regular expression matching operations.\n\n\nConstants\n\n\n\n\nre.I\n or \nre.IGNORECASE\n : Perform case-insensitive matching\n\n\nre.M\n or \nre.MULTILINE\n : When specified, the pattern character '^' matches at the beginning of the string and at the beginning of each line (immediately following each newline); and the pattern character '$' matches at the end of the string and at the end of each line (immediately preceding each newline).\n\n\n\n\nFunctions\n\n\n\n\nre.findall\n\n\nre.match\n\n\nre.search\n\n\nre.split\n\n\n\n\nClass\n\n\n\n\nre.MatchObject\n : match object support methods \ngroup\n and \ngroups\n\n\n\n\nFor more information on how to use above attributes and methods, check Python's official documentation at \nre module - docs.python.org\n\n\nExample\n\n\nimport re\n\nm = re.match(r\n(\\w+) (\\w+)\n, \nIsaac Newton, physicist\n)\n\nprint m.group(0)\n# Isaac Newton\n\nprint m.group(1)\n# Isaac\n\nprint m.group(2)\n# Newton\n\n\n\n\nReference\n\n\n\n\nre module - docs.python.org", 
+            "title": "re"
+        }, 
+        {
+            "location": "/stdmod/regexp/#re-regular-expression-operations", 
+            "text": "This module provides regular expression matching operations.", 
+            "title": "re \u2014 Regular expression operations"
+        }, 
+        {
+            "location": "/stdmod/regexp/#constants", 
+            "text": "re.I  or  re.IGNORECASE  : Perform case-insensitive matching  re.M  or  re.MULTILINE  : When specified, the pattern character '^' matches at the beginning of the string and at the beginning of each line (immediately following each newline); and the pattern character '$' matches at the end of the string and at the end of each line (immediately preceding each newline).", 
+            "title": "Constants"
+        }, 
+        {
+            "location": "/stdmod/regexp/#functions", 
+            "text": "re.findall  re.match  re.search  re.split", 
+            "title": "Functions"
+        }, 
+        {
+            "location": "/stdmod/regexp/#class", 
+            "text": "re.MatchObject  : match object support methods  group  and  groups   For more information on how to use above attributes and methods, check Python's official documentation at  re module - docs.python.org", 
+            "title": "Class"
+        }, 
+        {
+            "location": "/stdmod/regexp/#example", 
+            "text": "import re\n\nm = re.match(r (\\w+) (\\w+) ,  Isaac Newton, physicist )\n\nprint m.group(0)\n# Isaac Newton\n\nprint m.group(1)\n# Isaac\n\nprint m.group(2)\n# Newton", 
+            "title": "Example"
+        }, 
+        {
+            "location": "/stdmod/regexp/#reference", 
+            "text": "re module - docs.python.org", 
+            "title": "Reference"
+        }, 
+        {
+            "location": "/stdmod/string/", 
+            "text": "string - Common string operations\n\n\nThe string module contains a number of useful constants and functions.\n\n\nConstants\n\n\n\n\nstring.ascii_letters\n : The concatenation of the ascii_lowercase and ascii_uppercase constants described below.\n\n\nstring.ascii_lowercase\n : The lowercase letters \nabcdefghijklmnopqrstuvwxyz\n. This value is not locale-dependent and will not change.\n\n\nstring.ascii_uppercase\n : The uppercase letters \nABCDEFGHIJKLMNOPQRSTUVWXYZ\n. This value is not locale-dependent and will not change.\n\n\nstring.digits\n : The string \n0123456789\n.\n\n\nstring.hexdigits\n : The string \n0123456789abcdefABCDEF\n.\n\n\nstring.letters\n : The concatenation of the strings lowercase and uppercase described below.\n\n\nstring.lowercase\n : A string containing all the characters that are considered lowercase letters, \nabcdefghijklmnopqrstuvwxyz\n.\n\n\nstring.octdigits\n : The string \n01234567\n.\n\n\nstring.punctuation\n : String of ASCII characters which are considered punctuation characters.\n\n\nstring.printable\n : String of characters which are considered printable. This is a combination of digits, letters, punctuation, and whitespace.\n\n\nstring.uppercase\n : A string containing all the characters that are considered uppercase letters, \nABCDEFGHIJKLMNOPQRSTUVWXYZ\n.\n\n\nstring.whitespace\n : A string containing all characters that are considered whitespace.\n\n\n\n\nFunctions\n\n\n\n\nstring.capitalize(word)\n: Return a copy of word with only its first character capitalized.\n\n\nstring.capwords(s[, sep])\n: Split the argument into words using str.split(), capitalize each word using str.capitalize(), and join the capitalized words using str.join().  \n\n\nstring.join(words[, sep])\n: Concatenate a list or tuple of words with intervening occurrences of sep.\n\n\nstring.split(s[, sep[, maxsplit]])\n: Return a list of the words of the string s. If the optional second argument sep is absent or None, the words are separated by arbitrary strings of whitespace characters (space, tab, newline, return, formfeed). If the second argument sep is present and not None, it specifies a string to be used as the word separator.\n\n\n\n\nExample\n\n\nimport string\n\n\nprint string.ascii_letters\n# abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\nprint string.ascii_lowercase\n# abcdefghijklmnopqrstuvwxyz\nprint string.punctuation\n# !\n#$%\n'()*+,-./:;\n=\n?@[\\]^_`{|}~\n\ns = \nhello world\n\nprint string.capwords(s)\n# Hello World\nprint string.capitalize(s)\n# Hello world\n\nwords = [\ni\n, \nlove\n, \npizza\n]\nprint string.join(words, \n*\n)\n# i*love*pizza\n\n\n\n\nReference\n\n\n\n\nstring module, docs.python.org", 
+            "title": "string"
+        }, 
+        {
+            "location": "/stdmod/string/#string-common-string-operations", 
+            "text": "The string module contains a number of useful constants and functions.", 
+            "title": "string - Common string operations"
+        }, 
+        {
+            "location": "/stdmod/string/#constants", 
+            "text": "string.ascii_letters  : The concatenation of the ascii_lowercase and ascii_uppercase constants described below.  string.ascii_lowercase  : The lowercase letters  abcdefghijklmnopqrstuvwxyz . This value is not locale-dependent and will not change.  string.ascii_uppercase  : The uppercase letters  ABCDEFGHIJKLMNOPQRSTUVWXYZ . This value is not locale-dependent and will not change.  string.digits  : The string  0123456789 .  string.hexdigits  : The string  0123456789abcdefABCDEF .  string.letters  : The concatenation of the strings lowercase and uppercase described below.  string.lowercase  : A string containing all the characters that are considered lowercase letters,  abcdefghijklmnopqrstuvwxyz .  string.octdigits  : The string  01234567 .  string.punctuation  : String of ASCII characters which are considered punctuation characters.  string.printable  : String of characters which are considered printable. This is a combination of digits, letters, punctuation, and whitespace.  string.uppercase  : A string containing all the characters that are considered uppercase letters,  ABCDEFGHIJKLMNOPQRSTUVWXYZ .  string.whitespace  : A string containing all characters that are considered whitespace.", 
+            "title": "Constants"
+        }, 
+        {
+            "location": "/stdmod/string/#functions", 
+            "text": "string.capitalize(word) : Return a copy of word with only its first character capitalized.  string.capwords(s[, sep]) : Split the argument into words using str.split(), capitalize each word using str.capitalize(), and join the capitalized words using str.join().    string.join(words[, sep]) : Concatenate a list or tuple of words with intervening occurrences of sep.  string.split(s[, sep[, maxsplit]]) : Return a list of the words of the string s. If the optional second argument sep is absent or None, the words are separated by arbitrary strings of whitespace characters (space, tab, newline, return, formfeed). If the second argument sep is present and not None, it specifies a string to be used as the word separator.", 
+            "title": "Functions"
+        }, 
+        {
+            "location": "/stdmod/string/#example", 
+            "text": "import string\n\n\nprint string.ascii_letters\n# abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\nprint string.ascii_lowercase\n# abcdefghijklmnopqrstuvwxyz\nprint string.punctuation\n# ! #$% '()*+,-./:; = ?@[\\]^_`{|}~\n\ns =  hello world \nprint string.capwords(s)\n# Hello World\nprint string.capitalize(s)\n# Hello world\n\nwords = [ i ,  love ,  pizza ]\nprint string.join(words,  * )\n# i*love*pizza", 
+            "title": "Example"
+        }, 
+        {
+            "location": "/stdmod/string/#reference", 
+            "text": "string module, docs.python.org", 
+            "title": "Reference"
+        }, 
+        {
             "location": "/stdmod/time/", 
-            "text": "time \u2014 Time access\n\n\n\n\n\nThis module provides time-related functions.\n\n\nFunctions\n\n\n\n\ntime.time()\n : Return the time in seconds since the epoch as a floating point number.\n\n\n\n\nReference\n\n\n\n\ntime module, python.org", 
+            "text": "time \u2014 Time access\n\n\n\n\n\nThis module provides time-related functions.\n\n\nAttribute\n\n\n\n\ntime.altzone\n : The offset of the local DST timezone, in seconds west of UTC.\n\n\ntime.daylight\n : Nonzero if a DST timezone is defined.\n\n\ntime.timezone\n : The offset of the local (non-DST) timezone, in seconds west of UTC (negative in most of Western Europe, positive in the US, zero in the UK).\n\n\ntime.tzname\n : A tuple of two strings: the first is the name of the local non-DST timezone, the second is the name of the local DST timezone.\n\n\n\n\nFunctions\n\n\n\n\ntime.asctime([t])\n : Convert a tuple or struct_time representing a time as returned by gmtime() or localtime() to a 24-character string of the following form: 'Sun Jun 20 23:21:05 1993'. If t is not provided, the current time as returned by localtime() is used.\n\n\ntime.clock()\n : Return the current processor time as a floating point number expressed in seconds.\n\n\ntime.ctime([secs])\n : Convert a time expressed in seconds since the epoch to a string representing local time. If secs is not provided or None, the current time as returned by time() is used.\n\n\ntime.gmtime([secs])\n : Convert a time expressed in seconds since the epoch to a struct_time in UTC in which the dst flag is always zero. If secs is not provided or None, the current time as returned by time() is used.\n\n\ntime.localtime[secs]\n : Like gmtime() but converts to local time. If secs is not provided or None, the current time as returned by time() is used.\n\n\ntime.mktime(t)\n : This is the inverse function of localtime(). Its argument is the struct_time or full 9-tuple.\n\n\ntime.sleep(secs)\n : Suspend execution of the current thread for the given number of seconds.\n\n\ntime.time()\n: Return the time in seconds since the epoch as a floating point number.\n\n\n\n\nClass\n\n\n\n\ntime.struct_time\n: The type of the time value sequence returned by gmtime(), localtime().\n\n\n\n\nFor more information, check \ntime module on Python official documentation\n.\n\n\nExample\n\n\nimport time\n\nprint time.timezone\nprint time.altzone\nprint time.ctime()\nprint time.clock()\nprint time.localtime()\nprint time.gmtime()\nprint time.tzname\n\n# print out time every 1 second\nfor i in range(10):\n    print time.asctime()\n    time.sleep(1)\n\n\n\n\nReference\n\n\n\n\ntime module - docs.python.org", 
             "title": "time"
         }, 
         {
@@ -86,28 +216,33 @@
             "title": "time \u2014 Time access"
         }, 
         {
+            "location": "/stdmod/time/#attribute", 
+            "text": "time.altzone  : The offset of the local DST timezone, in seconds west of UTC.  time.daylight  : Nonzero if a DST timezone is defined.  time.timezone  : The offset of the local (non-DST) timezone, in seconds west of UTC (negative in most of Western Europe, positive in the US, zero in the UK).  time.tzname  : A tuple of two strings: the first is the name of the local non-DST timezone, the second is the name of the local DST timezone.", 
+            "title": "Attribute"
+        }, 
+        {
             "location": "/stdmod/time/#functions", 
-            "text": "time.time()  : Return the time in seconds since the epoch as a floating point number.", 
+            "text": "time.asctime([t])  : Convert a tuple or struct_time representing a time as returned by gmtime() or localtime() to a 24-character string of the following form: 'Sun Jun 20 23:21:05 1993'. If t is not provided, the current time as returned by localtime() is used.  time.clock()  : Return the current processor time as a floating point number expressed in seconds.  time.ctime([secs])  : Convert a time expressed in seconds since the epoch to a string representing local time. If secs is not provided or None, the current time as returned by time() is used.  time.gmtime([secs])  : Convert a time expressed in seconds since the epoch to a struct_time in UTC in which the dst flag is always zero. If secs is not provided or None, the current time as returned by time() is used.  time.localtime[secs]  : Like gmtime() but converts to local time. If secs is not provided or None, the current time as returned by time() is used.  time.mktime(t)  : This is the inverse function of localtime(). Its argument is the struct_time or full 9-tuple.  time.sleep(secs)  : Suspend execution of the current thread for the given number of seconds.  time.time() : Return the time in seconds since the epoch as a floating point number.", 
             "title": "Functions"
         }, 
         {
+            "location": "/stdmod/time/#class", 
+            "text": "time.struct_time : The type of the time value sequence returned by gmtime(), localtime().   For more information, check  time module on Python official documentation .", 
+            "title": "Class"
+        }, 
+        {
+            "location": "/stdmod/time/#example", 
+            "text": "import time\n\nprint time.timezone\nprint time.altzone\nprint time.ctime()\nprint time.clock()\nprint time.localtime()\nprint time.gmtime()\nprint time.tzname\n\n# print out time every 1 second\nfor i in range(10):\n    print time.asctime()\n    time.sleep(1)", 
+            "title": "Example"
+        }, 
+        {
             "location": "/stdmod/time/#reference", 
-            "text": "time module, python.org", 
+            "text": "time module - docs.python.org", 
             "title": "Reference"
         }, 
         {
-            "location": "/stdmod/regexp/", 
-            "text": "Regular Expression", 
-            "title": "re"
-        }, 
-        {
-            "location": "/stdmod/regexp/#regular-expression", 
-            "text": "", 
-            "title": "Regular Expression"
-        }, 
-        {
             "location": "/turtle/turtle/", 
-            "text": "turtle \u2014 Turtle graphics\n\n\nTurtle graphic implements a subset functions of the \nPython Turtle Library\n.\n\n\nSetup\n\n\nfrom turtle import Turtle\n\n# Generate Turtle object, name it like your pet\nnick = Turtle()\n\n\n\n\nNow you have your own turtle (in this example I called it \nnick\n, but you can change it), there are several functions you can use to control your turtle.\n\n\nMove and draw\n\n\n\n\nturtle.forward(distance)\n or \nturtle.fd(distance)\n : Move the turtle forward by \ndistance\n, in the direction the turtle is headed.\n\n\nturtle.backward(distance)\n or \nturtle.back(distance)\n or \nturtle.bk(distance)\n : Move the turtle backward by \ndistance\n, opposite to the direction the turtle is headed. This function doesn't change turtle's heading.\n\n\nturtle.right(angle)\n or \nturtle.rt(angle)\n :\n\n\nturtle.left(angle)\n or \nturtle.lt(angle)\n :\n\n\nturtle.goto(x, y)\n :\n\n\nturtle.setposition(x, y)\n or \nturtle.setpos(x, y)\n :\n\n\nturtle.setworldcoordinates()\n : ?\n\n\nturtle.setx(x)\n :\n\n\nturtle.sety(y)\n :\n\n\nturtle.setheading(dir)\n or \nturtle.seth(dir)\n :\n\n\nturtle.home()\n :\n\n\nturtle.circle()\n :\n\n\nturtle.dot()\n :\n\n\nturtle.stamp()\n :\n\n\nturtle.speed()\n :\n\n\n\n\nAppearance\n\n\n\n\nturtle.shape()\n :\n\n\n\n\nTell Turtle's State\n\n\n\n\nturtle.position()\n or \nturtle.pos()\n : Return the turtle\u2019s current location (x, y)\n\n\nturtle.towards(x, y)\n : Return the angle between the line from turtle position to position specified by (x, y), the vector or the other turtle.\n\n\nturtle.xcor()\n :\n\n\nturtle.ycor()\n :\n\n\nturtle.heading()\n :\n\n\nturtle.distance()\n :\n\n\n\n\nPen control\n\n\n\n\nturtle.pendown()\n or \nturtle.pd()\n or \nturtle.down()\n :\n\n\nturtle.penup()\n or \nturtle.pu()\n or \nturtle.up()\n :\n\n\nturtle.pensize(number)\n or \nturtle.width(number)\n :\n\n\nturtle.isdown()\n :\n\n\n\n\nColor control\n\n\n\n\nturtle.color()\n :\n\n\nturtle.pencolor()\n :\n\n\nturtle.fillcolor()\n :\n\n\n\n\nFilling\n\n\n\n\nturtle.fill()\n :\n\n\nturtle.begin_fill()\n :\n\n\nturtle.end_fill()\n :\n\n\n\n\nVisibility\n\n\n\n\nturtle.showturtle()\n or \nturtle.st()\n :\n\n\nturtle.hideturtle()\n or \nturtle.ht()\n :\n\n\nturtle.isvisible()\n :\n\n\n\n\nAnimation control\n\n\n\n\nturtle.delay()\n :\n\n\nturtle.tracer()\n :\n\n\nturtle.update()\n :\n\n\n\n\nReset\n\n\n\n\nturtle.reset()\n :\n\n\nturtle.clear()\n :\n\n\n\n\nExamples\n\n\n\n\nDraw line and circle\n\n\n\n\nfrom turtle import Turtle\nnick = Turtle()\n\n# move forward 100 steps\nnick.forward(100)\n\n\n\n\n\n\n\n\nDraw square\n\n\n\n\n\n\nPixel Art\n\n\n\n\n\n\nReference\n\n\n\n\nturtle library", 
+            "text": "turtle \u2014 Turtle graphics\n\n\nTurtle graphic implements a subset functions of the \nPython Turtle Library\n.\n\n\nSetup\n\n\nfrom turtle import Turtle\n\n# Generate Turtle object, name it like your pet\nnick = Turtle()\n\n\n\n\nNow you have your own turtle (in this example I called it \nnick\n, but you can change it), there are several functions you can use to control your turtle.\n\n\nMove and draw\n\n\n\n\nturtle.forward(distance)\n or \nturtle.fd(distance)\n : Move the turtle forward by \ndistance\n, in the direction the turtle is headed.\n\n\nturtle.backward(distance)\n or \nturtle.back(distance)\n or \nturtle.bk(distance)\n : Move the turtle backward by \ndistance\n, opposite to the direction the turtle is headed. This function doesn't change turtle's heading.\n\n\nturtle.right(angle)\n or \nturtle.rt(angle)\n : Turn turtle right by \nangle\n units.\n\n\nturtle.left(angle)\n or \nturtle.lt(angle)\n : Turn turtle left by \nangle\n units.\n\n\nturtle.goto(x, y)\n : Move turtle to an absolute position. If the pen is down, draw line.\n\n\nturtle.setposition(x, y)\n or \nturtle.setpos(x, y)\n : Move turtle to an absolute position without drawing the line. \nNotice:\n this one is different with Python's official turtle module documentation, in which \nsetposition\n is the same as \ngoto\n.\n\n\nturtle.setworldcoordinates(llx, lly, urx, ury)\n : Set up user-defined coordinate system and switch to mode \u201cworld\u201d if necessary.\n\n\nturtle.setx(x)\n : Set the turtle\u2019s first coordinate to x, leave second coordinate unchanged.\n\n\nturtle.sety(y)\n : Set the turtle\u2019s second coordinate to y, leave first coordinate unchanged.\n\n\nturtle.setheading(dir)\n or \nturtle.seth(dir)\n : Set the orientation of the turtle to \ndir\n. 0 is east, 90 is north, 180 is west, 270 is south, etc.\n\n\nturtle.home()\n : Move turtle to the origin \u2013 coordinates (0,0) \u2013 and set its heading to its start-orientation.\n\n\nturtle.circle(radius, extent=None)\n : Draw a circle with given radius. The center is radius units left of the turtle; extent \u2013 an angle \u2013 determines which part of the circle is drawn. If extent is not given, draw the entire circle.\n\n\nturtle.dot(size, color=None)\n : Draw a circular dot with diameter size, using color. If size is not given, the maximum of pensize+4 and 2*pensize is used.\n\n\nturtle.stamp()\n : Stamp a copy of the turtle shape onto the canvas at the current turtle position.\n\n\nturtle.speed(number=None)\n : Set the turtle\u2019s speed to an integer value in the range 0..10. If no argument is given, return current speed. If speed number is set to 0 or less than 0 or greater than 10, speed will be set to 0, which is fastest and no animation takes place. 1 is slowest, 3 is slow, 6 is normal, 10 is fast. By default, its speed is 6.\n\n\n\n\nAppearance\n\n\n\n\nturtle.shape(name)\n : Set turtle shape to shape with given name or, if name is not given, return name of current shape. Shape's name could be one of followings: \"arrow\", \"turtle\", \"circle\", \"square\", \"triangle\", \"classic\".\n\n\n\n\nTell Turtle's State\n\n\n\n\nturtle.position()\n or \nturtle.pos()\n : Return the turtle\u2019s current location (x, y)\n\n\nturtle.towards(x, y)\n : Return the angle between the line from turtle position to position specified by (x, y), the vector or the other turtle.\n\n\nturtle.xcor()\n : Return the turtle\u2019s x coordinate.\n\n\nturtle.ycor()\n : Return the turtle\u2019s y coordinate.\n\n\nturtle.heading()\n : Return the turtle\u2019s current heading.\n\n\nturtle.distance(x, y)\n : Return the distance from the turtle to (x, y)\n\n\n\n\nPen control\n\n\n\n\nturtle.pendown()\n or \nturtle.pd()\n or \nturtle.down()\n : Pull the pen down \u2013 drawing when moving.\n\n\nturtle.penup()\n or \nturtle.pu()\n or \nturtle.up()\n : Pull the pen up \u2013 no drawing when moving.\n\n\nturtle.pensize(number)\n or \nturtle.width(number)\n : Set the line thickness to width or return it.\n\n\nturtle.isdown()\n : Return True if pen is down, False if it\u2019s up.\n\n\n\n\nColor control\n\n\n\n\nturtle.pencolor(*args)\n : Return or set the pencolor. \npencolor()\n returns current pen color, \npencolor(colorstring)\n, e.g. \npencolor(\"red\")\n, \npencolor(\"#FF9900\")\n or \npencolor(r, g, b)\n will set pencolor to a RGB color.\n\n\nturtle.fillcolor(*args)\n : Return or set the fillcolor. \nfillcolor()\n returns current fill color. \nfillcolor(colorstring)\n or \nfillcolor(r, g, b)\n set fillcolor to a RGB color.\n\n\nturtle.color(*args)\n : Return or set pencolor and fillcolor. \ncolor()\n returns the current pencolor and the current fillcolor, \ncolor(colorstring)\n or \ncolor(r, g, b)\n set pencolor and fillcolor the a RGB color.\n\n\n\n\nFilling\n\n\n\n\nturtle.fill(flag)\n : Call \nfill(True)\n before drawing the shape you want to fill, and \nfill(False)\n when done.\n\n\nturtle.begin_fill()\n : Call just before drawing a shape to be filled. Equivalent to \nfill(True)\n.\n\n\nturtle.end_fill()\n : Fill the shape drawn after the last call to begin_fill(). Equivalent to \nfill(False)\n.\n\n\n\n\nVisibility\n\n\n\n\nturtle.showturtle()\n or \nturtle.st()\n : Make the turtle visible.\n\n\nturtle.hideturtle()\n or \nturtle.ht()\n : Make the turtle invisible.\n\n\nturtle.isvisible()\n : Return True if the Turtle is shown, False if it\u2019s hidden.\n\n\n\n\nAnimation control\n\n\n\n\nturtle.delay(delay=None)\n : Set or return the drawing delay in milliseconds.\n\n\nturtle.tracer(n=None, delay=None)\n : Turn turtle animation on/off and set delay for update drawings. If n is given, only each n-th regular screen update is really performed.\n\n\n\n\nReset\n\n\n\n\nturtle.reset()\n : Delete the turtle\u2019s drawings from the screen, re-center the turtle and set variables to the default values.\n\n\nturtle.clear()\n : Delete the turtle\u2019s drawings from the screen. Do not move turtle. State and position of the turtle as well as drawings of other turtles are not affected.\n\n\n\n\nExamples\n\n\n\n\nDraw line and circle\n\n\n\n\nfrom turtle import Turtle\nnick = Turtle()\n\n# move forward 100 steps\nnick.forward(100)\n\n# draw a circle with radius 40\nnick.circle(40)\n\n# change pencolor\nnick.pencolor(\nred\n)\n\n# draw a semi-circle\nnick.circle(40, 180)\n\n\n\n\n\n\nDraw square\n\n\n\n\nfrom turtle import Turtle\nnick = Turtle()\n\nnick.forward(100)\nnick.right(90)\nnick.forward(100)\nnick.right(90)\nnick.forward(100)\nnick.right(90)\nnick.forward(100)\nnick.right(90)\n\n\n\n\n\n\nDraw square with loop\n\n\n\n\nfrom turtle import Turtle\nnick = Turtle()\n\nfor counter in range(4):\n    nick.forward(100)\n    nick.right(90)\n\n\n\n\n\n\nFill square with color\n\n\n\n\nfrom turtle import Turtle\nnick = Turtle()\n\n# draw a square fill with red color\nnick.color(\nred\n)\n\nnick.begin_fill()\n\nfor counter in range(4):\n    nick.forward(100)\n    nick.right(90)\n\nnick.end_fill()\n\n\n\n\nReference\n\n\n\n\nturtle library - docs.python.org", 
             "title": "turtle"
         }, 
         {
@@ -122,57 +257,57 @@
         }, 
         {
             "location": "/turtle/turtle/#move-and-draw", 
-            "text": "turtle.forward(distance)  or  turtle.fd(distance)  : Move the turtle forward by  distance , in the direction the turtle is headed.  turtle.backward(distance)  or  turtle.back(distance)  or  turtle.bk(distance)  : Move the turtle backward by  distance , opposite to the direction the turtle is headed. This function doesn't change turtle's heading.  turtle.right(angle)  or  turtle.rt(angle)  :  turtle.left(angle)  or  turtle.lt(angle)  :  turtle.goto(x, y)  :  turtle.setposition(x, y)  or  turtle.setpos(x, y)  :  turtle.setworldcoordinates()  : ?  turtle.setx(x)  :  turtle.sety(y)  :  turtle.setheading(dir)  or  turtle.seth(dir)  :  turtle.home()  :  turtle.circle()  :  turtle.dot()  :  turtle.stamp()  :  turtle.speed()  :", 
+            "text": "turtle.forward(distance)  or  turtle.fd(distance)  : Move the turtle forward by  distance , in the direction the turtle is headed.  turtle.backward(distance)  or  turtle.back(distance)  or  turtle.bk(distance)  : Move the turtle backward by  distance , opposite to the direction the turtle is headed. This function doesn't change turtle's heading.  turtle.right(angle)  or  turtle.rt(angle)  : Turn turtle right by  angle  units.  turtle.left(angle)  or  turtle.lt(angle)  : Turn turtle left by  angle  units.  turtle.goto(x, y)  : Move turtle to an absolute position. If the pen is down, draw line.  turtle.setposition(x, y)  or  turtle.setpos(x, y)  : Move turtle to an absolute position without drawing the line.  Notice:  this one is different with Python's official turtle module documentation, in which  setposition  is the same as  goto .  turtle.setworldcoordinates(llx, lly, urx, ury)  : Set up user-defined coordinate system and switch to mode \u201cworld\u201d if necessary.  turtle.setx(x)  : Set the turtle\u2019s first coordinate to x, leave second coordinate unchanged.  turtle.sety(y)  : Set the turtle\u2019s second coordinate to y, leave first coordinate unchanged.  turtle.setheading(dir)  or  turtle.seth(dir)  : Set the orientation of the turtle to  dir . 0 is east, 90 is north, 180 is west, 270 is south, etc.  turtle.home()  : Move turtle to the origin \u2013 coordinates (0,0) \u2013 and set its heading to its start-orientation.  turtle.circle(radius, extent=None)  : Draw a circle with given radius. The center is radius units left of the turtle; extent \u2013 an angle \u2013 determines which part of the circle is drawn. If extent is not given, draw the entire circle.  turtle.dot(size, color=None)  : Draw a circular dot with diameter size, using color. If size is not given, the maximum of pensize+4 and 2*pensize is used.  turtle.stamp()  : Stamp a copy of the turtle shape onto the canvas at the current turtle position.  turtle.speed(number=None)  : Set the turtle\u2019s speed to an integer value in the range 0..10. If no argument is given, return current speed. If speed number is set to 0 or less than 0 or greater than 10, speed will be set to 0, which is fastest and no animation takes place. 1 is slowest, 3 is slow, 6 is normal, 10 is fast. By default, its speed is 6.", 
             "title": "Move and draw"
         }, 
         {
             "location": "/turtle/turtle/#appearance", 
-            "text": "turtle.shape()  :", 
+            "text": "turtle.shape(name)  : Set turtle shape to shape with given name or, if name is not given, return name of current shape. Shape's name could be one of followings: \"arrow\", \"turtle\", \"circle\", \"square\", \"triangle\", \"classic\".", 
             "title": "Appearance"
         }, 
         {
             "location": "/turtle/turtle/#tell-turtles-state", 
-            "text": "turtle.position()  or  turtle.pos()  : Return the turtle\u2019s current location (x, y)  turtle.towards(x, y)  : Return the angle between the line from turtle position to position specified by (x, y), the vector or the other turtle.  turtle.xcor()  :  turtle.ycor()  :  turtle.heading()  :  turtle.distance()  :", 
+            "text": "turtle.position()  or  turtle.pos()  : Return the turtle\u2019s current location (x, y)  turtle.towards(x, y)  : Return the angle between the line from turtle position to position specified by (x, y), the vector or the other turtle.  turtle.xcor()  : Return the turtle\u2019s x coordinate.  turtle.ycor()  : Return the turtle\u2019s y coordinate.  turtle.heading()  : Return the turtle\u2019s current heading.  turtle.distance(x, y)  : Return the distance from the turtle to (x, y)", 
             "title": "Tell Turtle's State"
         }, 
         {
             "location": "/turtle/turtle/#pen-control", 
-            "text": "turtle.pendown()  or  turtle.pd()  or  turtle.down()  :  turtle.penup()  or  turtle.pu()  or  turtle.up()  :  turtle.pensize(number)  or  turtle.width(number)  :  turtle.isdown()  :", 
+            "text": "turtle.pendown()  or  turtle.pd()  or  turtle.down()  : Pull the pen down \u2013 drawing when moving.  turtle.penup()  or  turtle.pu()  or  turtle.up()  : Pull the pen up \u2013 no drawing when moving.  turtle.pensize(number)  or  turtle.width(number)  : Set the line thickness to width or return it.  turtle.isdown()  : Return True if pen is down, False if it\u2019s up.", 
             "title": "Pen control"
         }, 
         {
             "location": "/turtle/turtle/#color-control", 
-            "text": "turtle.color()  :  turtle.pencolor()  :  turtle.fillcolor()  :", 
+            "text": "turtle.pencolor(*args)  : Return or set the pencolor.  pencolor()  returns current pen color,  pencolor(colorstring) , e.g.  pencolor(\"red\") ,  pencolor(\"#FF9900\")  or  pencolor(r, g, b)  will set pencolor to a RGB color.  turtle.fillcolor(*args)  : Return or set the fillcolor.  fillcolor()  returns current fill color.  fillcolor(colorstring)  or  fillcolor(r, g, b)  set fillcolor to a RGB color.  turtle.color(*args)  : Return or set pencolor and fillcolor.  color()  returns the current pencolor and the current fillcolor,  color(colorstring)  or  color(r, g, b)  set pencolor and fillcolor the a RGB color.", 
             "title": "Color control"
         }, 
         {
             "location": "/turtle/turtle/#filling", 
-            "text": "turtle.fill()  :  turtle.begin_fill()  :  turtle.end_fill()  :", 
+            "text": "turtle.fill(flag)  : Call  fill(True)  before drawing the shape you want to fill, and  fill(False)  when done.  turtle.begin_fill()  : Call just before drawing a shape to be filled. Equivalent to  fill(True) .  turtle.end_fill()  : Fill the shape drawn after the last call to begin_fill(). Equivalent to  fill(False) .", 
             "title": "Filling"
         }, 
         {
             "location": "/turtle/turtle/#visibility", 
-            "text": "turtle.showturtle()  or  turtle.st()  :  turtle.hideturtle()  or  turtle.ht()  :  turtle.isvisible()  :", 
+            "text": "turtle.showturtle()  or  turtle.st()  : Make the turtle visible.  turtle.hideturtle()  or  turtle.ht()  : Make the turtle invisible.  turtle.isvisible()  : Return True if the Turtle is shown, False if it\u2019s hidden.", 
             "title": "Visibility"
         }, 
         {
             "location": "/turtle/turtle/#animation-control", 
-            "text": "turtle.delay()  :  turtle.tracer()  :  turtle.update()  :", 
+            "text": "turtle.delay(delay=None)  : Set or return the drawing delay in milliseconds.  turtle.tracer(n=None, delay=None)  : Turn turtle animation on/off and set delay for update drawings. If n is given, only each n-th regular screen update is really performed.", 
             "title": "Animation control"
         }, 
         {
             "location": "/turtle/turtle/#reset", 
-            "text": "turtle.reset()  :  turtle.clear()  :", 
+            "text": "turtle.reset()  : Delete the turtle\u2019s drawings from the screen, re-center the turtle and set variables to the default values.  turtle.clear()  : Delete the turtle\u2019s drawings from the screen. Do not move turtle. State and position of the turtle as well as drawings of other turtles are not affected.", 
             "title": "Reset"
         }, 
         {
             "location": "/turtle/turtle/#examples", 
-            "text": "Draw line and circle   from turtle import Turtle\nnick = Turtle()\n\n# move forward 100 steps\nnick.forward(100)    Draw square    Pixel Art", 
+            "text": "Draw line and circle   from turtle import Turtle\nnick = Turtle()\n\n# move forward 100 steps\nnick.forward(100)\n\n# draw a circle with radius 40\nnick.circle(40)\n\n# change pencolor\nnick.pencolor( red )\n\n# draw a semi-circle\nnick.circle(40, 180)   Draw square   from turtle import Turtle\nnick = Turtle()\n\nnick.forward(100)\nnick.right(90)\nnick.forward(100)\nnick.right(90)\nnick.forward(100)\nnick.right(90)\nnick.forward(100)\nnick.right(90)   Draw square with loop   from turtle import Turtle\nnick = Turtle()\n\nfor counter in range(4):\n    nick.forward(100)\n    nick.right(90)   Fill square with color   from turtle import Turtle\nnick = Turtle()\n\n# draw a square fill with red color\nnick.color( red )\n\nnick.begin_fill()\n\nfor counter in range(4):\n    nick.forward(100)\n    nick.right(90)\n\nnick.end_fill()", 
             "title": "Examples"
         }, 
         {
             "location": "/turtle/turtle/#reference", 
-            "text": "turtle library", 
+            "text": "turtle library - docs.python.org", 
             "title": "Reference"
         }, 
         {
