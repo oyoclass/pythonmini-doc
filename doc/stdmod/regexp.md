@@ -9,10 +9,10 @@ This module provides regular expression matching operations.
 
 ### Functions
 
-* `re.findall` :
-* `re.match` :
-* `re.search` :
-* `re.split` :
+* `re.findall`
+* `re.match`
+* `re.search`
+* `re.split`
 
 ### Class
 

@@ -1,4 +1,4 @@
-site_name: Python Mini Document
+site_name: Python Mini Documentation
 theme: readthedocs
 docs_dir: 'doc'
 pages:
