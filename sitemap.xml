@@ -4,7 +4,7 @@
     
     <url>
      <loc>None/</loc>
-     <lastmod>2016-04-20</lastmod>
+     <lastmod>2016-04-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,8 +12,14 @@
     
         
     <url>
-     <loc>None/core/types/</loc>
-     <lastmod>2016-04-20</lastmod>
+     <loc>None/core/number/</loc>
+     <lastmod>2016-04-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/core/boolean/</loc>
+     <lastmod>2016-04-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -23,49 +29,49 @@
         
     <url>
      <loc>None/stdmod/collections/</loc>
-     <lastmod>2016-04-20</lastmod>
+     <lastmod>2016-04-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/stdmod/json/</loc>
-     <lastmod>2016-04-20</lastmod>
+     <lastmod>2016-04-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/stdmod/math/</loc>
-     <lastmod>2016-04-20</lastmod>
+     <lastmod>2016-04-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/stdmod/operator/</loc>
-     <lastmod>2016-04-20</lastmod>
+     <lastmod>2016-04-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/stdmod/random/</loc>
-     <lastmod>2016-04-20</lastmod>
+     <lastmod>2016-04-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/stdmod/regexp/</loc>
-     <lastmod>2016-04-20</lastmod>
+     <lastmod>2016-04-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/stdmod/string/</loc>
-     <lastmod>2016-04-20</lastmod>
+     <lastmod>2016-04-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/stdmod/time/</loc>
-     <lastmod>2016-04-20</lastmod>
+     <lastmod>2016-04-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -75,7 +81,7 @@
         
     <url>
      <loc>None/turtle/turtle/</loc>
-     <lastmod>2016-04-20</lastmod>
+     <lastmod>2016-04-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -85,19 +91,19 @@
         
     <url>
      <loc>None/processing/setup/</loc>
-     <lastmod>2016-04-20</lastmod>
+     <lastmod>2016-04-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/processing/keyboard/</loc>
-     <lastmod>2016-04-20</lastmod>
+     <lastmod>2016-04-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/processing/mouse/</loc>
-     <lastmod>2016-04-20</lastmod>
+     <lastmod>2016-04-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
