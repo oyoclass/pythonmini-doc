@@ -2,6 +2,8 @@
 
 Turtle graphic implements a subset functions of the [Python Turtle Library](https://docs.python.org/2/library/turtle.html).
 
+(Turtle module is also a Python's standard module, we put it in a separate section here to help you quickly locate and search)
+
 ### Setup
 
 ```python

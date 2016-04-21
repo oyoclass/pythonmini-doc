@@ -4,7 +4,8 @@ docs_dir: 'doc'
 pages:
     - 'Home': 'index.md'
     - 'Core':
-        - 'Types': 'core/types.md'
+        - 'Number': 'core/number.md'
+        - 'Boolean': 'core/boolean.md'
     - 'Standard Modules':
         - 'collections': 'stdmod/collections.md'
         - 'json': 'stdmod/json.md'
