@@ -13,6 +13,7 @@ pages:
         - 'List & Tuple': 'core/list.md'
         - 'Set': 'core/set.md'
         - 'Dictionary': 'core/dictionary.md'
+        - 'Standard output & input': 'core/stdoutin.md'
     - 'Standard Modules':
         - 'collections': 'stdmod/collections.md'
         - 'json': 'stdmod/json.md'

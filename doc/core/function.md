@@ -15,7 +15,6 @@
 * `filter`
 * `float`
 * `hex`
-* `input`
 * `int`
 * `isinstance`
 * `issubclass`

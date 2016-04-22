@@ -71,3 +71,13 @@ run()
 ```
 
 There are a lot more you can do with PythonMini, for more information and examples, check the documentation on the left.
+
+## Feedback
+
+If you find any error about this documentation, please help us improve it, mail us at <a href="mailto:feedback@oyoclass.com">feedback@oyoclass.com</a>
+
+## Credits
+
+* [Skulpt](skulpt.org)
+* [Python Official Documentation](https://docs.python.org/2/)
+* [Processingjs](http://py.processing.org/reference/)
