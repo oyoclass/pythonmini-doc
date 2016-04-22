@@ -27,7 +27,8 @@ pages:
         - 'turtle': 'turtle/turtle.md'
     - 'Processing Graphic':
         - 'setup': 'processing/setup.md'
-        - 'keyboard': 'processing/keyboard.md'
-        - 'mouse': 'processing/mouse.md'
+        - 'color': 'processing/color.md'
+        - 'shape': 'processing/shape.md'
+        - 'input': 'processing/input.md'
 extra_css:
     - css/doc.css

@@ -1,4 +1,15 @@
-## mouse
+# Input
+
+You can detect if user pressed keyboard or mouse.
+
+## Keyboard
+
+### Property
+
+* keyboard.keyCode
+
+
+## Mouse
 
 ### Property
 

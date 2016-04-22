@@ -1,5 +1,0 @@
-## keyboard
-
-### Property
-
-* keyboard.keyCode
