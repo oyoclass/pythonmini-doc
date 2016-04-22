@@ -1,4 +1,4 @@
-site_name: Python Mini Documentation
+site_name: PythonMini Documentation
 theme: readthedocs
 docs_dir: 'doc'
 pages:
@@ -6,6 +6,10 @@ pages:
     - 'Core':
         - 'Number': 'core/number.md'
         - 'Boolean': 'core/boolean.md'
+        - 'Comparison': 'core/comparison.md'
+        - 'None': 'core/none.md'
+        - 'String': 'core/string.md'
+        - 'Function': 'core/function.md'
     - 'Standard Modules':
         - 'collections': 'stdmod/collections.md'
         - 'json': 'stdmod/json.md'

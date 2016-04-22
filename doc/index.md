@@ -1,6 +1,6 @@
 ## What's Python?
 
-According to [Python official website](python.org):
+Quote from [Python official website](python.org):
 
 > Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.
 
@@ -10,13 +10,13 @@ According to [Python official website](python.org):
 * Not a toy, quite powerful and versatile, from basic tools to web development, to data analytics, etc, Python can handle all of them.
 * Write once, run everywhere. Once you finished the code, it can be run in Windows, Mac OS, Linux/Unix.
 
-## About Python Mini
+## About PythonMini
 
-Python Mini is an online python interpreter to help you write python in browser, without installing it to your computer. It implements a subset of Python 2, plus one additional graphical libraries - *Processing*.
+PythonMini is an online python interpreter to help you write python in browser, without installing it to your computer. It implements a subset of Python 2, plus one additional graphical libraries - *Processing*.
 
 ## Quick Start
 
-Copy following example code to editor then click "Run":
+Copy following example code to PythonMini editor then click "Run":
 
 * Say hello
 
@@ -70,4 +70,4 @@ def draw():
 run()
 ```
 
-There are a lot more you can do with Python Mini, for more information and examples, check the documentation on the left.
+There are a lot more you can do with PythonMini, for more information and examples, check the documentation on the left.
