@@ -23,6 +23,30 @@
      <changefreq>daily</changefreq>
     </url>
         
+    <url>
+     <loc>None/core/comparison/</loc>
+     <lastmod>2016-04-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/core/none/</loc>
+     <lastmod>2016-04-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/core/string/</loc>
+     <lastmod>2016-04-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/core/function/</loc>
+     <lastmod>2016-04-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     

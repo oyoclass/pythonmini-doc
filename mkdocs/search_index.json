@@ -71,6 +71,106 @@
             "title": "Reference"
         }, 
         {
+            "location": "/core/comparison/", 
+            "text": "Comparison\n\n\nComparison operations are supported by all objects. They all have the same priority (which is higher than that of the Boolean operations).\n\n\nOperations\n\n\n\n\n : strictly less than\n\n\n=\n : less than or equal\n\n\n : strictly greater than\n\n\n=\n : greater than or equal\n\n\n==\n : equal\n\n\n!=\n : not equal\n\n\nis\n : object identity\n\n\nis not\n : negated object identity\n\n\n\n\nExample\n\n\nprint 2 != 3            # True\nprint 5 \n= 4            # True\nprint 2 is 2            # True\nprint 300 is 300        # True\n\nnum = 350\nprint num is not 350    # False\n\n\n\n\nReference\n\n\n\n\nComparisons - docs.python.org", 
+            "title": "Comparison"
+        }, 
+        {
+            "location": "/core/comparison/#comparison", 
+            "text": "Comparison operations are supported by all objects. They all have the same priority (which is higher than that of the Boolean operations).", 
+            "title": "Comparison"
+        }, 
+        {
+            "location": "/core/comparison/#operations", 
+            "text": ": strictly less than  =  : less than or equal   : strictly greater than  =  : greater than or equal  ==  : equal  !=  : not equal  is  : object identity  is not  : negated object identity", 
+            "title": "Operations"
+        }, 
+        {
+            "location": "/core/comparison/#example", 
+            "text": "print 2 != 3            # True\nprint 5  = 4            # True\nprint 2 is 2            # True\nprint 300 is 300        # True\n\nnum = 350\nprint num is not 350    # False", 
+            "title": "Example"
+        }, 
+        {
+            "location": "/core/comparison/#reference", 
+            "text": "Comparisons - docs.python.org", 
+            "title": "Reference"
+        }, 
+        {
+            "location": "/core/none/", 
+            "text": "None\n\n\nNone is frequently used to represent the absence of a value, as when default arguments are not passed to a function.\n\n\nExample\n\n\na = None\nprint a             # None\nprint a is None     # True\n\n\n\n\nReference\n\n\n\n\nNone - docs.python.org", 
+            "title": "None"
+        }, 
+        {
+            "location": "/core/none/#none", 
+            "text": "None is frequently used to represent the absence of a value, as when default arguments are not passed to a function.", 
+            "title": "None"
+        }, 
+        {
+            "location": "/core/none/#example", 
+            "text": "a = None\nprint a             # None\nprint a is None     # True", 
+            "title": "Example"
+        }, 
+        {
+            "location": "/core/none/#reference", 
+            "text": "None - docs.python.org", 
+            "title": "Reference"
+        }, 
+        {
+            "location": "/core/string/", 
+            "text": "String\n\n\nYou can define a string using two single-quote or two double-quote, or two triple-quote, for example \ns = \"hello\"\n, once you have a string, below are listed the string methods you can apply to.\n\n\nFunctions\n\n\n\n\nstr.capitalize()\n\n\nstr.center(width[, fillchar])\n\n\nstr.count(sub[, start[, end]])\n\n\nstr.endswith(suffix)\n\n\nstr.expandtabs([tabsize])\n\n\nstr.find(sub[, start[, end]])\n\n\nstr.format(*args, **kwargs)\n\n\nstr.index(sub[, start[, end]])\n\n\nstr.isalnum()\n\n\nstr.isalpha()\n\n\nstr.isdigit()\n\n\nstr.islower()\n\n\nstr.isnumeric()\n\n\nstr.isspace()\n\n\nstr.istitle()\n\n\nstr.isupper()\n\n\nstr.join(iterable)\n\n\nstr.ljust(width[, fillchar])\n\n\nstr.lower()\n\n\nstr.lstrip([chars])\n\n\nstr.partition(seq)\n\n\nstr.replace(old, new[, count])\n\n\nstr.rfind(sub[, start[, end]])\n\n\nstr.rindex(sub[, start[, end]])\n\n\nstr.rjust(width[, fillchar])\n\n\nstr.rpartition(seq)\n\n\nstr.rstrip([chars])\n\n\nstr.split([sep[, maxsplit]])\n\n\nstr.splitlines([keepends])\n\n\nstr.startswith(prefix[, start[, end]])\n\n\nstr.strip([chars])\n\n\nstr.swapcase()\n\n\nstr.title()\n\n\nstr.upper()\n\n\nstr.zfill(width)\n\n\n\n\nFor how to use above functions, check \nString Methods on Python official documentation\n.\n\n\nExample\n\n\na = \nhello world\n\nprint a.capitalize()        # Hello world\nprint a.upper()             # HELLO WORLD\nprint a.find(\nworld\n)       # 6\nprint a.split()             # ['hello', 'world']\nprint a.isalnum()           # False\n\nb = \nhello {0} {1}\n\nprint b.format(\nAlbert\n, \nEinstein\n)    # hello Albert Einstein\n\n\n\n\nReference\n\n\n\n\nString methods - docs.python.org", 
+            "title": "String"
+        }, 
+        {
+            "location": "/core/string/#string", 
+            "text": "You can define a string using two single-quote or two double-quote, or two triple-quote, for example  s = \"hello\" , once you have a string, below are listed the string methods you can apply to.", 
+            "title": "String"
+        }, 
+        {
+            "location": "/core/string/#functions", 
+            "text": "str.capitalize()  str.center(width[, fillchar])  str.count(sub[, start[, end]])  str.endswith(suffix)  str.expandtabs([tabsize])  str.find(sub[, start[, end]])  str.format(*args, **kwargs)  str.index(sub[, start[, end]])  str.isalnum()  str.isalpha()  str.isdigit()  str.islower()  str.isnumeric()  str.isspace()  str.istitle()  str.isupper()  str.join(iterable)  str.ljust(width[, fillchar])  str.lower()  str.lstrip([chars])  str.partition(seq)  str.replace(old, new[, count])  str.rfind(sub[, start[, end]])  str.rindex(sub[, start[, end]])  str.rjust(width[, fillchar])  str.rpartition(seq)  str.rstrip([chars])  str.split([sep[, maxsplit]])  str.splitlines([keepends])  str.startswith(prefix[, start[, end]])  str.strip([chars])  str.swapcase()  str.title()  str.upper()  str.zfill(width)   For how to use above functions, check  String Methods on Python official documentation .", 
+            "title": "Functions"
+        }, 
+        {
+            "location": "/core/string/#example", 
+            "text": "a =  hello world \nprint a.capitalize()        # Hello world\nprint a.upper()             # HELLO WORLD\nprint a.find( world )       # 6\nprint a.split()             # ['hello', 'world']\nprint a.isalnum()           # False\n\nb =  hello {0} {1} \nprint b.format( Albert ,  Einstein )    # hello Albert Einstein", 
+            "title": "Example"
+        }, 
+        {
+            "location": "/core/string/#reference", 
+            "text": "String methods - docs.python.org", 
+            "title": "Reference"
+        }, 
+        {
+            "location": "/core/function/", 
+            "text": "Functions\n\n\nBuilt-in functions\n\n\n\n\nabs\n\n\nall\n\n\nany\n\n\nbin\n\n\nbool\n\n\nchr\n\n\ndict\n\n\ndir\n\n\ndivmod\n\n\nenumerate\n\n\nfilter\n\n\nfloat\n\n\nhex\n\n\ninput\n\n\nint\n\n\nisinstance\n\n\nissubclass\n\n\nlen\n\n\nlist\n\n\nlong\n\n\nmap\n\n\nmax\n\n\nmin\n\n\noct\n\n\nord\n\n\npow\n\n\nprint\n\n\nrange\n\n\nraw_input\n\n\nreduce\n\n\nrepr\n\n\nreversed\n\n\nround\n\n\nset\n\n\nslice\n\n\nsorted\n\n\nstr\n\n\nsum\n\n\ntuple\n\n\nxrange\n\n\nzip\n\n\n\n\nFor how to use above functions, check \nbuilt-in functions on Python official documentation\n.\n\n\nExample\n\n\nprint bin(3)        # 0b11\nprint hex(255)      # 0xff\nprint abs(-5)       # 5\nprint pow(3, 2)     # 9\nprint round(3.5)    # 4.0\nprint round(3.2)    # 3.0\nprint oct(8)        # 010\nprint ord('A')      # 65\nprint chr(97)       # a\n\na = [1,4,5,2,3]\nprint sorted(a)     # [1, 2, 3, 4, 5]\n\n\n\n\nUser-defined functions\n\n\nYou can define your own function by using \ndef\n.\n\n\nExample:\n\n\ndef my_add(a, b):\n    c = a + b\n    return c\n\nprint my_add(1, 2)  # 3\n\n\n\n\nReference\n\n\n\n\nBuilt-in function - docs.python.org", 
+            "title": "Function"
+        }, 
+        {
+            "location": "/core/function/#functions", 
+            "text": "", 
+            "title": "Functions"
+        }, 
+        {
+            "location": "/core/function/#built-in-functions", 
+            "text": "abs  all  any  bin  bool  chr  dict  dir  divmod  enumerate  filter  float  hex  input  int  isinstance  issubclass  len  list  long  map  max  min  oct  ord  pow  print  range  raw_input  reduce  repr  reversed  round  set  slice  sorted  str  sum  tuple  xrange  zip   For how to use above functions, check  built-in functions on Python official documentation .", 
+            "title": "Built-in functions"
+        }, 
+        {
+            "location": "/core/function/#example", 
+            "text": "print bin(3)        # 0b11\nprint hex(255)      # 0xff\nprint abs(-5)       # 5\nprint pow(3, 2)     # 9\nprint round(3.5)    # 4.0\nprint round(3.2)    # 3.0\nprint oct(8)        # 010\nprint ord('A')      # 65\nprint chr(97)       # a\n\na = [1,4,5,2,3]\nprint sorted(a)     # [1, 2, 3, 4, 5]", 
+            "title": "Example"
+        }, 
+        {
+            "location": "/core/function/#user-defined-functions", 
+            "text": "You can define your own function by using  def .  Example:  def my_add(a, b):\n    c = a + b\n    return c\n\nprint my_add(1, 2)  # 3", 
+            "title": "User-defined functions"
+        }, 
+        {
+            "location": "/core/function/#reference", 
+            "text": "Built-in function - docs.python.org", 
+            "title": "Reference"
+        }, 
+        {
             "location": "/stdmod/collections/", 
             "text": "collections \u2014 High-performance container datatypes\n\n\nThis module implements the following specialized container datatypes:\n\n\nObjects\n\n\n\n\nnamedtuple\n: factory function for creating tuple subclasses with named fields\n\n\ndeque\n: list-like container with fast appends and pops on either end\n\n\nCounter\n: dict subclass for counting hashable objects\n\n\nOrderedDict\n: dict subclass that remembers the order entries were added\n\n\ndefaultdict\n: dict subclass that calls a factory function to supply missing values\n\n\n\n\nFor more information and how to use those objects, check \nPython Collections Module documentation\n.\n\n\nExample\n\n\nimport collections\n\nc = collections.Counter('gallahad')\nprint c[\na\n]\n# 3\nprint c.most_common(1)\n# [('a', 3)]\n\nPoint = collections.namedtuple('Point', ['x', 'y'])\np = Point(1,2)\nprint p.x\n# 1\nprint p.y\n# 2", 
             "title": "collections"
