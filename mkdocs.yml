@@ -10,6 +10,9 @@ pages:
         - 'None': 'core/none.md'
         - 'String': 'core/string.md'
         - 'Function': 'core/function.md'
+        - 'List & Tuple': 'core/list.md'
+        - 'Set': 'core/set.md'
+        - 'Dictionary': 'core/dictionary.md'
     - 'Standard Modules':
         - 'collections': 'stdmod/collections.md'
         - 'json': 'stdmod/json.md'

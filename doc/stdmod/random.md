@@ -1,7 +1,7 @@
 ## random — Generate pseudo-random numbers
 <!-- doc for this module is completed -->
 
-This module implements a subset of Python standard ```random``` module, it contains pseudo-random number generators for various distributions. To use it, make sure use ```import random``` first.
+This module implements a subset of Python standard `random` module, it contains pseudo-random number generators for various distributions. To use it, make sure include `import random` first.
 
 ### Functions
 
@@ -39,4 +39,4 @@ print random.sample(range(100), 10)
 
 ### Reference
 
-* [random module, python.org](https://docs.python.org/2/library/random.html)
+* [random module - docs.python.org](https://docs.python.org/2/library/random.html)
