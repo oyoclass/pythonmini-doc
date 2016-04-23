@@ -8,7 +8,7 @@
   
   
   
-  <title>String - PythonMini Documentation</title>
+  <title>Transform - PythonMini Documentation</title>
   
 
   <link rel="shortcut icon" href="../../img/favicon.ico">
@@ -24,9 +24,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "String";
-    var mkdocs_page_input_path = "core/string.md";
-    var mkdocs_page_url = "/core/string/";
+    var mkdocs_page_name = "Transform";
+    var mkdocs_page_input_path = "processing/transform.md";
+    var mkdocs_page_url = "/processing/transform/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -69,83 +69,70 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../number/">Number</a>
+        <a class="" href="../../core/number/">Number</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../boolean/">Boolean</a>
+        <a class="" href="../../core/boolean/">Boolean</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../comparison/">Comparison</a>
+        <a class="" href="../../core/comparison/">Comparison</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../none/">None</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 current">
-        <a class="current" href="./">String</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#string">String</a></li>
-                
-                    <li><a class="toctree-l4" href="#functions">Functions</a></li>
-                
-                    <li><a class="toctree-l4" href="#example">Example</a></li>
-                
-                    <li><a class="toctree-l4" href="#reference">Reference</a></li>
-                
-            
-            </ul>
+        <a class="" href="../../core/none/">None</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../function/">Function</a>
+        <a class="" href="../../core/string/">String</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../list/">List & Tuple</a>
+        <a class="" href="../../core/function/">Function</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../set/">Set</a>
+        <a class="" href="../../core/list/">List & Tuple</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../dictionary/">Dictionary</a>
+        <a class="" href="../../core/set/">Set</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../stdoutin/">Standard output & input</a>
+        <a class="" href="../../core/dictionary/">Dictionary</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/stdoutin/">Standard output & input</a>
         
     </li>
 
@@ -239,70 +226,77 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../processing/setup/">Setup</a>
+        <a class="" href="../setup/">Setup</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../processing/color/">Color</a>
+        <a class="" href="../color/">Color</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../processing/shape/">Shape</a>
+        <a class="" href="../shape/">Shape</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../processing/typography/">Typography</a>
+        <a class="" href="../typography/">Typography</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../processing/input/">Input</a>
+        <a class="" href="../input/">Input</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../processing/image/">Image</a>
+        <a class="" href="../image/">Image</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Transform</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#transform">Transform</a></li>
+                
+            
+            </ul>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../processing/transform/">Transform</a>
+        <a class="" href="../light-camera/">Light & Camera</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../processing/light-camera/">Light & Camera</a>
+        <a class="" href="../math/">Math</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../processing/math/">Math</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../processing/constants/">Constants</a>
+        <a class="" href="../constants/">Constants</a>
         
     </li>
 
@@ -332,11 +326,11 @@
     
       
         
-          <li>Core &raquo;</li>
+          <li>Processing Graphic &raquo;</li>
         
       
     
-    <li>String</li>
+    <li>Transform</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -346,63 +340,7 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="string">String</h2>
-<p>You can define a string using two single-quote or two double-quote, or two triple-quote, for example <code>s = "hello"</code>, once you have a string, below are listed the string methods you can apply to.</p>
-<h3 id="functions">Functions</h3>
-<ul>
-<li><code>str.capitalize()</code></li>
-<li><code>str.center(width[, fillchar])</code></li>
-<li><code>str.count(sub[, start[, end]])</code></li>
-<li><code>str.endswith(suffix)</code></li>
-<li><code>str.expandtabs([tabsize])</code></li>
-<li><code>str.find(sub[, start[, end]])</code></li>
-<li><code>str.format(*args, **kwargs)</code></li>
-<li><code>str.index(sub[, start[, end]])</code></li>
-<li><code>str.isalnum()</code></li>
-<li><code>str.isalpha()</code></li>
-<li><code>str.isdigit()</code></li>
-<li><code>str.islower()</code></li>
-<li><code>str.isnumeric()</code></li>
-<li><code>str.isspace()</code></li>
-<li><code>str.istitle()</code></li>
-<li><code>str.isupper()</code></li>
-<li><code>str.join(iterable)</code></li>
-<li><code>str.ljust(width[, fillchar])</code></li>
-<li><code>str.lower()</code></li>
-<li><code>str.lstrip([chars])</code></li>
-<li><code>str.partition(seq)</code></li>
-<li><code>str.replace(old, new[, count])</code></li>
-<li><code>str.rfind(sub[, start[, end]])</code></li>
-<li><code>str.rindex(sub[, start[, end]])</code></li>
-<li><code>str.rjust(width[, fillchar])</code></li>
-<li><code>str.rpartition(seq)</code></li>
-<li><code>str.rstrip([chars])</code></li>
-<li><code>str.split([sep[, maxsplit]])</code></li>
-<li><code>str.splitlines([keepends])</code></li>
-<li><code>str.startswith(prefix[, start[, end]])</code></li>
-<li><code>str.strip([chars])</code></li>
-<li><code>str.swapcase()</code></li>
-<li><code>str.title()</code></li>
-<li><code>str.upper()</code></li>
-<li><code>str.zfill(width)</code></li>
-</ul>
-<p>For how to use above functions, check <a href="https://docs.python.org/2/library/stdtypes.html#string-methods">String Methods on Python official documentation</a>.</p>
-<h3 id="example">Example</h3>
-<pre><code class="python">a = &quot;hello world&quot;
-print a.capitalize()        # Hello world
-print a.upper()             # HELLO WORLD
-print a.find(&quot;world&quot;)       # 6
-print a.split()             # ['hello', 'world']
-print a.isalnum()           # False
-
-b = &quot;hello {0} {1}&quot;
-print b.format(&quot;Albert&quot;, &quot;Einstein&quot;)    # hello Albert Einstein
-</code></pre>
-
-<h3 id="reference">Reference</h3>
-<ul>
-<li><a href="https://docs.python.org/2/library/stdtypes.html#string-methods">String methods - docs.python.org</a></li>
-</ul>
+                <h2 id="transform">Transform</h2>
               
             </div>
           </div>
@@ -410,10 +348,10 @@ print b.format(&quot;Albert&quot;, &quot;Einstein&quot;)    # hello Albert Einst
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../function/" class="btn btn-neutral float-right" title="Function">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../light-camera/" class="btn btn-neutral float-right" title="Light & Camera">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../none/" class="btn btn-neutral" title="None"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../image/" class="btn btn-neutral" title="Image"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -439,10 +377,10 @@ print b.format(&quot;Albert&quot;, &quot;Einstein&quot;)    # hello Albert Einst
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../none/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../image/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../function/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../light-camera/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

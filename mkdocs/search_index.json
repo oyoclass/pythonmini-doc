@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "What's Python?\n\n\nQuote from \nPython official website\n:\n\n\n\n\nPython is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python\u2019s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.\n\n\n\n\nWhy Python?\n\n\n\n\nEasy to learn, a lot of top universities use Python to teach \"Programming 101\".\n\n\nNot a toy, quite powerful and versatile, from basic tools to web development, to data analytics, etc, Python can handle all of them.\n\n\nWrite once, run everywhere. Once you finished the code, it can be run in Windows, Mac OS, Linux/Unix.\n\n\n\n\nAbout PythonMini\n\n\nPythonMini is an online python interpreter to help you write python in browser, without installing it to your computer. It implements a subset of Python 2, plus one additional graphical libraries - \nProcessing\n.\n\n\nQuick Start\n\n\nCopy following example code to PythonMini editor then click \"Run\":\n\n\n\n\nSay hello\n\n\n\n\nprint \nhello\n\n\n\n\n\n\n\nDoing math\n\n\n\n\nprint 123 * 456     # calculate 123 times 456\nprint 180 / 12      # calculate 180 divided by 12\n\n\n\n\n\n\nAsk a question\n\n\n\n\nanswer = raw_input(\nWhat's your name?\n)\nprint \nhello\n, answer\n\n\n\n\n\n\nDraw a circle\n\n\n\n\nfrom turtle import Turtle\nt = Turtle()\nt.circle(40)    # a circle with radius 40\n\n\n\n\n\n\nDraw a 3D rotating box\n\n\n\n\nfrom processing import *\n\nrotating = 0.01\n\ndef setup():\n    size(400, 400, P3D)\n\ndef draw():\n    global rotating\n    background(0, 0, 0)\n    translate(200, 100, 0)\n    rotateY(rotating)\n    rotating += 0.01\n    if rotating \n= PI:\n        rotating = 0.01\n    fill(255, 0, 0)\n    box(40)\n\nrun()\n\n\n\n\nThere are a lot more you can do with PythonMini, for more information and examples, check the documentation on the left.\n\n\nFeedback\n\n\nIf you find any error about this documentation, please help us improve it, mail us at \nfeedback@oyoclass.com\n\n\nCredits\n\n\n\n\nSkulpt\n\n\nPython Official Documentation\n\n\nProcessingjs", 
+            "text": "What's Python?\n\n\nQuote from \nPython official website\n:\n\n\n\n\nPython is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python\u2019s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.\n\n\n\n\nWhy Python?\n\n\n\n\nEasy to learn, a lot of top universities use Python to teach \"Programming 101\".\n\n\nNot a toy, quite powerful and versatile, from basic tools to web development, to data analytics, etc, Python can handle all of them.\n\n\nWrite once, run everywhere. Once you finished the code, it can be run in Windows, Mac OS, Linux/Unix.\n\n\n\n\nAbout PythonMini\n\n\nPythonMini is an online python interpreter to help you write python in browser, without installing it to your computer. It implements a subset of Python 2, plus one additional graphical libraries - \nProcessing\n.\n\n\nQuick Start\n\n\nCopy following example code to PythonMini editor then click \"Run\":\n\n\n\n\nSay hello\n\n\n\n\nprint \nhello\n\n\n\n\n\n\n\nDoing math\n\n\n\n\nprint 123 * 456     # calculate 123 times 456\nprint 180 / 12      # calculate 180 divided by 12\n\n\n\n\n\n\nAsk a question\n\n\n\n\nanswer = raw_input(\nWhat's your name?\n)\nprint \nhello\n, answer\n\n\n\n\n\n\nDraw a circle\n\n\n\n\nfrom turtle import Turtle\nt = Turtle()\nt.circle(40)    # a circle with radius 40\n\n\n\n\n\n\nDraw a 3D rotating box\n\n\n\n\nfrom processing import *\n\nrotating = 0.01\n\ndef setup():\n    size(400, 400, P3D)\n\ndef draw():\n    global rotating\n    background(0, 0, 0)\n    translate(200, 100, 0)\n    rotateY(rotating)\n    rotating += 0.01\n    if rotating \n= PI:\n        rotating = 0.01\n    fill(255, 0, 0)\n    box(40)\n\nrun()\n\n\n\n\nThere are a lot more you can do with PythonMini, for more information and examples, check the documentation on the left.\n\n\nFeedback\n\n\nIf you find any error about this documentation, please help us improve it, mail us at \nfeedback@oyoclass.com\n\n\nCredits\n\n\n\n\nSkulpt\n\n\nPython Official Documentation\n\n\nProcessingjs\n \n \nProcessing.py", 
             "title": "Home"
         }, 
         {
@@ -32,7 +32,7 @@
         }, 
         {
             "location": "/#credits", 
-            "text": "Skulpt  Python Official Documentation  Processingjs", 
+            "text": "Skulpt  Python Official Documentation  Processingjs     Processing.py", 
             "title": "Credits"
         }, 
         {
@@ -507,12 +507,12 @@
         }, 
         {
             "location": "/turtle/turtle/", 
-            "text": "turtle \u2014 Turtle graphics\n\n\nTurtle graphic implements a subset functions of the \nPython Turtle Library\n.\n\n\n(Turtle module is also a Python's standard module, we put it in a separate section here to help you quickly locate and search)\n\n\nSetup\n\n\nfrom turtle import Turtle\n\n# Generate Turtle object, name it like your pet\nnick = Turtle()\n\n\n\n\nNow you have your own turtle (in this example I called it \nnick\n, but you can change it), there are several functions you can use to control your turtle.\n\n\nMove and draw\n\n\n\n\nturtle.forward(distance)\n or \nturtle.fd(distance)\n : Move the turtle forward by \ndistance\n, in the direction the turtle is headed.\n\n\nturtle.backward(distance)\n or \nturtle.back(distance)\n or \nturtle.bk(distance)\n : Move the turtle backward by \ndistance\n, opposite to the direction the turtle is headed. This function doesn't change turtle's heading.\n\n\nturtle.right(angle)\n or \nturtle.rt(angle)\n : Turn turtle right by \nangle\n units.\n\n\nturtle.left(angle)\n or \nturtle.lt(angle)\n : Turn turtle left by \nangle\n units.\n\n\nturtle.goto(x, y)\n : Move turtle to an absolute position. If the pen is down, draw line.\n\n\nturtle.setposition(x, y)\n or \nturtle.setpos(x, y)\n : Move turtle to an absolute position without drawing the line. (\nNotice:\n this one is different with Python's official turtle module documentation, in which \nsetposition\n is the same as \ngoto\n).\n\n\nturtle.setworldcoordinates(llx, lly, urx, ury)\n : Set up user-defined coordinate system and switch to mode \u201cworld\u201d if necessary.\n\n\nturtle.setx(x)\n : Set the turtle\u2019s first coordinate to x, leave second coordinate unchanged.\n\n\nturtle.sety(y)\n : Set the turtle\u2019s second coordinate to y, leave first coordinate unchanged.\n\n\nturtle.setheading(dir)\n or \nturtle.seth(dir)\n : Set the orientation of the turtle to \ndir\n. 0 is east, 90 is north, 180 is west, 270 is south, etc.\n\n\nturtle.home()\n : Move turtle to the origin \u2013 coordinates (0,0) \u2013 and set its heading to its start-orientation.\n\n\nturtle.circle(radius, extent=None)\n : Draw a circle with given radius. The center is radius units left of the turtle; extent \u2013 an angle \u2013 determines which part of the circle is drawn. If extent is not given, draw the entire circle.\n\n\nturtle.dot(size, color=None)\n : Draw a circular dot with diameter size, using color. If size is not given, the maximum of pensize+4 and 2*pensize is used.\n\n\nturtle.stamp()\n : Stamp a copy of the turtle shape onto the canvas at the current turtle position.\n\n\nturtle.speed(number=None)\n : Set the turtle\u2019s speed to an integer value in the range 0..10. If no argument is given, return current speed. If speed number is set to 0 or less than 0 or greater than 10, speed will be set to 0, which is fastest and no animation takes place. 1 is slowest, 3 is slow, 6 is normal, 10 is fast. By default, its speed is 6.\n\n\n\n\nAppearance\n\n\n\n\nturtle.shape(name)\n : Set turtle shape to shape with given name or, if name is not given, return name of current shape. Shape's name could be one of followings: \"arrow\", \"turtle\", \"circle\", \"square\", \"triangle\", \"classic\".\n\n\n\n\nTell Turtle's State\n\n\n\n\nturtle.position()\n or \nturtle.pos()\n : Return the turtle\u2019s current location (x, y)\n\n\nturtle.towards(x, y)\n : Return the angle between the line from turtle position to position specified by (x, y), the vector or the other turtle.\n\n\nturtle.xcor()\n : Return the turtle\u2019s x coordinate.\n\n\nturtle.ycor()\n : Return the turtle\u2019s y coordinate.\n\n\nturtle.heading()\n : Return the turtle\u2019s current heading.\n\n\nturtle.distance(x, y)\n : Return the distance from the turtle to (x, y)\n\n\n\n\nPen control\n\n\n\n\nturtle.pendown()\n or \nturtle.pd()\n or \nturtle.down()\n : Pull the pen down \u2013 drawing when moving.\n\n\nturtle.penup()\n or \nturtle.pu()\n or \nturtle.up()\n : Pull the pen up \u2013 no drawing when moving.\n\n\nturtle.pensize(number)\n or \nturtle.width(number)\n : Set the line thickness to width or return it.\n\n\nturtle.isdown()\n : Return True if pen is down, False if it\u2019s up.\n\n\n\n\nColor control\n\n\n\n\nturtle.pencolor(*args)\n : Return or set the pencolor. \npencolor()\n returns current pen color, \npencolor(colorstring)\n, e.g. \npencolor(\"red\")\n, \npencolor(\"#FF9900\")\n or \npencolor(r, g, b)\n will set pencolor to a RGB color.\n\n\nturtle.fillcolor(*args)\n : Return or set the fillcolor. \nfillcolor()\n returns current fill color. \nfillcolor(colorstring)\n or \nfillcolor(r, g, b)\n set fillcolor to a RGB color.\n\n\nturtle.color(*args)\n : Return or set pencolor and fillcolor. \ncolor()\n returns the current pencolor and the current fillcolor, \ncolor(colorstring)\n or \ncolor(r, g, b)\n set pencolor and fillcolor the a RGB color.\n\n\n\n\nFilling\n\n\n\n\nturtle.fill(flag)\n : Call \nfill(True)\n before drawing the shape you want to fill, and \nfill(False)\n when done.\n\n\nturtle.begin_fill()\n : Call just before drawing a shape to be filled. Equivalent to \nfill(True)\n.\n\n\nturtle.end_fill()\n : Fill the shape drawn after the last call to begin_fill(). Equivalent to \nfill(False)\n.\n\n\n\n\nVisibility\n\n\n\n\nturtle.showturtle()\n or \nturtle.st()\n : Make the turtle visible.\n\n\nturtle.hideturtle()\n or \nturtle.ht()\n : Make the turtle invisible.\n\n\nturtle.isvisible()\n : Return True if the Turtle is shown, False if it\u2019s hidden.\n\n\n\n\nAnimation control\n\n\n\n\nturtle.delay(delay=None)\n : Set or return the drawing delay in milliseconds.\n\n\nturtle.tracer(n=None, delay=None)\n : Turn turtle animation on/off and set delay for update drawings. If n is given, only each n-th regular screen update is really performed.\n\n\n\n\nReset\n\n\n\n\nturtle.reset()\n : Delete the turtle\u2019s drawings from the screen, re-center the turtle and set variables to the default values.\n\n\nturtle.clear()\n : Delete the turtle\u2019s drawings from the screen. Do not move turtle. State and position of the turtle as well as drawings of other turtles are not affected.\n\n\n\n\nExamples\n\n\n\n\nDraw line and circle\n\n\n\n\nfrom turtle import Turtle\nnick = Turtle()\n\n# move forward 100 steps\nnick.forward(100)\n\n# draw a circle with radius 40\nnick.circle(40)\n\n# change pencolor\nnick.pencolor(\nred\n)\n\n# draw a semi-circle\nnick.circle(40, 180)\n\n\n\n\n\n\nDraw square\n\n\n\n\nfrom turtle import Turtle\nnick = Turtle()\n\nnick.forward(100)\nnick.right(90)\nnick.forward(100)\nnick.right(90)\nnick.forward(100)\nnick.right(90)\nnick.forward(100)\nnick.right(90)\n\n\n\n\n\n\nDraw square with loop\n\n\n\n\nfrom turtle import Turtle\nnick = Turtle()\n\nfor counter in range(4):\n    nick.forward(100)\n    nick.right(90)\n\n\n\n\n\n\nFill square with color\n\n\n\n\nfrom turtle import Turtle\nnick = Turtle()\n\n# draw a square fill with red color\nnick.color(\nred\n)\n\nnick.begin_fill()\n\nfor counter in range(4):\n    nick.forward(100)\n    nick.right(90)\n\nnick.end_fill()\n\n\n\n\nReference\n\n\n\n\nturtle library - docs.python.org", 
+            "text": "turtle \u2014 Turtle graphics\n\n\nTurtle graphic implements a subset functions of the \nPython Turtle Module\n.\n\n\nSetup\n\n\nfrom turtle import Turtle\n\n# Generate Turtle object, name it like your pet\nnick = Turtle()\n\n\n\n\nNow you have your own turtle (in this example I called it \nnick\n, but you can change it), there are several functions you can use to control your turtle.\n\n\nMove and draw\n\n\n\n\nturtle.forward(distance)\n or \nturtle.fd(distance)\n : Move the turtle forward by \ndistance\n, in the direction the turtle is headed.\n\n\nturtle.backward(distance)\n or \nturtle.back(distance)\n or \nturtle.bk(distance)\n : Move the turtle backward by \ndistance\n, opposite to the direction the turtle is headed. This function doesn't change turtle's heading.\n\n\nturtle.right(angle)\n or \nturtle.rt(angle)\n : Turn turtle right by \nangle\n units.\n\n\nturtle.left(angle)\n or \nturtle.lt(angle)\n : Turn turtle left by \nangle\n units.\n\n\nturtle.goto(x, y)\n : Move turtle to an absolute position. If the pen is down, draw line.\n\n\nturtle.setposition(x, y)\n or \nturtle.setpos(x, y)\n : Move turtle to an absolute position without drawing the line. (\nNotice:\n this one is different with Python's official turtle module documentation, in which \nsetposition\n is the same as \ngoto\n).\n\n\nturtle.setworldcoordinates(llx, lly, urx, ury)\n : Set up user-defined coordinate system and switch to mode \u201cworld\u201d if necessary.\n\n\nturtle.setx(x)\n : Set the turtle\u2019s first coordinate to x, leave second coordinate unchanged.\n\n\nturtle.sety(y)\n : Set the turtle\u2019s second coordinate to y, leave first coordinate unchanged.\n\n\nturtle.setheading(dir)\n or \nturtle.seth(dir)\n : Set the orientation of the turtle to \ndir\n. 0 is east, 90 is north, 180 is west, 270 is south, etc.\n\n\nturtle.home()\n : Move turtle to the origin \u2013 coordinates (0,0) \u2013 and set its heading to its start-orientation.\n\n\nturtle.circle(radius, extent=None)\n : Draw a circle with given radius. The center is radius units left of the turtle; extent \u2013 an angle \u2013 determines which part of the circle is drawn. If extent is not given, draw the entire circle.\n\n\nturtle.dot(size, color=None)\n : Draw a circular dot with diameter size, using color. If size is not given, the maximum of pensize+4 and 2*pensize is used.\n\n\nturtle.stamp()\n : Stamp a copy of the turtle shape onto the canvas at the current turtle position.\n\n\nturtle.speed(number=None)\n : Set the turtle\u2019s speed to an integer value in the range 0..10. If no argument is given, return current speed. If speed number is set to 0 or less than 0 or greater than 10, speed will be set to 0, which is fastest and no animation takes place. 1 is slowest, 3 is slow, 6 is normal, 10 is fast. By default, its speed is 6.\n\n\n\n\nAppearance\n\n\n\n\nturtle.shape(name)\n : Set turtle shape to shape with given name or, if name is not given, return name of current shape. Shape's name could be one of followings: \"arrow\", \"turtle\", \"circle\", \"square\", \"triangle\", \"classic\".\n\n\n\n\nTell Turtle's State\n\n\n\n\nturtle.position()\n or \nturtle.pos()\n : Return the turtle\u2019s current location (x, y)\n\n\nturtle.towards(x, y)\n : Return the angle between the line from turtle position to position specified by (x, y), the vector or the other turtle.\n\n\nturtle.xcor()\n : Return the turtle\u2019s x coordinate.\n\n\nturtle.ycor()\n : Return the turtle\u2019s y coordinate.\n\n\nturtle.heading()\n : Return the turtle\u2019s current heading.\n\n\nturtle.distance(x, y)\n : Return the distance from the turtle to (x, y)\n\n\n\n\nPen control\n\n\n\n\nturtle.pendown()\n or \nturtle.pd()\n or \nturtle.down()\n : Pull the pen down \u2013 drawing when moving.\n\n\nturtle.penup()\n or \nturtle.pu()\n or \nturtle.up()\n : Pull the pen up \u2013 no drawing when moving.\n\n\nturtle.pensize(number)\n or \nturtle.width(number)\n : Set the line thickness to width or return it.\n\n\nturtle.isdown()\n : Return True if pen is down, False if it\u2019s up.\n\n\n\n\nColor control\n\n\n\n\nturtle.pencolor(*args)\n : Return or set the pencolor. \npencolor()\n returns current pen color, \npencolor(colorstring)\n, e.g. \npencolor(\"red\")\n, \npencolor(\"#FF9900\")\n or \npencolor(r, g, b)\n will set pencolor to a RGB color.\n\n\nturtle.fillcolor(*args)\n : Return or set the fillcolor. \nfillcolor()\n returns current fill color. \nfillcolor(colorstring)\n or \nfillcolor(r, g, b)\n set fillcolor to a RGB color.\n\n\nturtle.color(*args)\n : Return or set pencolor and fillcolor. \ncolor()\n returns the current pencolor and the current fillcolor, \ncolor(colorstring)\n or \ncolor(r, g, b)\n set pencolor and fillcolor the a RGB color.\n\n\n\n\nFilling\n\n\n\n\nturtle.fill(flag)\n : Call \nfill(True)\n before drawing the shape you want to fill, and \nfill(False)\n when done.\n\n\nturtle.begin_fill()\n : Call just before drawing a shape to be filled. Equivalent to \nfill(True)\n.\n\n\nturtle.end_fill()\n : Fill the shape drawn after the last call to begin_fill(). Equivalent to \nfill(False)\n.\n\n\n\n\nVisibility\n\n\n\n\nturtle.showturtle()\n or \nturtle.st()\n : Make the turtle visible.\n\n\nturtle.hideturtle()\n or \nturtle.ht()\n : Make the turtle invisible.\n\n\nturtle.isvisible()\n : Return True if the Turtle is shown, False if it\u2019s hidden.\n\n\n\n\nAnimation control\n\n\n\n\nturtle.delay(delay=None)\n : Set or return the drawing delay in milliseconds.\n\n\nturtle.tracer(n=None, delay=None)\n : Turn turtle animation on/off and set delay for update drawings. If n is given, only each n-th regular screen update is really performed.\n\n\n\n\nReset\n\n\n\n\nturtle.reset()\n : Delete the turtle\u2019s drawings from the screen, re-center the turtle and set variables to the default values.\n\n\nturtle.clear()\n : Delete the turtle\u2019s drawings from the screen. Do not move turtle. State and position of the turtle as well as drawings of other turtles are not affected.\n\n\n\n\nExamples\n\n\n\n\nDraw line and circle\n\n\n\n\nfrom turtle import Turtle\nnick = Turtle()\n\n# move forward 100 steps\nnick.forward(100)\n\n# draw a circle with radius 40\nnick.circle(40)\n\n# change pencolor\nnick.pencolor(\nred\n)\n\n# draw a semi-circle\nnick.circle(40, 180)\n\n\n\n\n\n\nDraw square\n\n\n\n\nfrom turtle import Turtle\nnick = Turtle()\n\nnick.forward(100)\nnick.right(90)\nnick.forward(100)\nnick.right(90)\nnick.forward(100)\nnick.right(90)\nnick.forward(100)\nnick.right(90)\n\n\n\n\n\n\nDraw square with loop\n\n\n\n\nfrom turtle import Turtle\nnick = Turtle()\n\nfor counter in range(4):\n    nick.forward(100)\n    nick.right(90)\n\n\n\n\n\n\nFill square with color\n\n\n\n\nfrom turtle import Turtle\nnick = Turtle()\n\n# draw a square fill with red color\nnick.color(\nred\n)\n\nnick.begin_fill()\n\nfor counter in range(4):\n    nick.forward(100)\n    nick.right(90)\n\nnick.end_fill()\n\n\n\n\nReference\n\n\n\n\nturtle library - docs.python.org", 
             "title": "turtle"
         }, 
         {
             "location": "/turtle/turtle/#turtle-turtle-graphics", 
-            "text": "Turtle graphic implements a subset functions of the  Python Turtle Library .  (Turtle module is also a Python's standard module, we put it in a separate section here to help you quickly locate and search)", 
+            "text": "Turtle graphic implements a subset functions of the  Python Turtle Module .", 
             "title": "turtle \u2014 Turtle graphics"
         }, 
         {
@@ -578,7 +578,7 @@
         {
             "location": "/processing/setup/", 
             "text": "setup processing", 
-            "title": "setup"
+            "title": "Setup"
         }, 
         {
             "location": "/processing/setup/#setup-processing", 
@@ -586,44 +586,199 @@
             "title": "setup processing"
         }, 
         {
-            "location": "/processing/keyboard/", 
-            "text": "keyboard\n\n\nProperty\n\n\n\n\nkeyboard.keyCode", 
-            "title": "keyboard"
+            "location": "/processing/color/", 
+            "text": "Color\n\n\nSetting\n\n\n\n\nbackground()\n\n\ncolorMode()\n\n\nfill()\n\n\nnoFill()\n\n\nnoStroke()\n\n\nstroke()\n\n\n\n\nCreating \n Reading\n\n\n\n\nalpha()\n\n\nblendColor()\n\n\nblue()\n\n\nbrightness()\n\n\ncolor()\n\n\ngreen()\n\n\nhue()\n\n\nlerpColor()\n\n\nred()\n\n\nsaturation()\n\n\n\n\nExample\n\n\nfrom processing import *\n\ndef setup():\n    size(400, 400)\n    background(180)\n\ndef draw():\n    fill(255, 0, 0)\n    noStroke()\n    triangle(130, 175, 158, 120, 186, 175)\n\nrun()\n\n\n\n\nReference\n\n\n\n\nProcessingjs", 
+            "title": "Color"
         }, 
         {
-            "location": "/processing/keyboard/#keyboard", 
+            "location": "/processing/color/#color", 
             "text": "", 
-            "title": "keyboard"
+            "title": "Color"
         }, 
         {
-            "location": "/processing/keyboard/#property", 
+            "location": "/processing/color/#setting", 
+            "text": "background()  colorMode()  fill()  noFill()  noStroke()  stroke()", 
+            "title": "Setting"
+        }, 
+        {
+            "location": "/processing/color/#creating-reading", 
+            "text": "alpha()  blendColor()  blue()  brightness()  color()  green()  hue()  lerpColor()  red()  saturation()", 
+            "title": "Creating &amp; Reading"
+        }, 
+        {
+            "location": "/processing/color/#example", 
+            "text": "from processing import *\n\ndef setup():\n    size(400, 400)\n    background(180)\n\ndef draw():\n    fill(255, 0, 0)\n    noStroke()\n    triangle(130, 175, 158, 120, 186, 175)\n\nrun()", 
+            "title": "Example"
+        }, 
+        {
+            "location": "/processing/color/#reference", 
+            "text": "Processingjs", 
+            "title": "Reference"
+        }, 
+        {
+            "location": "/processing/shape/", 
+            "text": "Shape\n\n\n2D Primitives\n\n\n\n\narc()\n\n\nellipse()\n\n\nline()\n\n\npoint()\n\n\nquad()\n\n\nrect()\n\n\ntriangle()\n\n\n\n\nCurves\n\n\n\n\nbezier()\n\n\nbezierDetail()\n\n\nbezierPoint()\n\n\nbezierTangent()\n\n\ncurve()\n\n\ncurveDetail()\n\n\ncurvePoint()\n\n\ncurveTangent()\n\n\ncurveTightness()\n\n\n\n\n3D Primitives\n\n\n\n\nbox()\n\n\nsphere()\n\n\nsphereDetail()\n\n\n\n\nAttributes\n\n\n\n\nellipseMode()\n\n\nnoSmooth()\n\n\nrectMode()\n\n\nsmooth()\n\n\nstrokeCap()\n\n\nstrokeJoin()\n\n\nstrokeWeight()\n\n\n\n\nVertex\n\n\n\n\nbeginShape()\n\n\nbezierVertex()\n\n\ncurveVertex()\n\n\nendShape()\n\n\ntexture()\n\n\ntextureMode()\n\n\nvertex()\n\n\n\n\nLoading \n Displaying\n\n\n\n\nloadShape()\n\n\nshape()\n\n\nshapeMode()\n\n\n\n\nExample\n\n\nfrom processing import *\n\ndef setup():\n    size(400, 400)\n    background(0, 0, 0)\n\ndef draw():\n    fill(0, 0, 255)\n    ellipse(56, 46, 55, 55)\n    fill(255, 0, 0)\n    triangle(130, 175, 158, 120, 186, 175)\n\nrun()\n\n\n\n\nReference\n\n\n\n\nProcessingjs\n\n\nProcessing.py", 
+            "title": "Shape"
+        }, 
+        {
+            "location": "/processing/shape/#shape", 
+            "text": "", 
+            "title": "Shape"
+        }, 
+        {
+            "location": "/processing/shape/#2d-primitives", 
+            "text": "arc()  ellipse()  line()  point()  quad()  rect()  triangle()", 
+            "title": "2D Primitives"
+        }, 
+        {
+            "location": "/processing/shape/#curves", 
+            "text": "bezier()  bezierDetail()  bezierPoint()  bezierTangent()  curve()  curveDetail()  curvePoint()  curveTangent()  curveTightness()", 
+            "title": "Curves"
+        }, 
+        {
+            "location": "/processing/shape/#3d-primitives", 
+            "text": "box()  sphere()  sphereDetail()", 
+            "title": "3D Primitives"
+        }, 
+        {
+            "location": "/processing/shape/#attributes", 
+            "text": "ellipseMode()  noSmooth()  rectMode()  smooth()  strokeCap()  strokeJoin()  strokeWeight()", 
+            "title": "Attributes"
+        }, 
+        {
+            "location": "/processing/shape/#vertex", 
+            "text": "beginShape()  bezierVertex()  curveVertex()  endShape()  texture()  textureMode()  vertex()", 
+            "title": "Vertex"
+        }, 
+        {
+            "location": "/processing/shape/#loading-displaying", 
+            "text": "loadShape()  shape()  shapeMode()", 
+            "title": "Loading &amp; Displaying"
+        }, 
+        {
+            "location": "/processing/shape/#example", 
+            "text": "from processing import *\n\ndef setup():\n    size(400, 400)\n    background(0, 0, 0)\n\ndef draw():\n    fill(0, 0, 255)\n    ellipse(56, 46, 55, 55)\n    fill(255, 0, 0)\n    triangle(130, 175, 158, 120, 186, 175)\n\nrun()", 
+            "title": "Example"
+        }, 
+        {
+            "location": "/processing/shape/#reference", 
+            "text": "Processingjs  Processing.py", 
+            "title": "Reference"
+        }, 
+        {
+            "location": "/processing/typography/", 
+            "text": "Typography", 
+            "title": "Typography"
+        }, 
+        {
+            "location": "/processing/typography/#typography", 
+            "text": "", 
+            "title": "Typography"
+        }, 
+        {
+            "location": "/processing/input/", 
+            "text": "Input\n\n\nYou can detect if user pressed keyboard or mouse.\n\n\nKeyboard\n\n\nProperty\n\n\n\n\nkeyboard.keyCode\n\n\n\n\nMouse\n\n\nProperty\n\n\n\n\nmouse.x\n\n\nmouse.y\n\n\nmouse.px (?)\n\n\nmouse.py (?)\n\n\nmouse.button\n\n\n\n\nFunctions\n\n\n\n\nmousePressed\n\n\nmouseMoved\n\n\nmouseReleased\n\n\n\n\nExample\n\n\nfrom processing import *\n\ndef mousePressed():\n    print \npressed at:\n, mouse.x, mouse.y\n    # left button is 37, right button is 39\n    print \nmouse button:\n, mouse.button\n\ndef mouseMoved():\n    print \nmouse moved\n\n\ndef mouseReleased():\n    print \nreleased ...\n\n\nrun()", 
+            "title": "Input"
+        }, 
+        {
+            "location": "/processing/input/#input", 
+            "text": "You can detect if user pressed keyboard or mouse.", 
+            "title": "Input"
+        }, 
+        {
+            "location": "/processing/input/#keyboard", 
+            "text": "", 
+            "title": "Keyboard"
+        }, 
+        {
+            "location": "/processing/input/#property", 
             "text": "keyboard.keyCode", 
             "title": "Property"
         }, 
         {
-            "location": "/processing/mouse/", 
-            "text": "mouse\n\n\nProperty\n\n\n\n\nmouse.x\n\n\nmouse.y\n\n\nmouse.px (?)\n\n\nmouse.py (?)\n\n\nmouse.button\n\n\n\n\nFunctions\n\n\n\n\nmousePressed\n\n\nmouseMoved\n\n\nmouseReleased\n\n\n\n\nExample\n\n\nfrom processing import *\n\ndef mousePressed():\n    print \npressed at:\n, mouse.x, mouse.y\n    # left button is 37, right button is 39\n    print \nmouse button:\n, mouse.button\n\ndef mouseMoved():\n    print \nmouse moved\n\n\ndef mouseReleased():\n    print \nreleased ...\n\n\nrun()", 
-            "title": "mouse"
-        }, 
-        {
-            "location": "/processing/mouse/#mouse", 
+            "location": "/processing/input/#mouse", 
             "text": "", 
-            "title": "mouse"
+            "title": "Mouse"
         }, 
         {
-            "location": "/processing/mouse/#property", 
+            "location": "/processing/input/#property_1", 
             "text": "mouse.x  mouse.y  mouse.px (?)  mouse.py (?)  mouse.button", 
             "title": "Property"
         }, 
         {
-            "location": "/processing/mouse/#functions", 
+            "location": "/processing/input/#functions", 
             "text": "mousePressed  mouseMoved  mouseReleased", 
             "title": "Functions"
         }, 
         {
-            "location": "/processing/mouse/#example", 
+            "location": "/processing/input/#example", 
             "text": "from processing import *\n\ndef mousePressed():\n    print  pressed at: , mouse.x, mouse.y\n    # left button is 37, right button is 39\n    print  mouse button: , mouse.button\n\ndef mouseMoved():\n    print  mouse moved \n\ndef mouseReleased():\n    print  released ... \n\nrun()", 
             "title": "Example"
+        }, 
+        {
+            "location": "/processing/image/", 
+            "text": "Image\n\n\n\n\nPImage\n\n\ncreateImage()\n\n\n\n\nLoading \n Displaying\n\n\n\n\nimage()\n\n\nimageMode()\n\n\nloadImage()\n\n\nnoTint()\n\n\nrequestImage()\n\n\ntint()\n\n\n\n\nPixels\n\n\n\n\nblend()\n\n\ncopy()\n\n\nfilter()\n\n\nget()\n\n\nloadPixels()\n\n\nset()\n\n\nupdatePixels()\n\n\n\n\nReference\n\n\n\n\nProcessingjs", 
+            "title": "Image"
+        }, 
+        {
+            "location": "/processing/image/#image", 
+            "text": "PImage  createImage()", 
+            "title": "Image"
+        }, 
+        {
+            "location": "/processing/image/#loading-displaying", 
+            "text": "image()  imageMode()  loadImage()  noTint()  requestImage()  tint()", 
+            "title": "Loading &amp; Displaying"
+        }, 
+        {
+            "location": "/processing/image/#pixels", 
+            "text": "blend()  copy()  filter()  get()  loadPixels()  set()  updatePixels()", 
+            "title": "Pixels"
+        }, 
+        {
+            "location": "/processing/image/#reference", 
+            "text": "Processingjs", 
+            "title": "Reference"
+        }, 
+        {
+            "location": "/processing/transform/", 
+            "text": "Transform", 
+            "title": "Transform"
+        }, 
+        {
+            "location": "/processing/transform/#transform", 
+            "text": "", 
+            "title": "Transform"
+        }, 
+        {
+            "location": "/processing/light-camera/", 
+            "text": "Light \n Camera", 
+            "title": "Light & Camera"
+        }, 
+        {
+            "location": "/processing/light-camera/#light-camera", 
+            "text": "", 
+            "title": "Light &amp; Camera"
+        }, 
+        {
+            "location": "/processing/math/", 
+            "text": "Math\n\n\n\n\nPVector", 
+            "title": "Math"
+        }, 
+        {
+            "location": "/processing/math/#math", 
+            "text": "PVector", 
+            "title": "Math"
+        }, 
+        {
+            "location": "/processing/constants/", 
+            "text": "Constants\n\n\n\n\nHALF_PI\n : PI / 2.0\n\n\nTHIRD_PI\n : PI / 3.0\n\n\nPI\n : PI (3.14159...)\n\n\nTWO_PI\n : PI * 2.0\n\n\nQUARTER_PI\n : PI / 4.0\n\n\nDEG_TO_RAD\n : PI / 180\n\n\nRAD_TO_REG\n : 180 / PI", 
+            "title": "Constants"
+        }, 
+        {
+            "location": "/processing/constants/#constants", 
+            "text": "HALF_PI  : PI / 2.0  THIRD_PI  : PI / 3.0  PI  : PI (3.14159...)  TWO_PI  : PI * 2.0  QUARTER_PI  : PI / 4.0  DEG_TO_RAD  : PI / 180  RAD_TO_REG  : 180 / PI", 
+            "title": "Constants"
         }
     ]
 }

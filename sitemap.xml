@@ -144,13 +144,55 @@
     </url>
         
     <url>
-     <loc>None/processing/keyboard/</loc>
+     <loc>None/processing/color/</loc>
      <lastmod>2016-04-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/processing/mouse/</loc>
+     <loc>None/processing/shape/</loc>
+     <lastmod>2016-04-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/processing/typography/</loc>
+     <lastmod>2016-04-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/processing/input/</loc>
+     <lastmod>2016-04-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/processing/image/</loc>
+     <lastmod>2016-04-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/processing/transform/</loc>
+     <lastmod>2016-04-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/processing/light-camera/</loc>
+     <lastmod>2016-04-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/processing/math/</loc>
+     <lastmod>2016-04-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/processing/constants/</loc>
      <lastmod>2016-04-22</lastmod>
      <changefreq>daily</changefreq>
     </url>

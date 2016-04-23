@@ -8,7 +8,7 @@
   
   
   
-  <title>mouse - PythonMini Documentation</title>
+  <title>Shape - PythonMini Documentation</title>
   
 
   <link rel="shortcut icon" href="../../img/favicon.ico">
@@ -24,9 +24,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "mouse";
-    var mkdocs_page_input_path = "processing/mouse.md";
-    var mkdocs_page_url = "/processing/mouse/";
+    var mkdocs_page_name = "Shape";
+    var mkdocs_page_input_path = "processing/shape.md";
+    var mkdocs_page_url = "/processing/shape/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -226,34 +226,93 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../setup/">setup</a>
+        <a class="" href="../setup/">Setup</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../keyboard/">keyboard</a>
+        <a class="" href="../color/">Color</a>
         
     </li>
 
         
             
     <li class="toctree-l1 current">
-        <a class="current" href="./">mouse</a>
+        <a class="current" href="./">Shape</a>
         
             <ul>
             
-                <li class="toctree-l3"><a href="#mouse">mouse</a></li>
+                <li class="toctree-l3"><a href="#shape">Shape</a></li>
                 
-                    <li><a class="toctree-l4" href="#property">Property</a></li>
+                    <li><a class="toctree-l4" href="#2d-primitives">2D Primitives</a></li>
                 
-                    <li><a class="toctree-l4" href="#functions">Functions</a></li>
+                    <li><a class="toctree-l4" href="#curves">Curves</a></li>
+                
+                    <li><a class="toctree-l4" href="#3d-primitives">3D Primitives</a></li>
+                
+                    <li><a class="toctree-l4" href="#attributes">Attributes</a></li>
+                
+                    <li><a class="toctree-l4" href="#vertex">Vertex</a></li>
+                
+                    <li><a class="toctree-l4" href="#loading-displaying">Loading &amp; Displaying</a></li>
                 
                     <li><a class="toctree-l4" href="#example">Example</a></li>
                 
+                    <li><a class="toctree-l4" href="#reference">Reference</a></li>
+                
             
             </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../typography/">Typography</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../input/">Input</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../image/">Image</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../transform/">Transform</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../light-camera/">Light & Camera</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../math/">Math</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../constants/">Constants</a>
         
     </li>
 
@@ -287,7 +346,7 @@
         
       
     
-    <li>mouse</li>
+    <li>Shape</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -297,37 +356,82 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="mouse">mouse</h2>
-<h3 id="property">Property</h3>
+                <h2 id="shape">Shape</h2>
+<h3 id="2d-primitives">2D Primitives</h3>
 <ul>
-<li>mouse.x</li>
-<li>mouse.y</li>
-<li>mouse.px (?)</li>
-<li>mouse.py (?)</li>
-<li>mouse.button</li>
+<li><a href="http://processingjs.org/reference/arc_/">arc()</a></li>
+<li><a href="http://processingjs.org/reference/ellipse_/">ellipse()</a></li>
+<li><a href="http://processingjs.org/reference/line_/">line()</a></li>
+<li><a href="http://processingjs.org/reference/point_/">point()</a></li>
+<li><a href="http://processingjs.org/reference/quad_/">quad()</a></li>
+<li><a href="http://processingjs.org/reference/rect_/">rect()</a></li>
+<li><a href="http://processingjs.org/reference/triangle_/">triangle()</a></li>
 </ul>
-<h3 id="functions">Functions</h3>
+<h3 id="curves">Curves</h3>
 <ul>
-<li>mousePressed</li>
-<li>mouseMoved</li>
-<li>mouseReleased</li>
+<li><a href="http://processingjs.org/reference/bezier_/">bezier()</a></li>
+<li><a href="http://processingjs.org/reference/bezierDetail_/">bezierDetail()</a></li>
+<li><a href="http://processingjs.org/reference/bezierPoint_/">bezierPoint()</a></li>
+<li><a href="http://processingjs.org/reference/bezierTangent_/">bezierTangent()</a></li>
+<li><a href="http://processingjs.org/reference/curve_/">curve()</a></li>
+<li><a href="http://processingjs.org/reference/curveDetail_/">curveDetail()</a></li>
+<li><a href="http://processingjs.org/reference/curvePoint_/">curvePoint()</a></li>
+<li><a href="http://processingjs.org/reference/curveTangent_/">curveTangent()</a></li>
+<li><a href="http://processingjs.org/reference/curveTightness_/">curveTightness()</a></li>
+</ul>
+<h3 id="3d-primitives">3D Primitives</h3>
+<ul>
+<li><a href="http://processingjs.org/reference/box_/">box()</a></li>
+<li><a href="http://processingjs.org/reference/sphere_/">sphere()</a></li>
+<li><a href="http://processingjs.org/reference/sphereDetail_/">sphereDetail()</a></li>
+</ul>
+<h3 id="attributes">Attributes</h3>
+<ul>
+<li><a href="http://processingjs.org/reference/ellipseMode_/">ellipseMode()</a></li>
+<li><a href="http://processingjs.org/reference/noSmooth_/">noSmooth()</a></li>
+<li><a href="http://processingjs.org/reference/rectMode_/">rectMode()</a></li>
+<li><a href="http://processingjs.org/reference/smooth_/">smooth()</a></li>
+<li><a href="http://processingjs.org/reference/strokeCap_/">strokeCap()</a></li>
+<li><a href="http://processingjs.org/reference/strokeJoin_/">strokeJoin()</a></li>
+<li><a href="http://processingjs.org/reference/strokeWeight_/">strokeWeight()</a></li>
+</ul>
+<h3 id="vertex">Vertex</h3>
+<ul>
+<li><a href="http://processingjs.org/reference/beginShape_/">beginShape()</a></li>
+<li><a href="http://processingjs.org/reference/bezierVertex_/">bezierVertex()</a></li>
+<li><a href="http://processingjs.org/reference/curveVertex_/">curveVertex()</a></li>
+<li><a href="http://processingjs.org/reference/endShape_/">endShape()</a></li>
+<li><a href="http://processingjs.org/reference/texture_/">texture()</a></li>
+<li><a href="http://processingjs.org/reference/textureMode_/">textureMode()</a></li>
+<li><a href="http://processingjs.org/reference/vertex_/">vertex()</a></li>
+</ul>
+<h3 id="loading-displaying">Loading &amp; Displaying</h3>
+<ul>
+<li><a href="http://processingjs.org/reference/loadShape_/">loadShape()</a></li>
+<li><a href="http://processingjs.org/reference/shape_/">shape()</a></li>
+<li><a href="http://processingjs.org/reference/shapeMode_/">shapeMode()</a></li>
 </ul>
 <h3 id="example">Example</h3>
 <pre><code class="python">from processing import *
 
-def mousePressed():
-    print &quot;pressed at:&quot;, mouse.x, mouse.y
-    # left button is 37, right button is 39
-    print &quot;mouse button:&quot;, mouse.button
+def setup():
+    size(400, 400)
+    background(0, 0, 0)
 
-def mouseMoved():
-    print &quot;mouse moved&quot;
-
-def mouseReleased():
-    print &quot;released ...&quot;
+def draw():
+    fill(0, 0, 255)
+    ellipse(56, 46, 55, 55)
+    fill(255, 0, 0)
+    triangle(130, 175, 158, 120, 186, 175)
 
 run()
 </code></pre>
+
+<h3 id="reference">Reference</h3>
+<ul>
+<li><a href="http://processingjs.org/reference/">Processingjs</a></li>
+<li><a href="http://py.processing.org/reference/">Processing.py</a></li>
+</ul>
               
             </div>
           </div>
@@ -335,8 +439,10 @@ run()
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="../typography/" class="btn btn-neutral float-right" title="Typography">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-        <a href="../keyboard/" class="btn btn-neutral" title="keyboard"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+        <a href="../color/" class="btn btn-neutral" title="Color"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -362,8 +468,10 @@ run()
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../keyboard/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../color/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
+      
+        <span style="margin-left: 15px"><a href="../typography/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
