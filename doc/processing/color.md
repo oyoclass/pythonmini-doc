@@ -22,6 +22,24 @@
 * [red()](http://processingjs.org/reference/red_/)
 * [saturation()](http://processingjs.org/reference/saturation_/)
 
-## Reference
+
+### Example
+
+```python
+from processing import *
+
+def setup():
+    size(400, 400)
+    background(180)
+
+def draw():
+    fill(255, 0, 0)
+    noStroke()
+    triangle(130, 175, 158, 120, 186, 175)
+
+run()
+```
+
+### Reference
 
 * [Processingjs](http://processingjs.org/reference/)

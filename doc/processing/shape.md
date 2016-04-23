@@ -54,6 +54,26 @@
 * [shape()](http://processingjs.org/reference/shape_/)
 * [shapeMode()](http://processingjs.org/reference/shapeMode_/)
 
-## Reference
+### Example
+
+```python
+from processing import *
+
+def setup():
+    size(400, 400)
+    background(0, 0, 0)
+
+def draw():
+    fill(0, 0, 255)
+    ellipse(56, 46, 55, 55)
+    fill(255, 0, 0)
+    triangle(130, 175, 158, 120, 186, 175)
+
+run()
+```
+
+
+### Reference
 
 * [Processingjs](http://processingjs.org/reference/)
+* [Processing.py](http://py.processing.org/reference/)

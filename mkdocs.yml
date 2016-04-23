@@ -26,9 +26,15 @@ pages:
     - 'Turtle Graphic':
         - 'turtle': 'turtle/turtle.md'
     - 'Processing Graphic':
-        - 'setup': 'processing/setup.md'
-        - 'color': 'processing/color.md'
-        - 'shape': 'processing/shape.md'
-        - 'input': 'processing/input.md'
+        - 'Setup': 'processing/setup.md'
+        - 'Color': 'processing/color.md'
+        - 'Shape': 'processing/shape.md'
+        - 'Typography': 'processing/typography.md'
+        - 'Input': 'processing/input.md'
+        - 'Image': 'processing/image.md'
+        - 'Transform': 'processing/transform.md'
+        - 'Light & Camera': 'processing/light-camera.md'
+        - 'Math': 'processing/math.md'
+        - 'Constants': 'processing/constants.md'
 extra_css:
     - css/doc.css
