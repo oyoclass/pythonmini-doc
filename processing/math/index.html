@@ -261,6 +261,20 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../web/">Web & Link</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../datetime/">Date & Time</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../image/">Image</a>
         
     </li>
@@ -287,6 +301,16 @@
             <ul>
             
                 <li class="toctree-l3"><a href="#math">Math</a></li>
+                
+                    <li><a class="toctree-l4" href="#calculation">Calculation</a></li>
+                
+                    <li><a class="toctree-l4" href="#trigonometry">Trigonometry</a></li>
+                
+                    <li><a class="toctree-l4" href="#random">Random</a></li>
+                
+                    <li><a class="toctree-l4" href="#example">Example</a></li>
+                
+                    <li><a class="toctree-l4" href="#reference">Reference</a></li>
                 
             
             </ul>
@@ -342,7 +366,55 @@
               
                 <h2 id="math">Math</h2>
 <ul>
-<li>PVector</li>
+<li><a href="http://processingjs.org/reference/PVector/">PVector</a></li>
+</ul>
+<h3 id="calculation">Calculation</h3>
+<ul>
+<li><a href="http://processingjs.org/reference/constrain_/">constrain()</a></li>
+<li><a href="http://processingjs.org/reference/dist_/">dist()</a></li>
+<li><a href="http://processingjs.org/reference/lerp_/">lerp()</a></li>
+<li><a href="http://processingjs.org/reference/mag_/">mag()</a></li>
+<li><a href="http://processingjs.org/reference/map_/">map()</a></li>
+<li><a href="http://processingjs.org/reference/norm_/">norm()</a></li>
+<li><a href="http://processingjs.org/reference/sq_/">sq()</a></li>
+</ul>
+<h3 id="trigonometry">Trigonometry</h3>
+<ul>
+<li><a href="http://processingjs.org/reference/degrees_/">degrees()</a></li>
+<li><a href="http://processingjs.org/reference/radians_/">radians()</a></li>
+</ul>
+<h3 id="random">Random</h3>
+<ul>
+<li><a href="http://processingjs.org/reference/noise_/">noise()</a></li>
+<li><a href="http://processingjs.org/reference/noiseDetail_/">noiseDetail()</a></li>
+<li><a href="http://processingjs.org/reference/noiseSeed_/">noiseSeed()</a></li>
+<li><a href="http://processingjs.org/reference/random_/">random()</a></li>
+<li><a href="http://processingjs.org/reference/randomSeed_/">randomSeed()</a></li>
+</ul>
+<h3 id="example">Example</h3>
+<pre><code class="python">from processing import *
+
+xoff = 0.0
+width = 400
+height = 300
+
+def setup():
+    size(400, 400)
+
+def draw():
+    global xoff
+    background(204)
+    xoff = xoff + .01
+    n = noise(xoff) * width
+    line(n, 0, n, height)
+
+run()
+</code></pre>
+
+<h3 id="reference">Reference</h3>
+<ul>
+<li><a href="http://processingjs.org/reference/">Processingjs</a></li>
+<li><a href="http://processingjs.org/reference/noise_/">Processingjs noise function</a></li>
 </ul>
               
             </div>

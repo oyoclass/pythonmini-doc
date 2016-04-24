@@ -260,6 +260,20 @@
 
         
             
+    <li class="toctree-l1 ">
+        <a class="" href="../web/">Web & Link</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../datetime/">Date & Time</a>
+        
+    </li>
+
+        
+            
     <li class="toctree-l1 current">
         <a class="current" href="./">Image</a>
         
@@ -270,6 +284,8 @@
                     <li><a class="toctree-l4" href="#loading-displaying">Loading &amp; Displaying</a></li>
                 
                     <li><a class="toctree-l4" href="#pixels">Pixels</a></li>
+                
+                    <li><a class="toctree-l4" href="#example">Example</a></li>
                 
                     <li><a class="toctree-l4" href="#reference">Reference</a></li>
                 
@@ -348,28 +364,52 @@
               
                 <h2 id="image">Image</h2>
 <ul>
-<li>PImage</li>
-<li>createImage()</li>
+<li><a href="http://processingjs.org/reference/PImage/">PImage</a></li>
+<li><a href="http://processingjs.org/reference/createImage_/">createImage()</a></li>
 </ul>
 <h3 id="loading-displaying">Loading &amp; Displaying</h3>
 <ul>
-<li>image()</li>
-<li>imageMode()</li>
-<li>loadImage()</li>
+<li><a href="http://processingjs.org/reference/image_/">image()</a></li>
+<li><a href="http://processingjs.org/reference/imageMode_/">imageMode()</a></li>
+<li><a href="http://processingjs.org/reference/loadImage_/">loadImage()</a></li>
+<li><a href="http://processingjs.org/reference/requestImage_/">requestImage()</a>
+&lt;!--</li>
 <li>noTint()</li>
-<li>requestImage()</li>
-<li>tint()</li>
+<li>tint()
+--&gt;</li>
 </ul>
 <h3 id="pixels">Pixels</h3>
 <ul>
-<li>blend()</li>
-<li>copy()</li>
-<li>filter()</li>
-<li>get()</li>
-<li>loadPixels()</li>
-<li>set()</li>
-<li>updatePixels()</li>
+<li><a href="http://processingjs.org/reference/blend_/">blend()</a></li>
+<li><a href="http://processingjs.org/reference/copy_/">copy()</a></li>
+<li><a href="http://processingjs.org/reference/filter_/">filter()</a></li>
+<li><a href="http://processingjs.org/reference/get_/">get()</a></li>
+<li><a href="http://processingjs.org/reference/set_/">set()</a></li>
 </ul>
+<h3 id="example">Example</h3>
+<pre><code class="python">from processing import *
+
+pikachu = None
+ball = None
+
+def setup():
+    global pikachu, ball
+    size(400, 400)
+    colorMode(RGB, 100)
+    # you may want to change the image url below
+    pikachu = loadImage(&quot;http://www.avatars101.com/avatars/Pokemon/301BE8845F43838DE7A6B6DFEB2B963E/Pikachu.gif&quot;)
+    ball = requestImage(&quot;http://vignette4.wikia.nocookie.net/pokemon/images/4/46/Timer_Ball.png&quot;)
+
+def draw():
+    background(0, 200, 200)
+    image(pikachu, 100, 100)
+
+    if ball.width != 0 and ball.width != -1:
+        image(ball, 200, 50, 65, 65)    
+
+run()
+</code></pre>
+
 <h3 id="reference">Reference</h3>
 <ul>
 <li><a href="http://processingjs.org/reference/">Processingjs</a></li>
@@ -384,7 +424,7 @@
         <a href="../transform/" class="btn btn-neutral float-right" title="Transform">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../input/" class="btn btn-neutral" title="Input"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../datetime/" class="btn btn-neutral" title="Date & Time"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -410,7 +450,7 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../input/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../datetime/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../transform/" style="color: #fcfcfc">Next &raquo;</a></span>

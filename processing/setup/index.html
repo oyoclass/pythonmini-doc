@@ -230,7 +230,13 @@
         
             <ul>
             
-                <li class="toctree-l3"><a href="#setup-processing">setup processing</a></li>
+                <li class="toctree-l3"><a href="#setup-processing">Setup processing</a></li>
+                
+                    <li><a class="toctree-l4" href="#a-typical-running-structure">A typical running structure</a></li>
+                
+                    <li><a class="toctree-l4" href="#get-input-from-user">Get input from user</a></li>
+                
+                    <li><a class="toctree-l4" href="#3d-drawing">3D drawing</a></li>
                 
             
             </ul>
@@ -262,6 +268,20 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../input/">Input</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../web/">Web & Link</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../datetime/">Date & Time</a>
         
     </li>
 
@@ -340,7 +360,86 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="setup-processing">setup processing</h1>
+                <h2 id="setup-processing">Setup processing</h2>
+<h3 id="a-typical-running-structure">A typical running structure</h3>
+<p>Here is a typical way to use Processing library:</p>
+<pre><code class="python">from processing import *
+
+healthPoint = 3
+
+def setup():
+    size(500, 400)
+
+def draw():
+    background(0, 0, 0)
+    # do other drawings and logic
+
+    # here if you want to end the drawing, call exitp()
+    if healthPoint == 0:
+        exitp()
+
+
+run()
+</code></pre>
+
+<p>Notice the <code>run()</code> function at bottom, it will call <code>setup()</code> once, and will iteratively call <code>draw()</code> function again and again and again, until you call <code>exitp()</code> function.</p>
+<p>In <code>setup()</code> function, we setup the canvas size for drawing, which is 500px in width and 400px in height. In the <code>draw()</code> function, we make the canvas's background as black (RGB color (0, 0, 0) is black).</p>
+<h3 id="get-input-from-user">Get input from user</h3>
+<p>If you want to make a game with Processing, one important part will be detecting if player pressed keyboard or clicked mouse, which is:</p>
+<pre><code class="python">
+from processing import *
+
+healthPoint = 3
+
+def setup():
+    size(500, 400)
+
+def draw():
+    background(0, 0, 0)
+    # do other drawings and logic
+    # here if you want to end the drawing, call exitp()
+    if healthPoint == 0:
+        exitp()
+
+def keyPressed():
+    if keyboard.keyCode == 37:
+        # left arrow key pressed
+        # do something ...
+    elif keyboard.keyCode == 39:
+        # right arrow key
+        # do something ...
+
+def mousePressed():
+    print &quot;Mouse pressed at&quot;, mouse.x, mouse.y
+
+
+run()
+</code></pre>
+
+<h3 id="3d-drawing">3D drawing</h3>
+<p>Processing also support 3D drawing, to use 3D, you need to setup canvas to "3D" model by passing P3D as the 3rd parameter in <code>size</code> function:</p>
+<pre><code class="python">from processing import *
+
+rotating = 0.01
+
+def setup():
+    size(400, 400, P3D)
+
+def draw():
+    global rotating
+    background(0, 0, 0)
+    translate(200, 100, 0)
+    rotateY(rotating)
+    rotating += 0.01
+    if rotating &gt;= PI:
+        rotating = 0.01
+    fill(255, 0, 0)
+    box(40)
+
+run()
+</code></pre>
+
+<p>To check more functions about Processing library, check all functions under <code>Processing Graphic</code> on the left.</p>
               
             </div>
           </div>

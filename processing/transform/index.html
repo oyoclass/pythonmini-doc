@@ -261,6 +261,20 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../web/">Web & Link</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../datetime/">Date & Time</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../image/">Image</a>
         
     </li>
@@ -273,6 +287,10 @@
             <ul>
             
                 <li class="toctree-l3"><a href="#transform">Transform</a></li>
+                
+                    <li><a class="toctree-l4" href="#example">Example</a></li>
+                
+                    <li><a class="toctree-l4" href="#reference">Reference</a></li>
                 
             
             </ul>
@@ -341,6 +359,56 @@
             <div class="section">
               
                 <h2 id="transform">Transform</h2>
+<ul>
+<li><a href="http://processingjs.org/reference/applyMatrix_/">applyMatrix()</a></li>
+<li><a href="http://processingjs.org/reference/popMatrix_/">popMatrix()</a></li>
+<li><a href="http://processingjs.org/reference/pushMatrix_/">pushMatrix()</a></li>
+<li><a href="http://processingjs.org/reference/resetMatrix_/">resetMatrix()</a></li>
+<li><a href="http://processingjs.org/reference/rotate_/">rotate()</a></li>
+<li><a href="http://processingjs.org/reference/rotateX_/">rotateX()</a></li>
+<li><a href="http://processingjs.org/reference/rotateY_/">rotateY()</a></li>
+<li><a href="http://processingjs.org/reference/rotateZ_/">rotateZ()</a></li>
+<li><a href="http://processingjs.org/reference/scale_/">scale()</a></li>
+<li><a href="http://processingjs.org/reference/translate_/">translate()</a></li>
+</ul>
+<h3 id="example">Example</h3>
+<pre><code class="python">from processing import *
+import math
+
+rotate = PI/6
+def setup():
+    size(400, 400, P3D)
+
+def draw():
+    global rotate
+    background(180)
+    noFill()
+    translate(150, 150, 0)
+    rotate += 0.01
+    if rotate &gt;= TWO_PI:
+        rotate = 0
+    rotateY(rotate)
+    stroke(153)
+    box(35)
+    # Set rotation angles
+    ct = math.cos(PI/9.0)
+    st = math.sin(PI/9.0)          
+    # Matrix for rotation around the Y axis
+    applyMatrix( ct,  0.0,  st,  0.0,
+                 0.0, 1.0, 0.0,  0.0,
+                 -st, 0.0,  ct,  0.0,
+                 0.0, 0.0, 0.0,  1.0)
+    stroke(255)
+    box(50)
+
+run()
+</code></pre>
+
+<h3 id="reference">Reference</h3>
+<ul>
+<li><a href="http://processingjs.org/reference/">Processingjs</a></li>
+<li><a href="http://processingjs.org/reference/applyMatrix_/">Processingjs applyMatrix</a></li>
+</ul>
               
             </div>
           </div>

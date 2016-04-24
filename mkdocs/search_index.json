@@ -577,13 +577,28 @@
         }, 
         {
             "location": "/processing/setup/", 
-            "text": "setup processing", 
+            "text": "Setup processing\n\n\nA typical running structure\n\n\nHere is a typical way to use Processing library:\n\n\nfrom processing import *\n\nhealthPoint = 3\n\ndef setup():\n    size(500, 400)\n\ndef draw():\n    background(0, 0, 0)\n    # do other drawings and logic\n\n    # here if you want to end the drawing, call exitp()\n    if healthPoint == 0:\n        exitp()\n\n\nrun()\n\n\n\n\nNotice the \nrun()\n function at bottom, it will call \nsetup()\n once, and will iteratively call \ndraw()\n function again and again and again, until you call \nexitp()\n function.\n\n\nIn \nsetup()\n function, we setup the canvas size for drawing, which is 500px in width and 400px in height. In the \ndraw()\n function, we make the canvas's background as black (RGB color (0, 0, 0) is black).\n\n\nGet input from user\n\n\nIf you want to make a game with Processing, one important part will be detecting if player pressed keyboard or clicked mouse, which is:\n\n\n\nfrom processing import *\n\nhealthPoint = 3\n\ndef setup():\n    size(500, 400)\n\ndef draw():\n    background(0, 0, 0)\n    # do other drawings and logic\n    # here if you want to end the drawing, call exitp()\n    if healthPoint == 0:\n        exitp()\n\ndef keyPressed():\n    if keyboard.keyCode == 37:\n        # left arrow key pressed\n        # do something ...\n    elif keyboard.keyCode == 39:\n        # right arrow key\n        # do something ...\n\ndef mousePressed():\n    print \nMouse pressed at\n, mouse.x, mouse.y\n\n\nrun()\n\n\n\n\n3D drawing\n\n\nProcessing also support 3D drawing, to use 3D, you need to setup canvas to \"3D\" model by passing P3D as the 3rd parameter in \nsize\n function:\n\n\nfrom processing import *\n\nrotating = 0.01\n\ndef setup():\n    size(400, 400, P3D)\n\ndef draw():\n    global rotating\n    background(0, 0, 0)\n    translate(200, 100, 0)\n    rotateY(rotating)\n    rotating += 0.01\n    if rotating \n= PI:\n        rotating = 0.01\n    fill(255, 0, 0)\n    box(40)\n\nrun()\n\n\n\n\nTo check more functions about Processing library, check all functions under \nProcessing Graphic\n on the left.", 
             "title": "Setup"
         }, 
         {
             "location": "/processing/setup/#setup-processing", 
             "text": "", 
-            "title": "setup processing"
+            "title": "Setup processing"
+        }, 
+        {
+            "location": "/processing/setup/#a-typical-running-structure", 
+            "text": "Here is a typical way to use Processing library:  from processing import *\n\nhealthPoint = 3\n\ndef setup():\n    size(500, 400)\n\ndef draw():\n    background(0, 0, 0)\n    # do other drawings and logic\n\n    # here if you want to end the drawing, call exitp()\n    if healthPoint == 0:\n        exitp()\n\n\nrun()  Notice the  run()  function at bottom, it will call  setup()  once, and will iteratively call  draw()  function again and again and again, until you call  exitp()  function.  In  setup()  function, we setup the canvas size for drawing, which is 500px in width and 400px in height. In the  draw()  function, we make the canvas's background as black (RGB color (0, 0, 0) is black).", 
+            "title": "A typical running structure"
+        }, 
+        {
+            "location": "/processing/setup/#get-input-from-user", 
+            "text": "If you want to make a game with Processing, one important part will be detecting if player pressed keyboard or clicked mouse, which is:  \nfrom processing import *\n\nhealthPoint = 3\n\ndef setup():\n    size(500, 400)\n\ndef draw():\n    background(0, 0, 0)\n    # do other drawings and logic\n    # here if you want to end the drawing, call exitp()\n    if healthPoint == 0:\n        exitp()\n\ndef keyPressed():\n    if keyboard.keyCode == 37:\n        # left arrow key pressed\n        # do something ...\n    elif keyboard.keyCode == 39:\n        # right arrow key\n        # do something ...\n\ndef mousePressed():\n    print  Mouse pressed at , mouse.x, mouse.y\n\n\nrun()", 
+            "title": "Get input from user"
+        }, 
+        {
+            "location": "/processing/setup/#3d-drawing", 
+            "text": "Processing also support 3D drawing, to use 3D, you need to setup canvas to \"3D\" model by passing P3D as the 3rd parameter in  size  function:  from processing import *\n\nrotating = 0.01\n\ndef setup():\n    size(400, 400, P3D)\n\ndef draw():\n    global rotating\n    background(0, 0, 0)\n    translate(200, 100, 0)\n    rotateY(rotating)\n    rotating += 0.01\n    if rotating  = PI:\n        rotating = 0.01\n    fill(255, 0, 0)\n    box(40)\n\nrun()  To check more functions about Processing library, check all functions under  Processing Graphic  on the left.", 
+            "title": "3D drawing"
         }, 
         {
             "location": "/processing/color/", 
@@ -667,17 +682,42 @@
         }, 
         {
             "location": "/processing/typography/", 
-            "text": "Typography", 
+            "text": "Typography\n\n\n\n\nPFont\n\n\n\n\nLoading \n Displaying\n\n\n\n\ncreateFont()\n\n\ntext()\n\n\ntextFont()\n\n\n\n\nAttributes\n\n\n\n\ntextAlign()\n\n\ntextLeading()\n\n\ntextMode()\n\n\ntextSize()\n\n\ntextWidth()\n\n\n\n\nMetrics\n\n\n\n\ntextAscent()\n\n\ntextDescent()\n\n\n\n\nExample\n\n\nfrom processing import *\n\nmyFont = None\n\ndef setup():\n    global myFont\n    size(400, 400)\n    background(0)\n    myFont = createFont(\nGeorgia\n, 32);\n\ndef draw():\n    fill(255, 255, 255)\n    textFont(myFont)\n    textAlign(LEFT)\n    text(\nHello World\n, 100, 200)\n\n    fill(255, 0, 0)\n    textSize(30)\n    text(\nStart Game\n, 100, 300)\n\n\nrun()\n\n\n\n\nReference\n\n\n\n\nProcessingjs", 
             "title": "Typography"
         }, 
         {
             "location": "/processing/typography/#typography", 
-            "text": "", 
+            "text": "PFont", 
             "title": "Typography"
         }, 
         {
+            "location": "/processing/typography/#loading-displaying", 
+            "text": "createFont()  text()  textFont()", 
+            "title": "Loading &amp; Displaying"
+        }, 
+        {
+            "location": "/processing/typography/#attributes", 
+            "text": "textAlign()  textLeading()  textMode()  textSize()  textWidth()", 
+            "title": "Attributes"
+        }, 
+        {
+            "location": "/processing/typography/#metrics", 
+            "text": "textAscent()  textDescent()", 
+            "title": "Metrics"
+        }, 
+        {
+            "location": "/processing/typography/#example", 
+            "text": "from processing import *\n\nmyFont = None\n\ndef setup():\n    global myFont\n    size(400, 400)\n    background(0)\n    myFont = createFont( Georgia , 32);\n\ndef draw():\n    fill(255, 255, 255)\n    textFont(myFont)\n    textAlign(LEFT)\n    text( Hello World , 100, 200)\n\n    fill(255, 0, 0)\n    textSize(30)\n    text( Start Game , 100, 300)\n\n\nrun()", 
+            "title": "Example"
+        }, 
+        {
+            "location": "/processing/typography/#reference", 
+            "text": "Processingjs", 
+            "title": "Reference"
+        }, 
+        {
             "location": "/processing/input/", 
-            "text": "Input\n\n\nYou can detect if user pressed keyboard or mouse.\n\n\nKeyboard\n\n\nProperty\n\n\n\n\nkeyboard.keyCode\n\n\n\n\nMouse\n\n\nProperty\n\n\n\n\nmouse.x\n\n\nmouse.y\n\n\nmouse.px (?)\n\n\nmouse.py (?)\n\n\nmouse.button\n\n\n\n\nFunctions\n\n\n\n\nmousePressed\n\n\nmouseMoved\n\n\nmouseReleased\n\n\n\n\nExample\n\n\nfrom processing import *\n\ndef mousePressed():\n    print \npressed at:\n, mouse.x, mouse.y\n    # left button is 37, right button is 39\n    print \nmouse button:\n, mouse.button\n\ndef mouseMoved():\n    print \nmouse moved\n\n\ndef mouseReleased():\n    print \nreleased ...\n\n\nrun()", 
+            "text": "Input\n\n\nYou can detect if user pressed keyboard or mouse.\n\n\nKeyboard\n\n\nProperty\n\n\n\n\nkeyboard.key\n : the actual key, if you pressed \ne\n, this will be \ne\n\n\nkeyboard.keyCode\n : the key's code, if you pressed \ne\n, this will be \n69\n\n\nkeyboard.keyPressed\n : \nTrue\n if any key is pressed and \nFalse\n if no keys are pressed\n\n\n\n\nConstants\n\n\n\n\nBACKSPACE\n : backspace key code\n\n\nTAB\n : tab key code\n\n\nENTER\n : enter key code\n\n\nRETURN\n : return key code\n\n\nESC\n : esc key code\n\n\nDELETE\n : delete key code\n\n\nSHIFT\n : shift key code\n\n\nCONTROL\n : control key code\n\n\nALT\n : alt key code\n\n\nCAPSLK\n : caps lock key code\n\n\nPGUP\n : page up key code\n\n\nPGDN\n : page down key code\n\n\nEND\n : end key code\n\n\nHOME\n : home key code\n\n\nLEFT\n : left arrow key code\n\n\nUP\n : up arrow key code\n\n\nRIGHT\n : right arrow key code\n\n\nDOWN\n : down arrow key code\n\n\nF1\n, \nF2\n ... \nF12\n : F1 ~ F12 key code\n\n\nNUMLK\n : number lock key code\n\n\nINSERT\n : insert key code\n\n\n\n\nEvents\n\n\n\n\nkeyPressed()\n : If any key is pressed, this function will be called\n\n\nkeyReleased()\n : If any key is released, this function will be called\n\n\nkeyTyped()\n : If any key is typed, this function will be called\n\n\n\n\nExample\n\n\nMove a rectangle when left or right arrow key is pressed.\n\n\nfrom processing import *\n\nrectX = 0\n\ndef setup():\n    size(500, 400)\n\ndef draw():\n    background(0, 0, 0)\n    rect(rectX, 100, 50, 10)\n\ndef keyPressed():\n    global rectX\n    if keyboard.keyCode == LEFT:\n        rectX -= 5\n    elif keyboard.keyCode == RIGHT:\n        rectX += 5\n\nrun()\n\n\n\n\nMouse\n\n\nProperty\n\n\n\n\nmouse.x\n : current horizontal coordinate of the mouse\n\n\nmouse.y\n : current vertical coordinate of the mouse\n\n\nmouse.px\n : the previous horizontal coordinate of the mouse\n\n\nmouse.py\n : the previous vertical coordinate of the mouse\n\n\nmouse.pressed\n : if mouse is pressed\n\n\nmouse.button\n : which mouse button is pressed, left mouse button is 37, right mouse button is 39\n\n\n\n\nFunctions\n\n\n\n\nmouseClicked()\n : will be called when click clicked\n\n\nmouseDragged()\n : will be called when drag mouse\n\n\nmousePressed()\n : will be called when press mouse\n\n\nmouseMoved()\n : will be called when move mouse\n\n\nmouseReleased()\n : will be called when release mouse\n\n\nmouseOut()\n : will be called when mouse pointer leaves canvas\n\n\nmouseOver()\n :  will be called when the mouse pointer moves over canvas\n\n\n\n\nExample\n\n\nfrom processing import *\n\ndef setup():\n    size(500, 400)\n\ndef draw():\n    background(0)\n\ndef mousePressed():\n    print \npressed at:\n, mouse.x, mouse.y\n    # left button is 37, right button is 39\n    print \nmouse button:\n, mouse.button\n\ndef mouseMoved():\n    info = \nMouse moved at (%s, %s)\n % (mouse.x, mouse.y)\n    text(info, mouse.x, mouse.y)\n\ndef mouseReleased():\n    text(\nMouse released\n, 10, 10)\n\n\nrun()\n\n\n\n\nReference\n\n\n\n\nProcessingjs", 
             "title": "Input"
         }, 
         {
@@ -692,8 +732,23 @@
         }, 
         {
             "location": "/processing/input/#property", 
-            "text": "keyboard.keyCode", 
+            "text": "keyboard.key  : the actual key, if you pressed  e , this will be  e  keyboard.keyCode  : the key's code, if you pressed  e , this will be  69  keyboard.keyPressed  :  True  if any key is pressed and  False  if no keys are pressed", 
             "title": "Property"
+        }, 
+        {
+            "location": "/processing/input/#constants", 
+            "text": "BACKSPACE  : backspace key code  TAB  : tab key code  ENTER  : enter key code  RETURN  : return key code  ESC  : esc key code  DELETE  : delete key code  SHIFT  : shift key code  CONTROL  : control key code  ALT  : alt key code  CAPSLK  : caps lock key code  PGUP  : page up key code  PGDN  : page down key code  END  : end key code  HOME  : home key code  LEFT  : left arrow key code  UP  : up arrow key code  RIGHT  : right arrow key code  DOWN  : down arrow key code  F1 ,  F2  ...  F12  : F1 ~ F12 key code  NUMLK  : number lock key code  INSERT  : insert key code", 
+            "title": "Constants"
+        }, 
+        {
+            "location": "/processing/input/#events", 
+            "text": "keyPressed()  : If any key is pressed, this function will be called  keyReleased()  : If any key is released, this function will be called  keyTyped()  : If any key is typed, this function will be called", 
+            "title": "Events"
+        }, 
+        {
+            "location": "/processing/input/#example", 
+            "text": "Move a rectangle when left or right arrow key is pressed.  from processing import *\n\nrectX = 0\n\ndef setup():\n    size(500, 400)\n\ndef draw():\n    background(0, 0, 0)\n    rect(rectX, 100, 50, 10)\n\ndef keyPressed():\n    global rectX\n    if keyboard.keyCode == LEFT:\n        rectX -= 5\n    elif keyboard.keyCode == RIGHT:\n        rectX += 5\n\nrun()", 
+            "title": "Example"
         }, 
         {
             "location": "/processing/input/#mouse", 
@@ -702,22 +757,67 @@
         }, 
         {
             "location": "/processing/input/#property_1", 
-            "text": "mouse.x  mouse.y  mouse.px (?)  mouse.py (?)  mouse.button", 
+            "text": "mouse.x  : current horizontal coordinate of the mouse  mouse.y  : current vertical coordinate of the mouse  mouse.px  : the previous horizontal coordinate of the mouse  mouse.py  : the previous vertical coordinate of the mouse  mouse.pressed  : if mouse is pressed  mouse.button  : which mouse button is pressed, left mouse button is 37, right mouse button is 39", 
             "title": "Property"
         }, 
         {
             "location": "/processing/input/#functions", 
-            "text": "mousePressed  mouseMoved  mouseReleased", 
+            "text": "mouseClicked()  : will be called when click clicked  mouseDragged()  : will be called when drag mouse  mousePressed()  : will be called when press mouse  mouseMoved()  : will be called when move mouse  mouseReleased()  : will be called when release mouse  mouseOut()  : will be called when mouse pointer leaves canvas  mouseOver()  :  will be called when the mouse pointer moves over canvas", 
             "title": "Functions"
         }, 
         {
-            "location": "/processing/input/#example", 
-            "text": "from processing import *\n\ndef mousePressed():\n    print  pressed at: , mouse.x, mouse.y\n    # left button is 37, right button is 39\n    print  mouse button: , mouse.button\n\ndef mouseMoved():\n    print  mouse moved \n\ndef mouseReleased():\n    print  released ... \n\nrun()", 
+            "location": "/processing/input/#example_1", 
+            "text": "from processing import *\n\ndef setup():\n    size(500, 400)\n\ndef draw():\n    background(0)\n\ndef mousePressed():\n    print  pressed at: , mouse.x, mouse.y\n    # left button is 37, right button is 39\n    print  mouse button: , mouse.button\n\ndef mouseMoved():\n    info =  Mouse moved at (%s, %s)  % (mouse.x, mouse.y)\n    text(info, mouse.x, mouse.y)\n\ndef mouseReleased():\n    text( Mouse released , 10, 10)\n\n\nrun()", 
             "title": "Example"
         }, 
         {
+            "location": "/processing/input/#reference", 
+            "text": "Processingjs", 
+            "title": "Reference"
+        }, 
+        {
+            "location": "/processing/web/", 
+            "text": "Web\n\n\n\n\nlink(url[, target=None])\n : open a web page in \ntarget\n window, if \ntarget\n is missing, web page will be opened in current window; if \ntarget\n equals \n_new\n, web page will be opened in a new window/tab.\n\n\n\n\nExample\n\n\nfrom processing import *\n\ndef keyPressed():\n    # key \no\n is pressed\n    # open a web page load oyoclass.com\n    if keyboard.keyCode == 79:\n        link(\nhttps://oyoclass.com\n, \n_new\n)\n\n\nrun()\n\n\n\n\nReference\n\n\n\n\nProcessingjs link", 
+            "title": "Web & Link"
+        }, 
+        {
+            "location": "/processing/web/#web", 
+            "text": "link(url[, target=None])  : open a web page in  target  window, if  target  is missing, web page will be opened in current window; if  target  equals  _new , web page will be opened in a new window/tab.", 
+            "title": "Web"
+        }, 
+        {
+            "location": "/processing/web/#example", 
+            "text": "from processing import *\n\ndef keyPressed():\n    # key  o  is pressed\n    # open a web page load oyoclass.com\n    if keyboard.keyCode == 79:\n        link( https://oyoclass.com ,  _new )\n\n\nrun()", 
+            "title": "Example"
+        }, 
+        {
+            "location": "/processing/web/#reference", 
+            "text": "Processingjs link", 
+            "title": "Reference"
+        }, 
+        {
+            "location": "/processing/datetime/", 
+            "text": "Date \n Time\n\n\n\n\nday()\n\n\nhour()\n\n\nmillis()\n\n\nminute()\n\n\nmonth()\n\n\nsecond()\n\n\nyear()\n\n\n\n\nExample\n\n\nfrom processing import *\n\ndef setup():\n    size(500, 400)\n\ndef draw():\n    background(0)\n    s = \nCurrent time: %02d:%02d:%02d\n % (hour(), minute(), second())\n    textSize(35)\n    fill(0, 255, 0)\n    text(s, 80, 200)\n\n\nrun()\n\n\n\n\nReference\n\n\n\n\nProcessingjs", 
+            "title": "Date & Time"
+        }, 
+        {
+            "location": "/processing/datetime/#date-time", 
+            "text": "day()  hour()  millis()  minute()  month()  second()  year()", 
+            "title": "Date &amp; Time"
+        }, 
+        {
+            "location": "/processing/datetime/#example", 
+            "text": "from processing import *\n\ndef setup():\n    size(500, 400)\n\ndef draw():\n    background(0)\n    s =  Current time: %02d:%02d:%02d  % (hour(), minute(), second())\n    textSize(35)\n    fill(0, 255, 0)\n    text(s, 80, 200)\n\n\nrun()", 
+            "title": "Example"
+        }, 
+        {
+            "location": "/processing/datetime/#reference", 
+            "text": "Processingjs", 
+            "title": "Reference"
+        }, 
+        {
             "location": "/processing/image/", 
-            "text": "Image\n\n\n\n\nPImage\n\n\ncreateImage()\n\n\n\n\nLoading \n Displaying\n\n\n\n\nimage()\n\n\nimageMode()\n\n\nloadImage()\n\n\nnoTint()\n\n\nrequestImage()\n\n\ntint()\n\n\n\n\nPixels\n\n\n\n\nblend()\n\n\ncopy()\n\n\nfilter()\n\n\nget()\n\n\nloadPixels()\n\n\nset()\n\n\nupdatePixels()\n\n\n\n\nReference\n\n\n\n\nProcessingjs", 
+            "text": "Image\n\n\n\n\nPImage\n\n\ncreateImage()\n\n\n\n\nLoading \n Displaying\n\n\n\n\nimage()\n\n\nimageMode()\n\n\nloadImage()\n\n\nrequestImage()\n\n\n!--\n\n\nnoTint()\n\n\ntint()\n--\n\n\n\n\nPixels\n\n\n\n\nblend()\n\n\ncopy()\n\n\nfilter()\n\n\nget()\n\n\nset()\n\n\n\n\nExample\n\n\nfrom processing import *\n\npikachu = None\nball = None\n\ndef setup():\n    global pikachu, ball\n    size(400, 400)\n    colorMode(RGB, 100)\n    # you may want to change the image url below\n    pikachu = loadImage(\nhttp://www.avatars101.com/avatars/Pokemon/301BE8845F43838DE7A6B6DFEB2B963E/Pikachu.gif\n)\n    ball = requestImage(\nhttp://vignette4.wikia.nocookie.net/pokemon/images/4/46/Timer_Ball.png\n)\n\ndef draw():\n    background(0, 200, 200)\n    image(pikachu, 100, 100)\n\n    if ball.width != 0 and ball.width != -1:\n        image(ball, 200, 50, 65, 65)    \n\nrun()\n\n\n\n\nReference\n\n\n\n\nProcessingjs", 
             "title": "Image"
         }, 
         {
@@ -727,13 +827,18 @@
         }, 
         {
             "location": "/processing/image/#loading-displaying", 
-            "text": "image()  imageMode()  loadImage()  noTint()  requestImage()  tint()", 
+            "text": "image()  imageMode()  loadImage()  requestImage()  !--  noTint()  tint()\n--", 
             "title": "Loading &amp; Displaying"
         }, 
         {
             "location": "/processing/image/#pixels", 
-            "text": "blend()  copy()  filter()  get()  loadPixels()  set()  updatePixels()", 
+            "text": "blend()  copy()  filter()  get()  set()", 
             "title": "Pixels"
+        }, 
+        {
+            "location": "/processing/image/#example", 
+            "text": "from processing import *\n\npikachu = None\nball = None\n\ndef setup():\n    global pikachu, ball\n    size(400, 400)\n    colorMode(RGB, 100)\n    # you may want to change the image url below\n    pikachu = loadImage( http://www.avatars101.com/avatars/Pokemon/301BE8845F43838DE7A6B6DFEB2B963E/Pikachu.gif )\n    ball = requestImage( http://vignette4.wikia.nocookie.net/pokemon/images/4/46/Timer_Ball.png )\n\ndef draw():\n    background(0, 200, 200)\n    image(pikachu, 100, 100)\n\n    if ball.width != 0 and ball.width != -1:\n        image(ball, 200, 50, 65, 65)    \n\nrun()", 
+            "title": "Example"
         }, 
         {
             "location": "/processing/image/#reference", 
@@ -742,17 +847,27 @@
         }, 
         {
             "location": "/processing/transform/", 
-            "text": "Transform", 
+            "text": "Transform\n\n\n\n\napplyMatrix()\n\n\npopMatrix()\n\n\npushMatrix()\n\n\nresetMatrix()\n\n\nrotate()\n\n\nrotateX()\n\n\nrotateY()\n\n\nrotateZ()\n\n\nscale()\n\n\ntranslate()\n\n\n\n\nExample\n\n\nfrom processing import *\nimport math\n\nrotate = PI/6\ndef setup():\n    size(400, 400, P3D)\n\ndef draw():\n    global rotate\n    background(180)\n    noFill()\n    translate(150, 150, 0)\n    rotate += 0.01\n    if rotate \n= TWO_PI:\n        rotate = 0\n    rotateY(rotate)\n    stroke(153)\n    box(35)\n    # Set rotation angles\n    ct = math.cos(PI/9.0)\n    st = math.sin(PI/9.0)          \n    # Matrix for rotation around the Y axis\n    applyMatrix( ct,  0.0,  st,  0.0,\n                 0.0, 1.0, 0.0,  0.0,\n                 -st, 0.0,  ct,  0.0,\n                 0.0, 0.0, 0.0,  1.0)\n    stroke(255)\n    box(50)\n\nrun()\n\n\n\n\nReference\n\n\n\n\nProcessingjs\n\n\nProcessingjs applyMatrix", 
             "title": "Transform"
         }, 
         {
             "location": "/processing/transform/#transform", 
-            "text": "", 
+            "text": "applyMatrix()  popMatrix()  pushMatrix()  resetMatrix()  rotate()  rotateX()  rotateY()  rotateZ()  scale()  translate()", 
             "title": "Transform"
         }, 
         {
+            "location": "/processing/transform/#example", 
+            "text": "from processing import *\nimport math\n\nrotate = PI/6\ndef setup():\n    size(400, 400, P3D)\n\ndef draw():\n    global rotate\n    background(180)\n    noFill()\n    translate(150, 150, 0)\n    rotate += 0.01\n    if rotate  = TWO_PI:\n        rotate = 0\n    rotateY(rotate)\n    stroke(153)\n    box(35)\n    # Set rotation angles\n    ct = math.cos(PI/9.0)\n    st = math.sin(PI/9.0)          \n    # Matrix for rotation around the Y axis\n    applyMatrix( ct,  0.0,  st,  0.0,\n                 0.0, 1.0, 0.0,  0.0,\n                 -st, 0.0,  ct,  0.0,\n                 0.0, 0.0, 0.0,  1.0)\n    stroke(255)\n    box(50)\n\nrun()", 
+            "title": "Example"
+        }, 
+        {
+            "location": "/processing/transform/#reference", 
+            "text": "Processingjs  Processingjs applyMatrix", 
+            "title": "Reference"
+        }, 
+        {
             "location": "/processing/light-camera/", 
-            "text": "Light \n Camera", 
+            "text": "Light \n Camera\n\n\nLights\n\n\n\n\nambientLight()\n\n\ndirectionalLight()\n\n\nlightFalloff()\n\n\nlightSpecular()\n\n\nlights()\n\n\nnoLights()\n\n\nnormal()\n\n\npointLight()\n\n\nspotLight()\n : Note - on this linked page, this function's syntax is \nspotLight(v1, v2, v3, nx, ny, nz, angle, concentration)\n, which SHOULD BE \nspotLight(v1, v2, v3, x, y, z, nx, ny, nz, angle, concentration)\n\n\n\n\nCamera\n\n\n\n\nbeginCamera()\n\n\ncamera()\n\n\nendCamera()\n\n\nfrustum()\n\n\northo()\n\n\nperspective()\n\n\nprintCamera()\n\n\nprintProjection()\n\n\n\n\nCoordinates\n\n\n\n\nmodelX()\n\n\nmodelY()\n\n\nmodelZ()\n\n\nscreenX()\n\n\nscreenY()\n\n\nscreenZ()\n\n\n\n\nMaterial Properties\n\n\n\n\nambient()\n\n\nemissive()\n\n\nshininess()\n\n\nspecular()\n\n\n\n\nExample\n\n\nfrom processing import *\n\ndef setup():\n    size(560, 400, P3D)\n    #printCamera()\n    #printProjection()\n\ndef draw():\n    noFill()\n    beginCamera()\n    camera()\n    rotateX(-PI/6)\n    endCamera()\n\n    translate(50, 50, 0)\n    rotateY(PI/3)\n    box(45)\n\n\nrun()\n\n\n\n\nReference\n\n\n\n\nProcessingjs", 
             "title": "Light & Camera"
         }, 
         {
@@ -761,14 +876,69 @@
             "title": "Light &amp; Camera"
         }, 
         {
+            "location": "/processing/light-camera/#lights", 
+            "text": "ambientLight()  directionalLight()  lightFalloff()  lightSpecular()  lights()  noLights()  normal()  pointLight()  spotLight()  : Note - on this linked page, this function's syntax is  spotLight(v1, v2, v3, nx, ny, nz, angle, concentration) , which SHOULD BE  spotLight(v1, v2, v3, x, y, z, nx, ny, nz, angle, concentration)", 
+            "title": "Lights"
+        }, 
+        {
+            "location": "/processing/light-camera/#camera", 
+            "text": "beginCamera()  camera()  endCamera()  frustum()  ortho()  perspective()  printCamera()  printProjection()", 
+            "title": "Camera"
+        }, 
+        {
+            "location": "/processing/light-camera/#coordinates", 
+            "text": "modelX()  modelY()  modelZ()  screenX()  screenY()  screenZ()", 
+            "title": "Coordinates"
+        }, 
+        {
+            "location": "/processing/light-camera/#material-properties", 
+            "text": "ambient()  emissive()  shininess()  specular()", 
+            "title": "Material Properties"
+        }, 
+        {
+            "location": "/processing/light-camera/#example", 
+            "text": "from processing import *\n\ndef setup():\n    size(560, 400, P3D)\n    #printCamera()\n    #printProjection()\n\ndef draw():\n    noFill()\n    beginCamera()\n    camera()\n    rotateX(-PI/6)\n    endCamera()\n\n    translate(50, 50, 0)\n    rotateY(PI/3)\n    box(45)\n\n\nrun()", 
+            "title": "Example"
+        }, 
+        {
+            "location": "/processing/light-camera/#reference", 
+            "text": "Processingjs", 
+            "title": "Reference"
+        }, 
+        {
             "location": "/processing/math/", 
-            "text": "Math\n\n\n\n\nPVector", 
+            "text": "Math\n\n\n\n\nPVector\n\n\n\n\nCalculation\n\n\n\n\nconstrain()\n\n\ndist()\n\n\nlerp()\n\n\nmag()\n\n\nmap()\n\n\nnorm()\n\n\nsq()\n\n\n\n\nTrigonometry\n\n\n\n\ndegrees()\n\n\nradians()\n\n\n\n\nRandom\n\n\n\n\nnoise()\n\n\nnoiseDetail()\n\n\nnoiseSeed()\n\n\nrandom()\n\n\nrandomSeed()\n\n\n\n\nExample\n\n\nfrom processing import *\n\nxoff = 0.0\nwidth = 400\nheight = 300\n\ndef setup():\n    size(400, 400)\n\ndef draw():\n    global xoff\n    background(204)\n    xoff = xoff + .01\n    n = noise(xoff) * width\n    line(n, 0, n, height)\n\nrun()\n\n\n\n\nReference\n\n\n\n\nProcessingjs\n\n\nProcessingjs noise function", 
             "title": "Math"
         }, 
         {
             "location": "/processing/math/#math", 
             "text": "PVector", 
             "title": "Math"
+        }, 
+        {
+            "location": "/processing/math/#calculation", 
+            "text": "constrain()  dist()  lerp()  mag()  map()  norm()  sq()", 
+            "title": "Calculation"
+        }, 
+        {
+            "location": "/processing/math/#trigonometry", 
+            "text": "degrees()  radians()", 
+            "title": "Trigonometry"
+        }, 
+        {
+            "location": "/processing/math/#random", 
+            "text": "noise()  noiseDetail()  noiseSeed()  random()  randomSeed()", 
+            "title": "Random"
+        }, 
+        {
+            "location": "/processing/math/#example", 
+            "text": "from processing import *\n\nxoff = 0.0\nwidth = 400\nheight = 300\n\ndef setup():\n    size(400, 400)\n\ndef draw():\n    global xoff\n    background(204)\n    xoff = xoff + .01\n    n = noise(xoff) * width\n    line(n, 0, n, height)\n\nrun()", 
+            "title": "Example"
+        }, 
+        {
+            "location": "/processing/math/#reference", 
+            "text": "Processingjs  Processingjs noise function", 
+            "title": "Reference"
         }, 
         {
             "location": "/processing/constants/", 
