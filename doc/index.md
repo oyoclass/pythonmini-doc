@@ -40,6 +40,23 @@ t = Turtle()
 t.circle(40)    # a circle with radius 40
 ```
 
+* Make a drawing-board
+
+```python
+from processing import *
+
+def setup():
+    size(500, 400)
+    background(255, 255, 255)
+
+def draw():
+    if mouse.pressed:
+        line(mouse.x, mouse.y, mouse.px, mouse.py)
+
+
+run()
+```
+
 * Draw a 3D rotating box
 
 ```python
