@@ -4,12 +4,6 @@ Quote from [Python official website](python.org):
 
 > Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.
 
-## Why Python?
-
-* Easy to learn, a lot of top universities use Python to teach "Programming 101".
-* Not a toy, quite powerful and versatile, from basic tools to web development, to data analytics, etc, Python can handle all of them.
-* Write once, run everywhere. Once you finished the code, it can be run in Windows, Mac OS, Linux/Unix.
-
 ## About PythonMini
 
 PythonMini is an online python interpreter to help you write python in browser, without installing it to your computer. It implements a subset of Python 2, plus one additional graphical libraries - *Processing*.
