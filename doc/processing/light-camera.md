@@ -44,31 +44,21 @@
 ```python
 from processing import *
 
-rotating = 0.01
-
 def setup():
-    global earth
     size(560, 400, P3D)
     #printCamera()
     #printProjection()
 
 def draw():
-    global rotating
-    background(0, 0, 0)
-    translate(200, 120, 0)
-    rotateY(rotating)
-    rotating += 0.01
-    if rotating >= 2*PI:
-        rotating = 0.01
+    noFill()
+    beginCamera()
+    camera()
+    rotateX(-PI/6)
+    endCamera()
 
-    fill(255, 0, 0)
-    box(40)
-
-    noStroke()
-    lights()
-    fill(0, 0, 255)
-    translate(58, 48, 0)
-    sphere(28)
+    translate(50, 50, 0)
+    rotateY(PI/3)
+    box(45)
 
 
 run()

@@ -26,11 +26,13 @@ pages:
     - 'Turtle Graphic':
         - 'turtle': 'turtle/turtle.md'
     - 'Processing Graphic':
-        - '* Setup': 'processing/setup.md'
+        - 'Setup': 'processing/setup.md'
         - 'Color': 'processing/color.md'
         - 'Shape': 'processing/shape.md'
         - 'Typography': 'processing/typography.md'
-        - '* Input': 'processing/input.md'
+        - 'Input': 'processing/input.md'
+        - 'Web & Link': 'processing/web.md'
+        - 'Date & Time': 'processing/datetime.md'
         - 'Image': 'processing/image.md'
         - 'Transform': 'processing/transform.md'
         - 'Light & Camera': 'processing/light-camera.md'
