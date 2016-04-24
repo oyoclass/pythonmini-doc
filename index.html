@@ -400,6 +400,23 @@ t.circle(40)    # a circle with radius 40
 </code></pre>
 
 <ul>
+<li>Make a drawing-board</li>
+</ul>
+<pre><code class="python">from processing import *
+
+def setup():
+    size(500, 400)
+    background(255, 255, 255)
+
+def draw():
+    if mouse.pressed:
+        line(mouse.x, mouse.y, mouse.px, mouse.py)
+
+
+run()
+</code></pre>
+
+<ul>
 <li>Draw a 3D rotating box</li>
 </ul>
 <pre><code class="python">from processing import *
@@ -477,5 +494,5 @@ run()
 
 <!--
 MkDocs version : 0.15.3
-Build Date UTC : 2016-04-24 03:14:08.692204
+Build Date UTC : 2016-04-24 14:12:03.775201
 -->
