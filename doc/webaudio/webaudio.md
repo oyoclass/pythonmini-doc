@@ -19,7 +19,7 @@ And an Audio object has following method:
 * `myAudio.pause()` : Pause the audio.
 * `myAudio.volume()` : Get the current volume number.
 * `myAudio.setVolume(volume)` : Set the volume number (from 0 to 1).
-* `myAudio.destroy()` : Unload / destroy audio.
+* `myAudio.unload()` : Unload audio.
 
 ### Example
 
@@ -49,9 +49,9 @@ time.sleep(5)
 bgsound.setVolume(1)
 bgsound.play()
 
-# after 5 seconds, unload / destroy the bgsound audio
+# after 5 seconds, unload the bgsound audio
 time.sleep(5)
-bgsound.destroy()
+bgsound.unload()
 
 # unload all audio
 webaudio.unloadAllAudio()
