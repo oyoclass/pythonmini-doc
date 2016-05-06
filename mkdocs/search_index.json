@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "What's Python?\n\n\nQuote from \nPython official website\n:\n\n\n\n\nPython is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python\u2019s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.\n\n\n\n\nAbout PythonMini\n\n\nPythonMini is an online python interpreter to help you write python in browser, without installing it to your computer. It implements a subset of Python 2, plus one additional graphical libraries - \nProcessing\n.\n\n\nQuick Start\n\n\nCopy following example code to PythonMini editor then click \"Run\":\n\n\n\n\nSay hello\n\n\n\n\nprint \nhello\n\n\n\n\n\n\n\nDoing math\n\n\n\n\nprint 123 * 456     # calculate 123 times 456\nprint 180 / 12      # calculate 180 divided by 12\n\n\n\n\n\n\nAsk a question\n\n\n\n\nanswer = raw_input(\nWhat's your name?\n)\nprint \nhello\n, answer\n\n\n\n\n\n\nDraw a circle\n\n\n\n\nfrom turtle import Turtle\nt = Turtle()\nt.circle(40)    # a circle with radius 40\n\n\n\n\n\n\nMake a drawing-board\n\n\n\n\nfrom processing import *\n\ndef setup():\n    size(500, 400)\n    background(255, 255, 255)\n\ndef draw():\n    if mouse.pressed:\n        line(mouse.x, mouse.y, mouse.px, mouse.py)\n\n\nrun()\n\n\n\n\n\n\nDraw a 3D rotating box\n\n\n\n\nfrom processing import *\n\nrotating = 0.01\n\ndef setup():\n    size(400, 400, P3D)\n\ndef draw():\n    global rotating\n    background(0, 0, 0)\n    translate(200, 100, 0)\n    rotateY(rotating)\n    rotating += 0.01\n    if rotating \n= PI:\n        rotating = 0.01\n    fill(255, 0, 0)\n    box(40)\n\nrun()\n\n\n\n\nThere are a lot more you can do with PythonMini, for more information and examples, check the documentation on the left.\n\n\nFeedback\n\n\nIf you find any error about this documentation, please help us improve it, mail us at \nfeedback@oyoclass.com\n\n\nCredits\n\n\n\n\nSkulpt\n\n\nPython Official Documentation\n\n\nProcessingjs\n \n \nProcessing.py", 
+            "text": "What's Python?\n\n\nQuote from \nPython official website\n:\n\n\n\n\nPython is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python\u2019s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.\n\n\n\n\nAbout PythonMini\n\n\nPythonMini is an online python interpreter to help you write python in browser, without installing it to your computer. It implements a subset of Python 2, plus extra libraries:\n\n\n\n\nprocessing\n : Graphical library\n\n\nwebaudio\n : Audio library\n\n\n\n\nQuick Start\n\n\nCopy following example code to PythonMini editor then click \"Run\":\n\n\n\n\nSay hello\n\n\n\n\nprint \nhello\n\n\n\n\n\n\n\nDoing math\n\n\n\n\nprint 123 * 456     # calculate 123 times 456\nprint 180 / 12      # calculate 180 divided by 12\n\n\n\n\n\n\nAsk a question\n\n\n\n\nanswer = raw_input(\nWhat's your name?\n)\nprint \nhello\n, answer\n\n\n\n\n\n\nDraw a circle\n\n\n\n\nfrom turtle import Turtle\nt = Turtle()\nt.circle(40)    # a circle with radius 40\n\n\n\n\n\n\nMake a drawing-board\n\n\n\n\nfrom processing import *\n\ndef setup():\n    size(500, 400)\n    background(255, 255, 255)\n\ndef draw():\n    if mouse.pressed:\n        line(mouse.x, mouse.y, mouse.px, mouse.py)\n\n\nrun()\n\n\n\n\n\n\nDraw a 3D rotating box\n\n\n\n\nfrom processing import *\n\nrotating = 0.01\n\ndef setup():\n    size(400, 400, P3D)\n\ndef draw():\n    global rotating\n    background(0, 0, 0)\n    translate(200, 100, 0)\n    rotateY(rotating)\n    rotating += 0.01\n    if rotating \n= PI:\n        rotating = 0.01\n    fill(255, 0, 0)\n    box(40)\n\nrun()\n\n\n\n\nThere are a lot more you can do with PythonMini, for more information and examples, check the documentation on the left.\n\n\nFeedback\n\n\nIf you find any error about this documentation, please help us improve it, mail us at \nfeedback@oyoclass.com\n\n\nCredits\n\n\n\n\nSkulpt\n\n\nPython Official Documentation\n\n\nProcessingjs\n \n \nProcessing.py", 
             "title": "Home"
         }, 
         {
@@ -12,7 +12,7 @@
         }, 
         {
             "location": "/#about-pythonmini", 
-            "text": "PythonMini is an online python interpreter to help you write python in browser, without installing it to your computer. It implements a subset of Python 2, plus one additional graphical libraries -  Processing .", 
+            "text": "PythonMini is an online python interpreter to help you write python in browser, without installing it to your computer. It implements a subset of Python 2, plus extra libraries:   processing  : Graphical library  webaudio  : Audio library", 
             "title": "About PythonMini"
         }, 
         {
@@ -944,6 +944,36 @@
             "location": "/processing/constants/#constants", 
             "text": "HALF_PI  : PI / 2.0  THIRD_PI  : PI / 3.0  PI  : PI (3.14159...)  TWO_PI  : PI * 2.0  QUARTER_PI  : PI / 4.0  DEG_TO_RAD  : PI / 180  RAD_TO_REG  : 180 / PI", 
             "title": "Constants"
+        }, 
+        {
+            "location": "/webaudio/webaudio/", 
+            "text": "webaudio \u2014 Play audio\n\n\nLoad and play audio\n\n\nFunctions\n\n\n\n\nwebaudio.loadAudio(sources[, autoplay=False])\n : Load an audio, parameter \nsources\n could be a string (either an url or builtin-audio's name), or a list, which contains a list of url, you may want to use this when you have different format audio, like \n.mp3\n, \n.ogg\n, \n.wav\n. If you pass url as parameter, it must end with \n.mp3\n or \n.ogg\n or \n.wav\n. The second parameter \nautoplay\n, if you set it to True, the audio will auto be played after loaded.\n\n\nwebaudio.unloadAudio(audioObject)\n : Unload an audio object. An audio object can be generated by using the \nAudio\n class (see below).\n\n\nwebaudio.unloadAllAudio()\n : Unload all loaded audios.\n\n\nwebaudio.builtinAudios()\n : Print a list of builtin-audio's name.\n\n\n\n\nClass\n\n\n\n\nwebaudio.Audio(sources[, autoplay=False])\n : Parameter \nsources\n and \nautoplay\n are the same as \nloadAudio\n function (see above). To get an Audio object, you can call it like \nmyAudio = Audio('http://example.com/sound.mp3', True)\n\n\n\n\nAnd an Audio object has following method:\n\n\n\n\nmyAudio.play([loop=False])\n : Play the audio. If pass True as parameter, it will loop playing.\n\n\nmyAudio.pause()\n : Pause the audio.\n\n\nmyAudio.volume()\n : Get the current volume number.\n\n\nmyAudio.setVolume(volume)\n : Set the volume number (from 0 to 1).\n\n\nmyAudio.unload()\n : Unload audio.\n\n\n\n\nExample\n\n\nimport webaudio\nimport time\n\nprint \nBuiltin Audios:\n, webaudio.builtinAudios()\n\nspring_weather = \nhttp://www.soundjay.com/ambient/spring-weather-1.mp3\n\n# load spring_weather, autoplay it\nbgsound = webaudio.loadAudio(spring_weather, True)\n\n# load coin drop use Audio class, this is a builtin-audio\ncoinsound = webaudio.Audio(\nsoundeffect-coin-drop1\n)\ncoinsound.play()\n\n# set background sound volume\nbgsound.setVolume(0.5)\n\n# after 5 seconds, pause it\ntime.sleep(5)\nbgsound.pause()\n\n# after 5 seconds, continue playing\ntime.sleep(5)\nbgsound.setVolume(1)\nbgsound.play()\n\n# after 5 seconds, unload the bgsound audio\ntime.sleep(5)\nbgsound.unload()\n\n# unload all audio\nwebaudio.unloadAllAudio()\n\n\n\n\nCredits\n\n\nCurrently the builtinAudios are from \nsoundjay.com", 
+            "title": "webaudio"
+        }, 
+        {
+            "location": "/webaudio/webaudio/#webaudio-play-audio", 
+            "text": "Load and play audio", 
+            "title": "webaudio \u2014 Play audio"
+        }, 
+        {
+            "location": "/webaudio/webaudio/#functions", 
+            "text": "webaudio.loadAudio(sources[, autoplay=False])  : Load an audio, parameter  sources  could be a string (either an url or builtin-audio's name), or a list, which contains a list of url, you may want to use this when you have different format audio, like  .mp3 ,  .ogg ,  .wav . If you pass url as parameter, it must end with  .mp3  or  .ogg  or  .wav . The second parameter  autoplay , if you set it to True, the audio will auto be played after loaded.  webaudio.unloadAudio(audioObject)  : Unload an audio object. An audio object can be generated by using the  Audio  class (see below).  webaudio.unloadAllAudio()  : Unload all loaded audios.  webaudio.builtinAudios()  : Print a list of builtin-audio's name.", 
+            "title": "Functions"
+        }, 
+        {
+            "location": "/webaudio/webaudio/#class", 
+            "text": "webaudio.Audio(sources[, autoplay=False])  : Parameter  sources  and  autoplay  are the same as  loadAudio  function (see above). To get an Audio object, you can call it like  myAudio = Audio('http://example.com/sound.mp3', True)   And an Audio object has following method:   myAudio.play([loop=False])  : Play the audio. If pass True as parameter, it will loop playing.  myAudio.pause()  : Pause the audio.  myAudio.volume()  : Get the current volume number.  myAudio.setVolume(volume)  : Set the volume number (from 0 to 1).  myAudio.unload()  : Unload audio.", 
+            "title": "Class"
+        }, 
+        {
+            "location": "/webaudio/webaudio/#example", 
+            "text": "import webaudio\nimport time\n\nprint  Builtin Audios: , webaudio.builtinAudios()\n\nspring_weather =  http://www.soundjay.com/ambient/spring-weather-1.mp3 \n# load spring_weather, autoplay it\nbgsound = webaudio.loadAudio(spring_weather, True)\n\n# load coin drop use Audio class, this is a builtin-audio\ncoinsound = webaudio.Audio( soundeffect-coin-drop1 )\ncoinsound.play()\n\n# set background sound volume\nbgsound.setVolume(0.5)\n\n# after 5 seconds, pause it\ntime.sleep(5)\nbgsound.pause()\n\n# after 5 seconds, continue playing\ntime.sleep(5)\nbgsound.setVolume(1)\nbgsound.play()\n\n# after 5 seconds, unload the bgsound audio\ntime.sleep(5)\nbgsound.unload()\n\n# unload all audio\nwebaudio.unloadAllAudio()", 
+            "title": "Example"
+        }, 
+        {
+            "location": "/webaudio/webaudio/#credits", 
+            "text": "Currently the builtinAudios are from  soundjay.com", 
+            "title": "Credits"
         }
     ]
 }
