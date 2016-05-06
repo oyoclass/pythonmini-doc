@@ -6,7 +6,10 @@ Quote from [Python official website](python.org):
 
 ## About PythonMini
 
-PythonMini is an online python interpreter to help you write python in browser, without installing it to your computer. It implements a subset of Python 2, plus one additional graphical libraries - *Processing*.
+PythonMini is an online python interpreter to help you write python in browser, without installing it to your computer. It implements a subset of Python 2, plus extra libraries:
+
+* [processing](/processing/setup) : Graphical library
+* [webaudio](/webaudio/webaudio) : Audio library
 
 ## Quick Start
 

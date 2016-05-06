@@ -38,5 +38,7 @@ pages:
         - 'Light & Camera': 'processing/light-camera.md'
         - 'Math': 'processing/math.md'
         - 'Constants': 'processing/constants.md'
+    - 'Audio':
+        - 'webaudio': 'webaudio/webaudio.md'
 extra_css:
     - css/doc.css
