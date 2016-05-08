@@ -57,6 +57,11 @@ bgsound.unload()
 webaudio.unloadAllAudio()
 ```
 
+### Royalty-free sound website reference
+
+* [soundjay.com](http://www.soundjay.com) - Free Sound Effects.
+* [www.bfxr.net](www.bfxr.net) - Make sound effect for your game. 
+
 ### Credits
 
 Currently the builtinAudios are from [soundjay.com](http://www.soundjay.com/)
