@@ -40,5 +40,7 @@ pages:
         - 'Constants': 'processing/constants.md'
     - 'Audio':
         - 'webaudio': 'webaudio/webaudio.md'
+    - 'Impress':
+        - 'impress': 'impress/impress.md'
 extra_css:
     - css/doc.css
