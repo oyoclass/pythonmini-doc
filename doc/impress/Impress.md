@@ -39,7 +39,9 @@ Impress can be used to create slideshows that are more than just a simple left t
 import impress
 
 print impress.builtinFonts()
+# ['Slabo', 'Roboto Condensed', 'Titillium Web', 'PT Sans']
 print impress.builtinThemes()
+# ['blue', 'red', 'green', 'dark']
 
 list1 = [1, 2, 3, 4, 5]
 
