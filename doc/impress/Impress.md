@@ -23,7 +23,7 @@ Impress can be used to create slideshows that are more than just a simple left t
 * `slide.setPosition(x, y[, z=0])` : Sets the position of the slide to the specified (x, y, z) coordinates. This function can also be called with only x and y.
 * `slide.setRotation(x, y, z)` : Sets the rotation of the slide around the x-axis, the y-axis, and the z-axis. If the slideshow will remain 2-D, call this function with `(0, 0, z)`.
 * `slide.setScale(number)` : Sets the scale for the current slide. This number must be greater than or equal to 1.
-* `slide.addList(list)` : Adds the list to the elements that are added in the current slide.
+* `slide.addList(list[, ordered=False])` : Adds the list to the elements that are added in the current slide. If ordered is True then it will be an ordered list.
 * `slide.addImage(imageURL[, alignment="center"])`: Adds the image with the specified URL to the current slide with the specified alignment. The default alginment is "center". You can set the alignment to "right", "center", or "left".
 * `slide.addHeader(text, level[, alignment="center"])`: Adds a header with the specified text to the current Slide. The level must be a number between 1 and 6, as it represents the HTML tags `<h1>, <h2>, ... <h6>`. By default, the alignment is "center". You can set the alignment to "right", "center", or "left".
 * `slide.addParagraph(paragraph[, alignment="center"])`: Adds a paragraph to the specified slide. Default alignment is "center". You can set the alignment to "right", "center", or "left".
