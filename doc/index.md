@@ -10,6 +10,7 @@ PythonMini is an online python interpreter to help you write python in browser, 
 
 * [processing](/processing/setup) : Graphical library
 * [webaudio](/webaudio/webaudio) : Audio library
+* [impress](/impress/impress): Slides/Presentation library
 
 ## Quick Start
 
@@ -95,3 +96,4 @@ If you find any error about this documentation, please help us improve it, mail 
 * [Skulpt](skulpt.org)
 * [Python Official Documentation](https://docs.python.org/2/)
 * [Processingjs](http://processingjs.org/reference/) & [Processing.py](http://py.processing.org/reference/)
+* [Impress.js](https://github.com/impress/impress.js/)
