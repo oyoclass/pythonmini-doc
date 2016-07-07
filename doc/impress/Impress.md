@@ -12,7 +12,7 @@ Impress can be used to create slideshows that are more than just a simple left t
 
 ## Slideshow Class
 
-* `slideshow.setTitle(title)` : Sets the title of the Slideshow to the string title. The default title is "Default Title".
+* `slideshow.setTitle(title)` : Sets the title of the Slideshow to the string title. The default title is "Impress Presentation".
 * `slideshow.setTheme(theme)` : Sets the theme of the Slideshow to the built in theme passed in the string theme. If the theme is not set, it will be set to the default theme.
 * `slideshow.setFont(font)` : Sets the font of all the text in the slideshow to the built in font passed in the string font.
 * `slideshow.setBackgroundColor(r, g, b)` : Sets the background color theme of the slideshow to the specified red, green, and blue values.
@@ -45,38 +45,47 @@ import impress
 import time
 
 print impress.builtinFonts()
-# ['Slabo', 'Roboto Condensed', 'Titillium Web', 'PT Sans']
+# ['Slabo', 'Roboto Condensed', 'Titillium Web', 'PT Sans', 'Rakkas', 'Baloo Da', 'Lobster', 'Lalezar', 'Poiret One', 'Bungee', 'Bungee Shade', 'Shrikhand', 'Yatra One', 'Mogra', 'Black Ops One', 'Concert One', 'Kavoon', 'Ewert', 'Fruktur', 'Baloo', 'Monoton', 'Creepster', 'Righteous', 'Bangers', 'Fredoka One', 'Special Elite', 'Bubblegum Sans', 'Limelight', 'Freckle Face', 'Cabin Sketch', 'Frijole', 'Finger Paint', 'Fontdiner Swanky', 'Fredericka the Great', 'Baumans', 'Slackey']
 print impress.builtinThemes()
 # ['blue', 'red', 'green', 'dark']
 
-list1 = [1, 2, 3, 4, 5]
+list1 = ["Jake", "Andrew", "Jeden", "Gideon", "Jacica"]
 
+# create a slideshow, set theme, fonts, etc.
 x = impress.Slideshow(1000, 500)
+x.setTitle("Team JAZZ Presentation")
 x.setTheme("green")
-x.setFont("Slabo")
+x.setFont("Slackey")
 
+# create first slide
 slide1 = impress.Slide(50, 10, 0)
+slide1.addHeader("Meet our Team", 1)
 slide1.setScale(1)
 slide1.addList(list1)
 slide1.addImage("http://cdn.bulbagarden.net/upload/thumb/0/0d/025Pikachu.png/250px-025Pikachu.png", "center")
-slide1.addHeader("Hello, World", 1, "center")
+slide1.addHeader("Awesome!!!", 2, "center")
 
+# create second slide
 slide2 = impress.Slide(300, 1000, 0)
 slide2.setRotation(0, 0, 90)
 slide2.setScale(3)
 slide2.addHeader("Second Slide", 2, "center")
 slide2.addImage("http://cdn.bulbagarden.net/upload/thumb/8/85/385Jirachi.png/250px-385Jirachi.png", "center")
 
+# create third slide
 slide3 = impress.Slide(1000, 200, 90)
 slide3.setRotation(0, 90, 180)
 slide3.setScale(2)
 p = impress.Paragraph()
-p.addText("This is a test p", True, False)
+p.addText("This is a test paragraph", True, False)
 p.addBreak()
+p.addText(".. and a test link ")
 p.addLink("OYOclass", "https://oyoclass.com/")
+p.addBreak()
 p.addText("   Another text", False, True)
 slide3.addParagraph(p, "center")
 
+# now add above 3 slides to our slideshow
 x.addSlides([slide1, slide2, slide3])
 x.present()
 
