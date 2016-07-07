@@ -15,8 +15,13 @@ Impress can be used to create slideshows that are more than just a simple left t
 * `slideshow.setTitle(title)` : Sets the title of the Slideshow to the string title. The default title is "Default Title".
 * `slideshow.setTheme(theme)` : Sets the theme of the Slideshow to the built in theme passed in the string theme. If the theme is not set, it will be set to the default theme.
 * `slideshow.setFont(font)` : Sets the font of all the text in the slideshow to the built in font passed in the string font.
+* `slideshow.setBackgroundColor(r, g, b)` : Sets the background color theme of the slideshow to the specified red, green, and blue values.
+* `slideshow.setFontColor(r, g, b)` : Sets the font color of the text in the slideshow to the specified red, green, and blue values.
+* `slideshow.setLinkColor(r, g, b)` : Sets the background color of all links in the slideshow to the specified red, green, and blue values.
 * `slideshow.addSlides(slides)` : Sets the list of slides for the Slideshow to the list of Slides that is passed in the function call
 * `slideshow.present()` : Creates the HTML for the slideshow and opens it in a new window.
+* `slideshow.next()` : Goes to the next slide if the slideshow is open
+* `slideshow.prev()` : Goes to the previous slide if the slideshow is open
 
 ## Slide Class
 
@@ -24,7 +29,7 @@ Impress can be used to create slideshows that are more than just a simple left t
 * `slide.setRotation(x, y, z)` : Sets the rotation of the slide around the x-axis, the y-axis, and the z-axis. If the slideshow will remain 2-D, call this function with `(0, 0, z)`.
 * `slide.setScale(number)` : Sets the scale for the current slide. This number must be greater than or equal to 1.
 * `slide.addList(list[, ordered=False])` : Adds the list to the elements that are added in the current slide. If ordered is True then it will be an ordered list.
-* `slide.addImage(imageURL[, alignment="center"])`: Adds the image with the specified URL to the current slide with the specified alignment. The default alginment is "center". You can set the alignment to "right", "center", or "left".
+* `slide.addImage(imageURL[, alignment="center", scale=1])`: Adds the image with the specified URL to the current slide with the specified alignment. The default alignment is "center". You can set the alignment to "right", "center", or "left". If the scale is 0.25, then the image will be scaled to 25% its original size. If you want to set the scale you must also set the alignment.
 * `slide.addHeader(text, level[, alignment="center"])`: Adds a header with the specified text to the current Slide. The level must be a number between 1 and 6, as it represents the HTML tags `<h1>, <h2>, ... <h6>`. By default, the alignment is "center". You can set the alignment to "right", "center", or "left".
 * `slide.addParagraph(paragraph[, alignment="center"])`: Adds a paragraph to the specified slide. Default alignment is "center". You can set the alignment to "right", "center", or "left".
 
@@ -37,6 +42,7 @@ Impress can be used to create slideshows that are more than just a simple left t
 ## Example
 ```python
 import impress
+import time
 
 print impress.builtinFonts()
 # ['Slabo', 'Roboto Condensed', 'Titillium Web', 'PT Sans']
@@ -73,4 +79,8 @@ slide3.addParagraph(p, "center")
 
 x.addSlides([slide1, slide2, slide3])
 x.present()
+
+#go to next slide after waiting five seconds
+time.sleep(5)
+x.next()
 ```
