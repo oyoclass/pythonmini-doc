@@ -40,6 +40,8 @@ pages:
         - 'Constants': 'processing/constants.md'
     - 'Audio':
         - 'webaudio': 'webaudio/webaudio.md'
+    - 'Gesture':
+        - 'gesture': 'gesture/gesture.md'
     - 'Impress':
         - 'impress': 'impress/impress.md'
 extra_css:
