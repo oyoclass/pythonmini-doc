@@ -44,5 +44,8 @@ pages:
         - 'gesture': 'gesture/gesture.md'
     - 'Impress':
         - 'impress': 'impress/impress.md'
+    - 'Firebase':
+        - 'setup': 'firebase/setup.md'
+        - 'firebase': 'firebase/firebase.md'
 extra_css:
     - css/doc.css
