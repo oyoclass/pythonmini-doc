@@ -8,7 +8,7 @@
   
   
   
-  <title>Light & Camera - PythonMini Documentation</title>
+  <title>Setup - PythonMini Documentation</title>
   
 
   <link rel="shortcut icon" href="../../img/favicon.ico">
@@ -24,9 +24,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Light & Camera";
-    var mkdocs_page_input_path = "processing/light-camera.md";
-    var mkdocs_page_url = "/processing/light-camera/";
+    var mkdocs_page_name = "Setup";
+    var mkdocs_page_input_path = "firebase/setup.md";
+    var mkdocs_page_url = "/firebase/setup/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -226,103 +226,84 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../setup/">Setup</a>
+        <a class="" href="../../processing/setup/">Setup</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../color/">Color</a>
+        <a class="" href="../../processing/color/">Color</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../shape/">Shape</a>
+        <a class="" href="../../processing/shape/">Shape</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../typography/">Typography</a>
+        <a class="" href="../../processing/typography/">Typography</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../input/">Input</a>
+        <a class="" href="../../processing/input/">Input</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../web/">Web & Link</a>
+        <a class="" href="../../processing/web/">Web & Link</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../datetime/">Date & Time</a>
+        <a class="" href="../../processing/datetime/">Date & Time</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../image/">Image</a>
+        <a class="" href="../../processing/image/">Image</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../transform/">Transform</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Light & Camera</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#light-camera">Light &amp; Camera</a></li>
-                
-                    <li><a class="toctree-l4" href="#lights">Lights</a></li>
-                
-                    <li><a class="toctree-l4" href="#camera">Camera</a></li>
-                
-                    <li><a class="toctree-l4" href="#coordinates">Coordinates</a></li>
-                
-                    <li><a class="toctree-l4" href="#material-properties">Material Properties</a></li>
-                
-                    <li><a class="toctree-l4" href="#example">Example</a></li>
-                
-                    <li><a class="toctree-l4" href="#reference">Reference</a></li>
-                
-            
-            </ul>
+        <a class="" href="../../processing/transform/">Transform</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../math/">Math</a>
+        <a class="" href="../../processing/light-camera/">Light & Camera</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../constants/">Constants</a>
+        <a class="" href="../../processing/math/">Math</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../processing/constants/">Constants</a>
         
     </li>
 
@@ -381,22 +362,29 @@
 
         
             
-    <li class="toctree-l1 ">
-        <a class="" href="../../firebase/setup/">Setup</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Setup</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#firebase-setup">Firebase Setup</a></li>
+                
+            
+            </ul>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../firebase/firebase/">Firebase</a>
+        <a class="" href="../firebase/">Firebase</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../firebase/structured_data/">Structured Data</a>
+        <a class="" href="../structured_data/">Structured Data</a>
         
     </li>
 
@@ -426,11 +414,11 @@
     
       
         
-          <li>Processing Graphic &raquo;</li>
+          <li>Firebase &raquo;</li>
         
       
     
-    <li>Light & Camera</li>
+    <li>Setup</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -440,73 +428,40 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="light-camera">Light &amp; Camera</h2>
-<h3 id="lights">Lights</h3>
-<ul>
-<li><a href="http://processingjs.org/reference/ambientLight_/">ambientLight()</a></li>
-<li><a href="http://processingjs.org/reference/directionalLight_/">directionalLight()</a></li>
-<li><a href="http://processingjs.org/reference/lightFalloff_/">lightFalloff()</a></li>
-<li><a href="http://processingjs.org/reference/lightSpecular_/">lightSpecular()</a></li>
-<li><a href="http://processingjs.org/reference/lights_/">lights()</a></li>
-<li><a href="http://processingjs.org/reference/noLights_/">noLights()</a></li>
-<li><a href="http://processingjs.org/reference/normal_/">normal()</a></li>
-<li><a href="http://processingjs.org/reference/pointLight_/">pointLight()</a></li>
-<li><a href="http://processingjs.org/reference/spotLight_/">spotLight()</a> : Note - on this linked page, this function's syntax is <code>spotLight(v1, v2, v3, nx, ny, nz, angle, concentration)</code>, which SHOULD BE <code>spotLight(v1, v2, v3, x, y, z, nx, ny, nz, angle, concentration)</code></li>
-</ul>
-<h3 id="camera">Camera</h3>
-<ul>
-<li><a href="http://processingjs.org/reference/beginCamera_/">beginCamera()</a></li>
-<li><a href="http://processingjs.org/reference/camera_/">camera()</a></li>
-<li><a href="http://processingjs.org/reference/endCamera_/">endCamera()</a></li>
-<li><a href="http://processingjs.org/reference/frustum_/">frustum()</a></li>
-<li><a href="http://processingjs.org/reference/ortho_/">ortho()</a></li>
-<li><a href="http://processingjs.org/reference/perspective_/">perspective()</a></li>
-<li><a href="http://processingjs.org/reference/printCamera_/">printCamera()</a></li>
-<li><a href="http://processingjs.org/reference/printProjection_/">printProjection()</a></li>
-</ul>
-<h3 id="coordinates">Coordinates</h3>
-<ul>
-<li><a href="http://processingjs.org/reference/modelX_/">modelX()</a></li>
-<li><a href="http://processingjs.org/reference/modelY_/">modelY()</a></li>
-<li><a href="http://processingjs.org/reference/modelZ_/">modelZ()</a></li>
-<li><a href="http://processingjs.org/reference/screenX_/">screenX()</a></li>
-<li><a href="http://processingjs.org/reference/screenY_/">screenY()</a></li>
-<li><a href="http://processingjs.org/reference/screenZ_/">screenZ()</a></li>
-</ul>
-<h3 id="material-properties">Material Properties</h3>
-<ul>
-<li><a href="http://processingjs.org/reference/ambient_/">ambient()</a></li>
-<li><a href="http://processingjs.org/reference/emissive_/">emissive()</a></li>
-<li><a href="http://processingjs.org/reference/shininess_/">shininess()</a></li>
-<li><a href="http://processingjs.org/reference/specular_/">specular()</a></li>
-</ul>
-<h3 id="example">Example</h3>
-<pre><code class="python">from processing import *
+                <h2 id="firebase-setup">Firebase Setup</h2>
+<p>Below are steps to setup you Google Firebase app and create a firebase library database object.</p>
+<ol>
+<li>Head to <a href="https://firebase.google.com/">Google Firebase</a>. Click 'SIGN IN' at the upper right corner of the site.<br><br>
+<img src="../images/step_1.png" width="600px" /><br><br></li>
+<li>You will need a Google account to create a Firebase account. Log into your Google account.<br><br>
+<img src="../images/step_2.png" width="350px" /><br><br></li>
+<li>Click 'Go to console' in the upper right corner of the site.<br><br>
+<img src="../images/step_3.png" width="600px" /><br><br></li>
+<li>Click 'CREATE NEW PROJECT' in the center of the page.<br><br>
+<img src="../images/step_4.png" width="600px" /><br><br></li>
+<li>A modal window should pop up. Fill in the project name.<br><br>
+<img src="../images/step_5.png" width="400px" /><br><br></li>
+<li>You should see this Firebase app dashboard. Click on the 'Add Firebase to your web app' icon.</br><br>
+<img src="../images/step_6.png" width="600px" /><br><br></li>
+<li>Copy the API Key, Auth Domain, and Database URL from the highlighted areas. These three values are used in the firebase.loadFirebase function: <code>db = firebase.loadFirebase('AIzaSyATrCtlpxYanFOSt_6xPmj2z2phAL16lAI', 'fir-docs-demo', 'fir-docs-demo')</code>.
+<br><br>
+<img src="../images/step_7.png" width="600px" /><br><br></li>
+<li>On the side panel of the Firebase app dashboard click the Database icon.<br><br>
+<img src="../images/step_8.png" width="600px" /><br><br></li>
+<li>The dashboard shows three tabs for the Realtime Database. Click on the Rules tab.<br><br>
+<img src="../images/step_9.png" width="600px" /><br><br></li>
+<li>The Firebase database Rules section is where rules to ensure security are set. For the basic setup the rules will be relaxed. <b>SECURE</b> your rules before sharing your firebase library based app. <br><br>
+<img src="../images/step_10.png" width="600px" /><br><br></li>
+<li>Set the rules for ".read" and ".write" to "true" from "auth != null". <br><br>
+<img src="../images/step_11.png" width="600px" /><br><br></li>
+<li>With the Firebase App setup done in the Python Mini add the following code:</li>
+</ol>
+<pre><code>import firebase
 
-def setup():
-    size(560, 400, P3D)
-    #printCamera()
-    #printProjection()
-
-def draw():
-    noFill()
-    beginCamera()
-    camera()
-    rotateX(-PI/6)
-    endCamera()
-
-    translate(50, 50, 0)
-    rotateY(PI/3)
-    box(45)
-
-
-run()
+db = firebase.loadFirebase('AIzaSyATrCtlpxYanFOSt_6xPmj2z2phAL16lAI', 'fir-docs-demo', 'fir-docs-demo')
 </code></pre>
 
-<h3 id="reference">Reference</h3>
-<ul>
-<li><a href="http://processingjs.org/reference/">Processingjs</a></li>
-</ul>
+<p>The db variable now has the firebase object that is connected to the newly created app.</p>
               
             </div>
           </div>
@@ -514,10 +469,10 @@ run()
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../math/" class="btn btn-neutral float-right" title="Math">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../firebase/" class="btn btn-neutral float-right" title="Firebase">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../transform/" class="btn btn-neutral" title="Transform"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../impress/impress/" class="btn btn-neutral" title="impress"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -543,10 +498,10 @@ run()
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../transform/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../../impress/impress/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../math/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../firebase/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
