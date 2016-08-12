@@ -45,7 +45,8 @@ pages:
     - 'Impress':
         - 'impress': 'impress/impress.md'
     - 'Firebase':
-        - 'setup': 'firebase/setup.md'
-        - 'firebase': 'firebase/firebase.md'
+        - 'Setup': 'firebase/setup.md'
+        - 'Firebase': 'firebase/firebase.md'
+        - 'Structured Data': 'firebase/structured_data.md'
 extra_css:
     - css/doc.css
