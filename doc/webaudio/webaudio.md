@@ -60,7 +60,7 @@ webaudio.unloadAllAudio()
 ### Royalty-free sound website reference
 
 * [soundjay.com](http://www.soundjay.com) - Free Sound Effects.
-* [www.bfxr.net](www.bfxr.net) - Make sound effect for your game. 
+* [www.bfxr.net](http://www.bfxr.net) - Make sound effect for your game. 
 
 ### Credits
 

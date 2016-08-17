@@ -12,6 +12,7 @@ PythonMini is an online python interpreter to help you write python in browser, 
 * [webaudio](/webaudio/webaudio) : Audio library
 * [gesture](/gesture/gesture) : Gesture detecting library
 * [impress](/impress/impress): Slides/Presentation library
+* [firebase](/firebase/setup): Firebase library, can be used as database
 
 ## Quick Start
 
@@ -99,3 +100,4 @@ If you find any error about this documentation, please help us improve it, mail 
 * [Processingjs](http://processingjs.org/reference/) & [Processing.py](http://py.processing.org/reference/)
 * [Gesture.js](https://github.com/bofeng/gest.js)
 * [Impress.js](https://github.com/impress/impress.js/)
+* [Firebase](https://firebase.google.com)

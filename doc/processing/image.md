@@ -9,18 +9,14 @@
 * [imageMode()](http://processingjs.org/reference/imageMode_/)
 * [loadImage()](http://processingjs.org/reference/loadImage_/)
 * [requestImage()](http://processingjs.org/reference/requestImage_/)
-<!--
-* noTint()
-* tint()
--->
 
 ### Pixels
 
 * [blend()](http://processingjs.org/reference/blend_/)
 * [copy()](http://processingjs.org/reference/copy_/)
 * [filter()](http://processingjs.org/reference/filter_/)
-* [get()](http://processingjs.org/reference/get_/)
-* [set()](http://processingjs.org/reference/set_/)
+* [getPixel()](http://processingjs.org/reference/get_/)
+* [setPixel()](http://processingjs.org/reference/set_/)
 
 ### Example
 
