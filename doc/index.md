@@ -4,6 +4,7 @@ Quote from [Python official website](python.org):
 
 > Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.
 
+
 ## About PythonMini
 
 PythonMini is an online python interpreter to help you write python in browser, without installing it to your computer. It implements a subset of Python 2, plus extra libraries:
@@ -13,6 +14,7 @@ PythonMini is an online python interpreter to help you write python in browser, 
 * [gesture](/gesture/gesture) : Gesture detecting library
 * [impress](/impress/impress): Slides/Presentation library
 * [firebase](/firebase/setup): Firebase library, can be used as database
+
 
 ## Quick Start
 
@@ -89,9 +91,21 @@ run()
 
 There are a lot more you can do with PythonMini, for more information and examples, check the documentation on the left.
 
+## Beyond PythonMini
+
+PythonMini is meant as an introduction to the Python programming language. Everything you see in this documentation represents the full capability of the PythonMini editor. It is designed to allow you to run python in the browser, making storage and sharing of your work easier. Much more is possible with python than can be done with Python Mini alone. Examples include accessing local data, interacting with the operating system, or installing and using third-party libraries.
+
+To access the full capabilities of Python, download and install python onto your machine. Also included below are the links to the official python website and its documentation.
+
+ * [Python.org](https://www.python.org)
+ * [Download Python](https://www.python.org/downloads/)
+ * [Python Official Documentation](https://www.python.org/doc/)
+
+
 ## Feedback
 
-If you find any error about this documentation, please help us improve it, mail us at <a href="mailto:feedback@oyoclass.com">feedback@oyoclass.com</a>
+If you find any error about this PythonMini documentation, please help us improve it, mail us at <a href="mailto:feedback@oyoclass.com">feedback@oyoclass.com</a>
+
 
 ## Credits
 
