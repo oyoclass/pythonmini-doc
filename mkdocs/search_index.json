@@ -287,7 +287,7 @@
         }, 
         {
             "location": "/stdmod/collections/", 
-            "text": "collections \u2014 High-performance container datatypes\n\n\nThis module implements the following specialized container datatypes:\n\n\nObjects\n\n\n\n\nnamedtuple\n: factory function for creating tuple subclasses with named fields\n\n\ndeque\n: list-like container with fast appends and pops on either end\n\n\nCounter\n: dict subclass for counting hashable objects\n\n\nOrderedDict\n: dict subclass that remembers the order entries were added\n\n\ndefaultdict\n: dict subclass that calls a factory function to supply missing values\n\n\n\n\nFor more information and how to use those objects, check \nPython Collections Module documentation\n.\n\n\nExample\n\n\nimport collections\n\nc = collections.Counter('gallahad')\nprint c[\na\n]\n# 3\nprint c.most_common(1)\n# [('a', 3)]\n\nPoint = collections.namedtuple('Point', ['x', 'y'])\np = Point(1,2)\nprint p.x\n# 1\nprint p.y\n# 2", 
+            "text": "collections \u2014 High-performance container datatypes\n\n\nThis module implements the following specialized container datatypes:\n\n\nObjects\n\n\n\n\nnamedtuple\n: factory function for creating tuple subclasses with named fields\n\n\nCounter\n: dict subclass for counting hashable objects\n\n\nOrderedDict\n: dict subclass that remembers the order entries were added\n\n\ndefaultdict\n: dict subclass that calls a factory function to supply missing values\n\n\n\n\nFor more information and how to use those objects, check \nPython Collections Module documentation\n.\n\n\nExample\n\n\nimport collections\n\nc = collections.Counter('gallahad')\nprint c[\na\n]\n# 3\nprint c.most_common(1)\n# [('a', 3)]\n\nPoint = collections.namedtuple('Point', ['x', 'y'])\np = Point(1,2)\nprint p.x\n# 1\nprint p.y\n# 2", 
             "title": "collections"
         }, 
         {
@@ -297,7 +297,7 @@
         }, 
         {
             "location": "/stdmod/collections/#objects", 
-            "text": "namedtuple : factory function for creating tuple subclasses with named fields  deque : list-like container with fast appends and pops on either end  Counter : dict subclass for counting hashable objects  OrderedDict : dict subclass that remembers the order entries were added  defaultdict : dict subclass that calls a factory function to supply missing values   For more information and how to use those objects, check  Python Collections Module documentation .", 
+            "text": "namedtuple : factory function for creating tuple subclasses with named fields  Counter : dict subclass for counting hashable objects  OrderedDict : dict subclass that remembers the order entries were added  defaultdict : dict subclass that calls a factory function to supply missing values   For more information and how to use those objects, check  Python Collections Module documentation .", 
             "title": "Objects"
         }, 
         {
