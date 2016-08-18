@@ -5,7 +5,6 @@ This module implements the following specialized container datatypes:
 ### Objects
 
 * `namedtuple`: factory function for creating tuple subclasses with named fields
-* `deque`: list-like container with fast appends and pops on either end
 * `Counter`: dict subclass for counting hashable objects
 * `OrderedDict`: dict subclass that remembers the order entries were added
 * `defaultdict`: dict subclass that calls a factory function to supply missing values
