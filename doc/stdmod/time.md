@@ -16,7 +16,7 @@ This module provides time-related functions.
 * `time.clock()` : Return the current processor time as a floating point number expressed in seconds.
 * `time.ctime([secs])` : Convert a time expressed in seconds since the epoch to a string representing local time. If secs is not provided or None, the current time as returned by time() is used.
 * `time.gmtime([secs])` : Convert a time expressed in seconds since the epoch to a struct_time in UTC in which the dst flag is always zero. If secs is not provided or None, the current time as returned by time() is used.
-* `time.localtime[secs]` : Like gmtime() but converts to local time. If secs is not provided or None, the current time as returned by time() is used.
+* `time.localtime([secs])` : Like gmtime() but converts to local time. If secs is not provided or None, the current time as returned by time() is used.
 * `time.mktime(t)` : This is the inverse function of localtime(). Its argument is the struct_time or full 9-tuple.
 * `time.sleep(secs)` : Suspend execution of the current thread for the given number of seconds.
 * `time.time()`: Return the time in seconds since the epoch as a floating point number.
