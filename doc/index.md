@@ -1,6 +1,6 @@
 ## What's Python?
 
-Quote from [Python official website](python.org):
+Quote from [Python official website](https://www.python.org/):
 
 > Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.
 
@@ -109,7 +109,7 @@ If you find any error about this PythonMini documentation, please help us improv
 
 ## Credits
 
-* [Skulpt](skulpt.org)
+* [Skulpt](http://skulpt.org/)
 * [Python Official Documentation](https://docs.python.org/2/)
 * [Processingjs](http://processingjs.org/reference/) & [Processing.py](http://py.processing.org/reference/)
 * [Gesture.js](https://github.com/bofeng/gest.js)
