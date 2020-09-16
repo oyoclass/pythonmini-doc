@@ -1,7 +1,7 @@
 site_name: PythonMini Documentation
 theme: readthedocs
 docs_dir: 'doc'
-pages:
+nav:
     - 'Home': 'index.md'
     - 'Core':
         - 'Number': 'core/number.md'

@@ -49,5 +49,5 @@ run()
 
 ### Reference
 
-* [Processingjs](http://processing.org/reference/)
-* [Processingjs noise function](http://processing.org/reference/noise_.html)
+* [Processing.org](http://processing.org/reference/)
+* [Processing noise function](http://processing.org/reference/noise_.html)

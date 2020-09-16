@@ -75,5 +75,4 @@ run()
 
 ### Reference
 
-* [Processingjs](http://processing.org/reference/)
-* [Processing.py](http://processing.org/reference/)
+* [Processing.org](http://processing.org/reference/)

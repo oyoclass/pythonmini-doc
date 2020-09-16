@@ -19,4 +19,4 @@ run()
 
 ### Reference
 
-* [Processingjs link](http://processing.org/reference/link_.html)
+* [Processing link](http://processing.org/reference/link_.html)

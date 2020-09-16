@@ -48,5 +48,5 @@ run()
 
 ### Reference
 
-* [Processingjs](http://processing.org/reference/)
-* [Processingjs applyMatrix](http://processing.org/reference/applyMatrix_.html)
+* [Processing.org](http://processing.org/reference/)
+* [Processing applyMatrix](http://processing.org/reference/applyMatrix_.html)
