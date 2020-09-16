@@ -1,29 +1,29 @@
 ## Math
 
-* [PVector](http://processingjs.org/reference/PVector/)
+* [PVector](http://processing.org/reference/PVector/)
 
 ### Calculation
 
-* [constrain()](http://processingjs.org/reference/constrain_/)
-* [dist()](http://processingjs.org/reference/dist_/)
-* [lerp()](http://processingjs.org/reference/lerp_/)
-* [mag()](http://processingjs.org/reference/mag_/)
-* [map()](http://processingjs.org/reference/map_/)
-* [norm()](http://processingjs.org/reference/norm_/)
-* [sq()](http://processingjs.org/reference/sq_/)
+* [constrain()](http://processing.org/reference/constrain_.html)
+* [dist()](http://processing.org/reference/dist_.html)
+* [lerp()](http://processing.org/reference/lerp_.html)
+* [mag()](http://processing.org/reference/mag_.html)
+* [map()](http://processing.org/reference/map_.html)
+* [norm()](http://processing.org/reference/norm_.html)
+* [sq()](http://processing.org/reference/sq_.html)
 
 ### Trigonometry
 
-* [degrees()](http://processingjs.org/reference/degrees_/)
-* [radians()](http://processingjs.org/reference/radians_/)
+* [degrees()](http://processing.org/reference/degrees_.html)
+* [radians()](http://processing.org/reference/radians_.html)
 
 ### Random
 
-* [noise()](http://processingjs.org/reference/noise_/)
-* [noiseDetail()](http://processingjs.org/reference/noiseDetail_/)
-* [noiseSeed()](http://processingjs.org/reference/noiseSeed_/)
-* [random()](http://processingjs.org/reference/random_/)
-* [randomSeed()](http://processingjs.org/reference/randomSeed_/)
+* [noise()](http://processing.org/reference/noise_.html)
+* [noiseDetail()](http://processing.org/reference/noiseDetail_.html)
+* [noiseSeed()](http://processing.org/reference/noiseSeed_.html)
+* [random()](http://processing.org/reference/random_.html)
+* [randomSeed()](http://processing.org/reference/randomSeed_.html)
 
 ### Example
 
@@ -49,5 +49,5 @@ run()
 
 ### Reference
 
-* [Processingjs](http://processingjs.org/reference/)
-* [Processingjs noise function](http://processingjs.org/reference/noise_/)
+* [Processingjs](http://processing.org/reference/)
+* [Processingjs noise function](http://processing.org/reference/noise_.html)

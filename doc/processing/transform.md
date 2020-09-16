@@ -1,15 +1,15 @@
 ## Transform
 
-* [applyMatrix()](http://processingjs.org/reference/applyMatrix_/)
-* [popMatrix()](http://processingjs.org/reference/popMatrix_/)
-* [pushMatrix()](http://processingjs.org/reference/pushMatrix_/)
-* [resetMatrix()](http://processingjs.org/reference/resetMatrix_/)
-* [rotate()](http://processingjs.org/reference/rotate_/)
-* [rotateX()](http://processingjs.org/reference/rotateX_/)
-* [rotateY()](http://processingjs.org/reference/rotateY_/)
-* [rotateZ()](http://processingjs.org/reference/rotateZ_/)
-* [scale()](http://processingjs.org/reference/scale_/)
-* [translate()](http://processingjs.org/reference/translate_/)
+* [applyMatrix()](http://processing.org/reference/applyMatrix_.html)
+* [popMatrix()](http://processing.org/reference/popMatrix_.html)
+* [pushMatrix()](http://processing.org/reference/pushMatrix_.html)
+* [resetMatrix()](http://processing.org/reference/resetMatrix_.html)
+* [rotate()](http://processing.org/reference/rotate_.html)
+* [rotateX()](http://processing.org/reference/rotateX_.html)
+* [rotateY()](http://processing.org/reference/rotateY_.html)
+* [rotateZ()](http://processing.org/reference/rotateZ_.html)
+* [scale()](http://processing.org/reference/scale_.html)
+* [translate()](http://processing.org/reference/translate_.html)
 
 ### Example
 
@@ -48,5 +48,5 @@ run()
 
 ### Reference
 
-* [Processingjs](http://processingjs.org/reference/)
-* [Processingjs applyMatrix](http://processingjs.org/reference/applyMatrix_/)
+* [Processingjs](http://processing.org/reference/)
+* [Processingjs applyMatrix](http://processing.org/reference/applyMatrix_.html)

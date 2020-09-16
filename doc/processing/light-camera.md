@@ -2,42 +2,42 @@
 
 ### Lights
 
-* [ambientLight()](http://processingjs.org/reference/ambientLight_/)
-* [directionalLight()](http://processingjs.org/reference/directionalLight_/)
-* [lightFalloff()](http://processingjs.org/reference/lightFalloff_/)
-* [lightSpecular()](http://processingjs.org/reference/lightSpecular_/)
-* [lights()](http://processingjs.org/reference/lights_/)
-* [noLights()](http://processingjs.org/reference/noLights_/)
-* [normal()](http://processingjs.org/reference/normal_/)
-* [pointLight()](http://processingjs.org/reference/pointLight_/)
-* [spotLight()](http://processingjs.org/reference/spotLight_/) : Note - on this linked page, this function's syntax is `spotLight(v1, v2, v3, nx, ny, nz, angle, concentration)`, which SHOULD BE `spotLight(v1, v2, v3, x, y, z, nx, ny, nz, angle, concentration)`
+* [ambientLight()](http://processing.org/reference/ambientLight_.html)
+* [directionalLight()](http://processing.org/reference/directionalLight_.html)
+* [lightFalloff()](http://processing.org/reference/lightFalloff_.html)
+* [lightSpecular()](http://processing.org/reference/lightSpecular_.html)
+* [lights()](http://processing.org/reference/lights_.html)
+* [noLights()](http://processing.org/reference/noLights_.html)
+* [normal()](http://processing.org/reference/normal_.html)
+* [pointLight()](http://processing.org/reference/pointLight_.html)
+* [spotLight()](http://processing.org/reference/spotLight_.html) : Note - on this linked page, this function's syntax is `spotLight(v1, v2, v3, nx, ny, nz, angle, concentration)`, which SHOULD BE `spotLight(v1, v2, v3, x, y, z, nx, ny, nz, angle, concentration)`
 
 ### Camera
 
-* [beginCamera()](http://processingjs.org/reference/beginCamera_/)
-* [camera()](http://processingjs.org/reference/camera_/)
-* [endCamera()](http://processingjs.org/reference/endCamera_/)
-* [frustum()](http://processingjs.org/reference/frustum_/)
-* [ortho()](http://processingjs.org/reference/ortho_/)
-* [perspective()](http://processingjs.org/reference/perspective_/)
-* [printCamera()](http://processingjs.org/reference/printCamera_/)
-* [printProjection()](http://processingjs.org/reference/printProjection_/)
+* [beginCamera()](http://processing.org/reference/beginCamera_.html)
+* [camera()](http://processing.org/reference/camera_.html)
+* [endCamera()](http://processing.org/reference/endCamera_.html)
+* [frustum()](http://processing.org/reference/frustum_.html)
+* [ortho()](http://processing.org/reference/ortho_.html)
+* [perspective()](http://processing.org/reference/perspective_.html)
+* [printCamera()](http://processing.org/reference/printCamera_.html)
+* [printProjection()](http://processing.org/reference/printProjection_.html)
 
 ### Coordinates
 
-* [modelX()](http://processingjs.org/reference/modelX_/)
-* [modelY()](http://processingjs.org/reference/modelY_/)
-* [modelZ()](http://processingjs.org/reference/modelZ_/)
-* [screenX()](http://processingjs.org/reference/screenX_/)
-* [screenY()](http://processingjs.org/reference/screenY_/)
-* [screenZ()](http://processingjs.org/reference/screenZ_/)
+* [modelX()](http://processing.org/reference/modelX_.html)
+* [modelY()](http://processing.org/reference/modelY_.html)
+* [modelZ()](http://processing.org/reference/modelZ_.html)
+* [screenX()](http://processing.org/reference/screenX_.html)
+* [screenY()](http://processing.org/reference/screenY_.html)
+* [screenZ()](http://processing.org/reference/screenZ_.html)
 
 ### Material Properties
 
-* [ambient()](http://processingjs.org/reference/ambient_/)
-* [emissive()](http://processingjs.org/reference/emissive_/)
-* [shininess()](http://processingjs.org/reference/shininess_/)
-* [specular()](http://processingjs.org/reference/specular_/)
+* [ambient()](http://processing.org/reference/ambient_.html)
+* [emissive()](http://processing.org/reference/emissive_.html)
+* [shininess()](http://processing.org/reference/shininess_.html)
+* [specular()](http://processing.org/reference/specular_.html)
 
 ### Example
 
@@ -66,4 +66,4 @@ run()
 
 ### Reference
 
-* [Processingjs](http://processingjs.org/reference/)
+* [Processingjs](http://processing.org/reference/)

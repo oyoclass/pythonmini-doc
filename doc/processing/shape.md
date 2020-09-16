@@ -2,57 +2,57 @@
 
 ### 2D Primitives
 
-* [arc()](http://processingjs.org/reference/arc_/)
-* [ellipse()](http://processingjs.org/reference/ellipse_/)
-* [line()](http://processingjs.org/reference/line_/)
-* [point()](http://processingjs.org/reference/point_/)
-* [quad()](http://processingjs.org/reference/quad_/)
-* [rect()](http://processingjs.org/reference/rect_/)
-* [triangle()](http://processingjs.org/reference/triangle_/)
+* [arc()](http://processing.org/reference/arc_.html)
+* [ellipse()](http://processing.org/reference/ellipse_.html)
+* [line()](http://processing.org/reference/line_.html)
+* [point()](http://processing.org/reference/point_.html)
+* [quad()](http://processing.org/reference/quad_.html)
+* [rect()](http://processing.org/reference/rect_.html)
+* [triangle()](http://processing.org/reference/triangle_.html)
 
 ### Curves
 
-* [bezier()](http://processingjs.org/reference/bezier_/)
-* [bezierDetail()](http://processingjs.org/reference/bezierDetail_/)
-* [bezierPoint()](http://processingjs.org/reference/bezierPoint_/)
-* [bezierTangent()](http://processingjs.org/reference/bezierTangent_/)
-* [curve()](http://processingjs.org/reference/curve_/)
-* [curveDetail()](http://processingjs.org/reference/curveDetail_/)
-* [curvePoint()](http://processingjs.org/reference/curvePoint_/)
-* [curveTangent()](http://processingjs.org/reference/curveTangent_/)
-* [curveTightness()](http://processingjs.org/reference/curveTightness_/)
+* [bezier()](http://processing.org/reference/bezier_.html)
+* [bezierDetail()](http://processing.org/reference/bezierDetail_.html)
+* [bezierPoint()](http://processing.org/reference/bezierPoint_.html)
+* [bezierTangent()](http://processing.org/reference/bezierTangent_.html)
+* [curve()](http://processing.org/reference/curve_.html)
+* [curveDetail()](http://processing.org/reference/curveDetail_.html)
+* [curvePoint()](http://processing.org/reference/curvePoint_.html)
+* [curveTangent()](http://processing.org/reference/curveTangent_.html)
+* [curveTightness()](http://processing.org/reference/curveTightness_.html)
 
 ### 3D Primitives
 
-* [box()](http://processingjs.org/reference/box_/)
-* [sphere()](http://processingjs.org/reference/sphere_/)
-* [sphereDetail()](http://processingjs.org/reference/sphereDetail_/)
+* [box()](http://processing.org/reference/box_.html)
+* [sphere()](http://processing.org/reference/sphere_.html)
+* [sphereDetail()](http://processing.org/reference/sphereDetail_.html)
 
 ### Attributes
 
-* [ellipseMode()](http://processingjs.org/reference/ellipseMode_/)
-* [noSmooth()](http://processingjs.org/reference/noSmooth_/)
-* [rectMode()](http://processingjs.org/reference/rectMode_/)
-* [smooth()](http://processingjs.org/reference/smooth_/)
-* [strokeCap()](http://processingjs.org/reference/strokeCap_/)
-* [strokeJoin()](http://processingjs.org/reference/strokeJoin_/)
-* [strokeWeight()](http://processingjs.org/reference/strokeWeight_/)
+* [ellipseMode()](http://processing.org/reference/ellipseMode_.html)
+* [noSmooth()](http://processing.org/reference/noSmooth_.html)
+* [rectMode()](http://processing.org/reference/rectMode_.html)
+* [smooth()](http://processing.org/reference/smooth_.html)
+* [strokeCap()](http://processing.org/reference/strokeCap_.html)
+* [strokeJoin()](http://processing.org/reference/strokeJoin_.html)
+* [strokeWeight()](http://processing.org/reference/strokeWeight_.html)
 
 ### Vertex
 
-* [beginShape()](http://processingjs.org/reference/beginShape_/)
-* [bezierVertex()](http://processingjs.org/reference/bezierVertex_/)
-* [curveVertex()](http://processingjs.org/reference/curveVertex_/)
-* [endShape()](http://processingjs.org/reference/endShape_/)
-* [texture()](http://processingjs.org/reference/texture_/)
-* [textureMode()](http://processingjs.org/reference/textureMode_/)
-* [vertex()](http://processingjs.org/reference/vertex_/)
+* [beginShape()](http://processing.org/reference/beginShape_.html)
+* [bezierVertex()](http://processing.org/reference/bezierVertex_.html)
+* [curveVertex()](http://processing.org/reference/curveVertex_.html)
+* [endShape()](http://processing.org/reference/endShape_.html)
+* [texture()](http://processing.org/reference/texture_.html)
+* [textureMode()](http://processing.org/reference/textureMode_.html)
+* [vertex()](http://processing.org/reference/vertex_.html)
 
 ### Loading & Displaying
 
-* [loadShape()](http://processingjs.org/reference/loadShape_/)
-* [shape()](http://processingjs.org/reference/shape_/)
-* [shapeMode()](http://processingjs.org/reference/shapeMode_/)
+* [loadShape()](http://processing.org/reference/loadShape_.html)
+* [shape()](http://processing.org/reference/shape_.html)
+* [shapeMode()](http://processing.org/reference/shapeMode_.html)
 
 ### Example
 
@@ -75,5 +75,5 @@ run()
 
 ### Reference
 
-* [Processingjs](http://processingjs.org/reference/)
-* [Processing.py](http://py.processing.org/reference/)
+* [Processingjs](http://processing.org/reference/)
+* [Processing.py](http://processing.org/reference/)

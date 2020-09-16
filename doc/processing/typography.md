@@ -1,25 +1,25 @@
 ## Typography
 
-* [PFont](http://processingjs.org/reference/PFont/)
+* [PFont](http://processing.org/reference/PFont/)
 
 ### Loading & Displaying
 
-* [createFont()](http://processingjs.org/reference/createFont_/)
-* [text()](http://processingjs.org/reference/text_/)
-* [textFont()](http://processingjs.org/reference/textFont_/)
+* [createFont()](http://processing.org/reference/createFont_.html)
+* [text()](http://processing.org/reference/text_.html)
+* [textFont()](http://processing.org/reference/textFont_.html)
 
 ### Attributes
 
-* [textAlign()](http://processingjs.org/reference/textAlign_/)
-* [textLeading()](http://processingjs.org/reference/textLeading_/)
-* [textMode()](http://processingjs.org/reference/textMode_/)
-* [textSize()](http://processingjs.org/reference/textSize_/)
-* [textWidth()](http://processingjs.org/reference/textWidth_/)
+* [textAlign()](http://processing.org/reference/textAlign_.html)
+* [textLeading()](http://processing.org/reference/textLeading_.html)
+* [textMode()](http://processing.org/reference/textMode_.html)
+* [textSize()](http://processing.org/reference/textSize_.html)
+* [textWidth()](http://processing.org/reference/textWidth_.html)
 
 ### Metrics
 
-* [textAscent()](http://processingjs.org/reference/textAscent_/)
-* [textDescent()](http://processingjs.org/reference/textDescent_/)
+* [textAscent()](http://processing.org/reference/textAscent_.html)
+* [textDescent()](http://processing.org/reference/textDescent_.html)
 
 
 ### Example
@@ -52,4 +52,4 @@ run()
 
 ### Reference
 
-* [Processingjs](http://processingjs.org/reference/)
+* [Processingjs](http://processing.org/reference/)

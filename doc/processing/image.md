@@ -1,22 +1,22 @@
 ## Image
 
-* [PImage](http://processingjs.org/reference/PImage/)
-* [createImage()](http://processingjs.org/reference/createImage_/)
+* [PImage](http://processing.org/reference/PImage/)
+* [createImage()](http://processing.org/reference/createImage_.html)
 
 ### Loading & Displaying
 
-* [image()](http://processingjs.org/reference/image_/)
-* [imageMode()](http://processingjs.org/reference/imageMode_/)
-* [loadImage()](http://processingjs.org/reference/loadImage_/)
-* [requestImage()](http://processingjs.org/reference/requestImage_/)
+* [image()](http://processing.org/reference/image_.html)
+* [imageMode()](http://processing.org/reference/imageMode_.html)
+* [loadImage()](http://processing.org/reference/loadImage_.html)
+* [requestImage()](http://processing.org/reference/requestImage_.html)
 
 ### Pixels
 
-* [blend()](http://processingjs.org/reference/blend_/)
-* [copy()](http://processingjs.org/reference/copy_/)
-* [filter()](http://processingjs.org/reference/filter_/)
-* [getPixel()](http://processingjs.org/reference/get_/)
-* [setPixel()](http://processingjs.org/reference/set_/)
+* [blend()](http://processing.org/reference/blend_.html)
+* [copy()](http://processing.org/reference/copy_.html)
+* [filter()](http://processing.org/reference/filter_.html)
+* [getPixel()](http://processing.org/reference/get_.html)
+* [setPixel()](http://processing.org/reference/set_.html)
 
 ### Example
 
@@ -46,4 +46,4 @@ run()
 
 ### Reference
 
-* [Processingjs](http://processingjs.org/reference/)
+* [Processingjs](http://processing.org/reference/)

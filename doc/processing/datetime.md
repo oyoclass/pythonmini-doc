@@ -1,12 +1,12 @@
 ## Date & Time
 
-* [day()](http://processingjs.org/reference/day_/)
-* [hour()](http://processingjs.org/reference/hour_/)
-* [millis()](http://processingjs.org/reference/millis_/)
-* [minute()](http://processingjs.org/reference/minute_/)
-* [month()](http://processingjs.org/reference/month_/)
-* [second()](http://processingjs.org/reference/second_/)
-* [year()](http://processingjs.org/reference/year_/)
+* [day()](http://processing.org/reference/day_.html)
+* [hour()](http://processing.org/reference/hour_.html)
+* [millis()](http://processing.org/reference/millis_.html)
+* [minute()](http://processing.org/reference/minute_.html)
+* [month()](http://processing.org/reference/month_.html)
+* [second()](http://processing.org/reference/second_.html)
+* [year()](http://processing.org/reference/year_.html)
 
 
 ### Example
@@ -30,4 +30,4 @@ run()
 
 ### Reference
 
-* [Processingjs](http://processingjs.org/reference/)
+* [Processingjs](http://processing.org/reference/)

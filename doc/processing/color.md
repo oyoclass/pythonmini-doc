@@ -2,25 +2,25 @@
 
 ### Setting
 
-* [background()](http://processingjs.org/reference/background_/)
-* [colorMode()](http://processingjs.org/reference/colorMode_/)
-* [fill()](http://processingjs.org/reference/fill_/)
-* [noFill()](http://processingjs.org/reference/noFill_/)
-* [noStroke()](http://processingjs.org/reference/noStroke_/)
-* [stroke()](http://processingjs.org/reference/stroke_/)
+* [background()](http://processing.org/reference/background_.html)
+* [colorMode()](http://processing.org/reference/colorMode_.html)
+* [fill()](http://processing.org/reference/fill_.html)
+* [noFill()](http://processing.org/reference/noFill_.html)
+* [noStroke()](http://processing.org/reference/noStroke_.html)
+* [stroke()](http://processing.org/reference/stroke_.html)
 
 ### Creating & Reading
 
-* [alpha()](http://processingjs.org/reference/alpha_/)
-* [blendColor()](http://processingjs.org/reference/blendColor_/)
-* [blue()](http://processingjs.org/reference/blue_/)
-* [brightness()](http://processingjs.org/reference/brightness_/)
-* [color()](http://processingjs.org/reference/color_/)
-* [green()](http://processingjs.org/reference/green_/)
-* [hue()](http://processingjs.org/reference/hue_/)
-* [lerpColor()](http://processingjs.org/reference/lerpColor_/)
-* [red()](http://processingjs.org/reference/red_/)
-* [saturation()](http://processingjs.org/reference/saturation_/)
+* [alpha()](http://processing.org/reference/alpha_.html)
+* [blendColor()](http://processing.org/reference/blendColor_.html)
+* [blue()](http://processing.org/reference/blue_.html)
+* [brightness()](http://processing.org/reference/brightness_.html)
+* [color()](http://processing.org/reference/color_.html)
+* [green()](http://processing.org/reference/green_.html)
+* [hue()](http://processing.org/reference/hue_.html)
+* [lerpColor()](http://processing.org/reference/lerpColor_.html)
+* [red()](http://processing.org/reference/red_.html)
+* [saturation()](http://processing.org/reference/saturation_.html)
 
 
 ### Example
@@ -42,4 +42,4 @@ run()
 
 ### Reference
 
-* [Processingjs](http://processingjs.org/reference/)
+* [Processingjs](http://processing.org/reference/)
