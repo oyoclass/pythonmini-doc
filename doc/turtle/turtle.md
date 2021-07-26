@@ -56,7 +56,6 @@ Now you have your own turtle (in this example I called it *nick*, but you can ch
 * ```turtle.color(*args)``` : Return or set pencolor and fillcolor. *color()* returns the current pencolor and the current fillcolor, *color(colorstring)* or *color(r, g, b)* set pencolor and fillcolor the a RGB color.
 
 ### Filling
-* ```turtle.fill(flag)``` : Call *fill(True)* before drawing the shape you want to fill, and *fill(False)* when done.
 * ```turtle.begin_fill()``` : Call just before drawing a shape to be filled. Equivalent to *fill(True)*.
 * ```turtle.end_fill()``` : Fill the shape drawn after the last call to begin_fill(). Equivalent to *fill(False)*.
 
